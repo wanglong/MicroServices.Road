@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e7fc8ac6-fece-4bce-85af-055070c43c20" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-171474046">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="17" />
+          <entry key="csproj" value="1" />
+          <entry key="json" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="17" />
+          <entry key="Csproj" value="1" />
+          <entry key="JSON" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="445" />
+          <entry key="csproj" value="8" />
+          <entry key="json" value="406" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="445" />
+          <entry key="Csproj" value="8" />
+          <entry key="JSON" value="406" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/appsettings.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Startup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="715">
+              <caret line="61" column="1" lean-forward="true" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+              <folding>
+                <marker date="1539590224000" expanded="false" signature="6:568" ph="..." />
+                <marker date="1539590224000" expanded="true" signature="597:2283" ph="{...}" />
+                <marker date="1539590224000" expanded="true" signature="624:2281" ph="{...}" />
+                <marker date="1539590224000" expanded="true" signature="683:746" ph="{...}" />
+                <marker date="1539590224000" expanded="true" signature="969:1421" ph="{...}" />
+                <marker date="1539590224000" expanded="true" signature="1042:1319" ph="{...}" />
+                <marker date="1539590224000" expanded="true" signature="1640:2275" ph="{...}" />
+                <marker date="1539590224000" expanded="true" signature="1683:1854" ph="{...}" />
+                <marker date="1539590224000" expanded="true" signature="1929:2263" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/App_Code/NetworkHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AC88FF9-9817-4BE7-8F0D-6AB05B5F222B/b8/96b46b9d/ConfigureServicesBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Models/ServiceEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AC88FF9-9817-4BE7-8F0D-6AB05B5F222B/f9/f64703da/StartupLoader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/App_Code/AppBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/680D0A75-2A4E-40EB-A596-BAD88FBFB729/d9/d285de13/Thread.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Controllers/HealthController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4B47B422-BC4C-4615-BBDE-BE1DF9B21B0D/be/88541376/ActivatorUtilities.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/LZZ.DEV.WebServer/Controllers/HealthController.cs" />
+        <option value="$PROJECT_DIR$/LZZ.DEV.WebServer/Models/ServiceEntity.cs" />
+        <option value="$PROJECT_DIR$/LZZ.DEV.WebServer/App_Code/AppBuilderExtensions.cs" />
+        <option value="$PROJECT_DIR$/LZZ.DEV.WebServer/App_Code/NetworkHelper.cs" />
+        <option value="$PROJECT_DIR$/LZZ.DEV.WebServer/hosting.json" />
+        <option value="$PROJECT_DIR$/LZZ.DEV.WebServer/LZZ.DEV.WebServer.csproj" />
+        <option value="$PROJECT_DIR$/LZZ.DEV.WebServer/Program.cs" />
+        <option value="$PROJECT_DIR$/LZZ.DEV.WebServer/Startup.cs" />
+        <option value="$PROJECT_DIR$/LZZ.DEV.WebServer/appsettings.json" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="560" />
+    <option name="y" value="253" />
+    <option name="width" value="1650" />
+    <option name="height" value="949" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="LZZ.DEV.WebServer" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="LZZ.DEV.WebServer" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="LZZ.DEV.WebServer" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../publish" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Publish to folder.Publish LZZ.DEV.WebServer to folder">
+    <configuration name="Publish LZZ.DEV.WebServer to folder" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish target_folder="$PROJECT_DIR$/../publish" uuid_high="4365711453849338478" uuid_low="-8762770473244825913" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/LZZ.DEV.WebServer/bin/Debug/netcoreapp2.1/LZZ.DEV.WebServer.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LZZ.DEV.WebServer" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/LZZ.DEV.WebServer/LZZ.DEV.WebServer.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.1" />
+      <browser start="true" url="http://localhost:5000" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue=".NET Project.Default" />
+      <item itemvalue="Publish to folder.Publish LZZ.DEV.WebServer to folder" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e7fc8ac6-fece-4bce-85af-055070c43c20" name="Default" comment="" />
+      <created>1539515568326</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539515568326</updated>
+      <workItem from="1539515577663" duration="3611000" />
+      <workItem from="1539525246546" duration="1862000" />
+      <workItem from="1539576563730" duration="10396000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="15869000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19527897" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="DB Browser" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30872482" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39485458" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.32994923" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="DB Execution Console" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="REST Client" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="15" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Build" order="16" visible="true" weight="0.25838926" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/LZZ.DEV.WebServer/App_Code/NetworkHelper.cs</url>
+          <line>18</line>
+          <properties documentPath="$PROJECT_DIR$/LZZ.DEV.WebServer/App_Code/NetworkHelper.cs" initialLine="18">
+            <startOffsets>
+              <option value="463" />
+            </startOffsets>
+            <endOffsets>
+              <option value="509" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="DotNetProject">
+        <watch expression="Configuration[&quot;Server.Ip.Address&quot;]" language="C#" custom="RiderImportsList:" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>Configuration[&quot;Server.Ip.Address&quot;]</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>config[&quot;server.urls&quot;]</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>config</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Configuration[&quot;Service&quot;]</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Configuration[&quot;Service:Name&quot;]</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Configuration[&quot;Service:Port&quot;]</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>config[&quot;ASPNETCORE_URLS&quot;]</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ipEntry.AddressList</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>NetworkHelper.GetLocalIp()</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>GetAddressIp()</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Models/ServiceEntity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Controllers/HomeController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Controllers/HealthController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AC88FF9-9817-4BE7-8F0D-6AB05B5F222B/f9/f64703da/StartupLoader.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="155" column="10" selection-start-line="155" selection-start-column="10" selection-end-line="155" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AC88FF9-9817-4BE7-8F0D-6AB05B5F222B/b8/96b46b9d/ConfigureServicesBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/App_Code/NetworkHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <marker date="1539583242000" expanded="false" signature="6:92" ph="..." />
+            <marker date="1539583242000" expanded="true" signature="121:1958" ph="{...}" />
+            <marker date="1539583242000" expanded="true" signature="161:1956" ph="{...}" />
+            <marker date="1539583242000" expanded="true" signature="176:231" ph="/// 得到本机IP ... " />
+            <marker date="1539583242000" expanded="true" signature="273:742" ph="{...}" />
+            <marker date="1539583242000" expanded="true" signature="509:708" ph="{...}" />
+            <marker date="1539583242000" expanded="true" signature="752:915" ph="/// 判断是否为正确的IP地址 ... " />
+            <marker date="1539583242000" expanded="true" signature="969:1464" ph="{...}" />
+            <marker date="1539583242000" expanded="true" signature="1245:1427" ph="{...}" />
+            <marker date="1539583242000" expanded="true" signature="1474:1633" ph="/// 尝试Ping指定IP是否能够Ping通 ... " />
+            <marker date="1539583242000" expanded="true" signature="1683:1950" ph="{...}" />
+            <marker date="1539583242000" expanded="true" signature="1709:1864" ph="{...}" />
+            <marker date="1539583242000" expanded="true" signature="1882:1940" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/appsettings.Development.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4B47B422-BC4C-4615-BBDE-BE1DF9B21B0D/be/88541376/ActivatorUtilities.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="320" column="67" lean-forward="true" selection-start-line="320" selection-start-column="67" selection-end-line="320" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/680D0A75-2A4E-40EB-A596-BAD88FBFB729/d9/d285de13/Thread.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
+          <folding>
+            <marker date="1539586776201" expanded="true" signature="0:329" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1539586776201" expanded="false" signature="337:511" ph="..." />
+            <marker date="1539586776201" expanded="true" signature="539:7595" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="588:7593" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="1068:1080" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="1118:1260" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="1318:1606" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="1657:1799" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="1870:2158" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="2197:2245" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="2387:2635" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="2680:2884" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="2913:3147" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="3195:3340" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="3211:3267" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="3277:3334" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="3400:3557" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="3416:3478" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="3488:3551" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="3940:4001" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="4049:4359" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="4527:4582" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="4721:4770" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="4810:4896" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="4826:4890" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="5144:5453" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="5586:5629" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="5874:6158" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="5890:5951" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="5961:6152" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="6197:6477" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="6213:6272" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="6282:6471" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="6852:6939" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="6978:7031" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="7059:7443" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="7075:7119" ph="{...}" />
+            <marker date="1539586776201" expanded="true" signature="7129:7437" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/App_Code/AppBuilderExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+          <folding>
+            <marker date="1539525474000" expanded="false" signature="6:131" ph="..." />
+            <marker date="1539525474000" expanded="true" signature="160:1816" ph="{...}" />
+            <marker date="1539525474000" expanded="true" signature="207:1814" ph="{...}" />
+            <marker date="1539525474000" expanded="true" signature="384:1808" ph="{...}" />
+            <marker date="1539525474000" expanded="true" signature="631:963" ph="{...}" />
+            <marker date="1539525474000" expanded="true" signature="1084:1473" ph="{...}" />
+            <marker date="1539525474000" expanded="true" signature="1652:1771" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/LZZ.DEV.WebServer.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/hosting.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="39" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1539590064000" expanded="true" signature="6:105" ph="..." />
+            <marker date="1539590064000" expanded="true" signature="134:619" ph="{...}" />
+            <marker date="1539590064000" expanded="true" signature="161:617" ph="{...}" />
+            <marker date="1539590064000" expanded="true" signature="214:357" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="61" column="1" lean-forward="true" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+          <folding>
+            <marker date="1539590224000" expanded="false" signature="6:568" ph="..." />
+            <marker date="1539590224000" expanded="true" signature="597:2283" ph="{...}" />
+            <marker date="1539590224000" expanded="true" signature="624:2281" ph="{...}" />
+            <marker date="1539590224000" expanded="true" signature="683:746" ph="{...}" />
+            <marker date="1539590224000" expanded="true" signature="969:1421" ph="{...}" />
+            <marker date="1539590224000" expanded="true" signature="1042:1319" ph="{...}" />
+            <marker date="1539590224000" expanded="true" signature="1640:2275" ph="{...}" />
+            <marker date="1539590224000" expanded="true" signature="1683:1854" ph="{...}" />
+            <marker date="1539590224000" expanded="true" signature="1929:2263" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
