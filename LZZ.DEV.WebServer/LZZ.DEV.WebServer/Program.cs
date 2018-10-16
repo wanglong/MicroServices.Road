@@ -8,7 +8,11 @@ namespace LZZ.DEV.WebServer
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args, new ConfigurationBuilder().AddJsonFile($"appsettings.json").Build()).Build().Run();
+            CreateWebHostBuilder(args,
+                new ConfigurationBuilder()
+                    .AddJsonFile($"appsettings.json")
+                    .Build()
+            ).Build().Run();
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args, IConfigurationRoot hostingConfig) =>

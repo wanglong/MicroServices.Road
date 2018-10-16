@@ -1,0 +1,38 @@
+{
+  "services": [
+    {
+      "id": "CLIENT_SERVICE_01",
+      "name": "CAS Client Service",
+      "tags": [
+        "urlprefix-/ClientService01"
+      ],
+      "address": "192.168.153.132",
+      "port": 5000,
+      "checks": [
+        {
+          "name": "clientservice_check01",
+          "http": "http://192.168.53.132:5000/api/health",
+          "interval": "10s",
+          "timeout": "5s"
+        }
+      ]
+    },
+    {
+      "id": "CLIENT_SERVICE_02",
+      "name": "CAS Client Service",
+      "tags": [
+        "urlprefix-/ClientService02"
+      ],
+      "address": "192.168.153.132",
+      "port": 5001,
+      "checks": [
+        {
+          "name": "clientservice_check02",
+          "http": "http://192.168.153.132:5001/api/health",
+          "interval": "10s",
+          "timeout": "5s"
+        }
+      ]
+    }
+  ]
+}
