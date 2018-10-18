@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "G:\\learn_project\\MicroServices\\LZZ.DEV.WebServer\\LZZ.DEV.Watch\\LZZ.DEV.Watch.csproj",
+    "projectUniqueName": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\LZZ.DEV.Watch\\LZZ.DEV.Watch.csproj",
     "projectName": "LZZ.DEV.Watch",
-    "projectPath": "G:\\learn_project\\MicroServices\\LZZ.DEV.WebServer\\LZZ.DEV.Watch\\LZZ.DEV.Watch.csproj",
-    "outputPath": "G:\\learn_project\\MicroServices\\LZZ.DEV.WebServer\\LZZ.DEV.Watch\\obj\\",
+    "projectPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\LZZ.DEV.Watch\\LZZ.DEV.Watch.csproj",
+    "outputPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\LZZ.DEV.Watch\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

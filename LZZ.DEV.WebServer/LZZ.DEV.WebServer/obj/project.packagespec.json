@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "G:\\learn_project\\MicroServices\\LZZ.DEV.WebServer\\LZZ.DEV.WebServer\\LZZ.DEV.WebServer.csproj",
+    "projectUniqueName": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\LZZ.DEV.WebServer\\LZZ.DEV.WebServer.csproj",
     "projectName": "LZZ.DEV.WebServer",
-    "projectPath": "G:\\learn_project\\MicroServices\\LZZ.DEV.WebServer\\LZZ.DEV.WebServer\\LZZ.DEV.WebServer.csproj",
-    "outputPath": "G:\\learn_project\\MicroServices\\LZZ.DEV.WebServer\\LZZ.DEV.WebServer\\obj\\",
+    "projectPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\LZZ.DEV.WebServer\\LZZ.DEV.WebServer.csproj",
+    "outputPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\LZZ.DEV.WebServer\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
