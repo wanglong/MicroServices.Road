@@ -11,7 +11,7 @@
       "checks": [
         {
           "name": "clientservice_check01",
-          "http": "http://192.168.53.132:5000/api/health",
+          "http": "http://192.168.153.132:5000/api/health",
           "interval": "10s",
           "timeout": "5s"
         }
@@ -29,6 +29,23 @@
         {
           "name": "clientservice_check02",
           "http": "http://192.168.153.132:5001/api/health",
+          "interval": "10s",
+          "timeout": "5s"
+        }
+      ]
+    },
+    {
+      "id": "WATCH_ALERT_NOTICE_SERVICE",
+      "name": "CAS.Notice.Service",
+      "tags": [
+        "urlprefix-/NoticeService"
+      ],
+      "address": "192.168.153.132",
+      "port": 9000,
+      "checks": [
+        {
+          "name": "clientservice_check02",
+          "http": "http://192.168.153.132:9000/api/health",
           "interval": "10s",
           "timeout": "5s"
         }

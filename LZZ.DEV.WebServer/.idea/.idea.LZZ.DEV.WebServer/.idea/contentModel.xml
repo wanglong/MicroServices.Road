@@ -5,6 +5,28 @@
     <e p="C:\Users\Administrator\.Rider2018.2\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Administrator\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_LZZ.DEV.WebServer.-317427179.00" t="ExcludeRecursive" />
     <e p="G:\learn_project\MicroServices\LZZ.DEV.WebServer" t="IncludeFlat">
+      <e p="LZZ.DEV.Watch" t="IncludeRecursive">
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="HealthController.cs" t="Include" />
+          <e p="HomeController.cs" t="Include" />
+        </e>
+        <e p="LZZ.DEV.Watch.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="LZZ.DEV.Watch.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="watch_config.json" t="Include" />
+      </e>
       <e p="LZZ.DEV.WebServer" t="IncludeRecursive">
         <e p="App_Code" t="Include">
           <e p="AppBuilderExtensions.cs" t="Include" />

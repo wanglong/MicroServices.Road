@@ -1,0 +1,15 @@
+G:\learn_project\MicroServices\LZZ.DEV.WebServer\LZZ.DEV.Watch\bin\Debug\netcoreapp2.1\LZZ.DEV.Watch.deps.json
+G:\learn_project\MicroServices\LZZ.DEV.WebServer\LZZ.DEV.Watch\bin\Debug\netcoreapp2.1\LZZ.DEV.Watch.runtimeconfig.json
+G:\learn_project\MicroServices\LZZ.DEV.WebServer\LZZ.DEV.Watch\bin\Debug\netcoreapp2.1\LZZ.DEV.Watch.runtimeconfig.dev.json
+G:\learn_project\MicroServices\LZZ.DEV.WebServer\LZZ.DEV.Watch\bin\Debug\netcoreapp2.1\LZZ.DEV.Watch.dll
+G:\learn_project\MicroServices\LZZ.DEV.WebServer\LZZ.DEV.Watch\bin\Debug\netcoreapp2.1\LZZ.DEV.Watch.pdb
+G:\learn_project\MicroServices\LZZ.DEV.WebServer\LZZ.DEV.Watch\obj\Debug\netcoreapp2.1\LZZ.DEV.Watch.csprojAssemblyReference.cache
+G:\learn_project\MicroServices\LZZ.DEV.WebServer\LZZ.DEV.Watch\obj\Debug\netcoreapp2.1\LZZ.DEV.Watch.csproj.CoreCompileInputs.cache
+G:\learn_project\MicroServices\LZZ.DEV.WebServer\LZZ.DEV.Watch\obj\Debug\netcoreapp2.1\LZZ.DEV.Watch.RazorAssemblyInfo.cache
+G:\learn_project\MicroServices\LZZ.DEV.WebServer\LZZ.DEV.Watch\obj\Debug\netcoreapp2.1\LZZ.DEV.Watch.RazorAssemblyInfo.cs
+G:\learn_project\MicroServices\LZZ.DEV.WebServer\LZZ.DEV.Watch\obj\Debug\netcoreapp2.1\LZZ.DEV.Watch.AssemblyInfoInputs.cache
+G:\learn_project\MicroServices\LZZ.DEV.WebServer\LZZ.DEV.Watch\obj\Debug\netcoreapp2.1\LZZ.DEV.Watch.AssemblyInfo.cs
+G:\learn_project\MicroServices\LZZ.DEV.WebServer\LZZ.DEV.Watch\obj\Debug\netcoreapp2.1\LZZ.DEV.Watch.RazorTargetAssemblyInfo.cache
+G:\learn_project\MicroServices\LZZ.DEV.WebServer\LZZ.DEV.Watch\obj\Debug\netcoreapp2.1\LZZ.DEV.Watch.dll
+G:\learn_project\MicroServices\LZZ.DEV.WebServer\LZZ.DEV.Watch\obj\Debug\netcoreapp2.1\LZZ.DEV.Watch.pdb
+G:\learn_project\MicroServices\LZZ.DEV.WebServer\LZZ.DEV.Watch\bin\Debug\netcoreapp2.1\appsettings.json
