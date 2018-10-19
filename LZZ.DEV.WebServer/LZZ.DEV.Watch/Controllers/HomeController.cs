@@ -8,6 +8,11 @@ namespace LZZ.DEV.Watch.Controllers
     [Produces("application/json")]
     public class HomeController : Controller
     {
+        /// <summary>
+        /// Consul服务出现故障的通知
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         [HttpPost]
         [Route("/notice")]
         public IActionResult Notice()
@@ -31,9 +36,10 @@ namespace LZZ.DEV.Watch.Controllers
                     sw.Flush();
                     sw.Close();
                 }
-                
+
                 return Ok();
             }
+
             throw new Exception("post is null");
         }
     }

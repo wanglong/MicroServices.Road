@@ -5,6 +5,7 @@
     <e p="C:\Users\Administrator\.Rider2018.2\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Administrator\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_LZZ.DEV.WebServer.1081918825.00" t="ExcludeRecursive" />
     <e p="G:\My_Project\MicroServices\LZZ.DEV.WebServer" t="IncludeFlat">
+      <e p="gRPC.Simple.Demo" t="Include" />
       <e p="LZZ.DEV.Watch" t="IncludeRecursive">
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
@@ -133,6 +134,30 @@
       </e>
       <e p="LZZ.DEV.WebServer.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
+      <e p="Rpc.Client" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="Rpc.Client.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Rpc.Client.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="Rpc.Server" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="Rpc.Server.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Rpc.Server.csproj" t="IncludeRecursive" />
+      </e>
     </e>
   </component>
 </project>

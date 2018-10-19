@@ -48,7 +48,8 @@ namespace LZZ.DEV.WebServer
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
-
+            
+            // 注册Consul服务 
             app.RegisterConsul(lifetime, new ServiceEntity
             {
                 IP = Configuration["Server.Ip.Address"],
