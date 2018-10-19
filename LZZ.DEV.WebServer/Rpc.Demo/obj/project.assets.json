@@ -285,19 +285,6 @@
           "lib/netstandard2.0/System.ServiceModel.Primitives.dll": {},
           "lib/netstandard2.0/System.ServiceModel.dll": {}
         }
-      },
-      "Rpc.Demo/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
-        "dependencies": {
-          "protobuf-net": "2.4.0"
-        },
-        "compile": {
-          "bin/placeholder/Rpc.Demo.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Rpc.Demo.dll": {}
-        }
       }
     }
   },
@@ -954,17 +941,12 @@
         "system.servicemodel.primitives.nuspec",
         "version.txt"
       ]
-    },
-    "Rpc.Demo/1.0.0": {
-      "type": "project",
-      "path": "../Rpc.Demo/Rpc.Demo.csproj",
-      "msbuildProject": "../Rpc.Demo/Rpc.Demo.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.NETCore.App >= 2.1.0",
-      "Rpc.Demo >= 1.0.0"
+      "protobuf-net >= 2.4.0"
     ]
   },
   "packageFolders": {
@@ -974,11 +956,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Server\\Rpc.Server.csproj",
-      "projectName": "Rpc.Server",
-      "projectPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Server\\Rpc.Server.csproj",
+      "projectUniqueName": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Demo\\Rpc.Demo.csproj",
+      "projectName": "Rpc.Demo",
+      "projectPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Demo\\Rpc.Demo.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Server\\obj\\",
+      "outputPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Demo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -997,11 +979,7 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {
-            "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Demo\\Rpc.Demo.csproj": {
-              "projectPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Demo\\Rpc.Demo.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -1018,6 +996,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "protobuf-net": {
+            "target": "Package",
+            "version": "[2.4.0, )"
           }
         },
         "imports": [

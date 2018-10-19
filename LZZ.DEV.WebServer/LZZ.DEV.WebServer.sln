@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rpc.Client", "Rpc.Client\Rp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rpc.Server", "Rpc.Server\Rpc.Server.csproj", "{CCDA82CB-0F14-4E27-9026-194D18AE496C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rpc.Demo", "Rpc.Demo\Rpc.Demo.csproj", "{2CFA1D2F-009C-477B-A04F-9D6B261E2BDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,9 +34,14 @@ Global
 		{CCDA82CB-0F14-4E27-9026-194D18AE496C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCDA82CB-0F14-4E27-9026-194D18AE496C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCDA82CB-0F14-4E27-9026-194D18AE496C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CFA1D2F-009C-477B-A04F-9D6B261E2BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CFA1D2F-009C-477B-A04F-9D6B261E2BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CFA1D2F-009C-477B-A04F-9D6B261E2BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CFA1D2F-009C-477B-A04F-9D6B261E2BDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6AEE6974-40E0-42C0-A30F-BC0B897ED009} = {7AEDF845-93D5-4241-9528-C89F61A67247}
 		{CCDA82CB-0F14-4E27-9026-194D18AE496C} = {7AEDF845-93D5-4241-9528-C89F61A67247}
+		{2CFA1D2F-009C-477B-A04F-9D6B261E2BDF} = {7AEDF845-93D5-4241-9528-C89F61A67247}
 	EndGlobalSection
 EndGlobal

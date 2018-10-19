@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Server\\Rpc.Server.csproj",
-    "projectName": "Rpc.Server",
-    "projectPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Server\\Rpc.Server.csproj",
-    "outputPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Server\\obj\\",
+    "projectUniqueName": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Demo\\Rpc.Demo.csproj",
+    "projectName": "Rpc.Demo",
+    "projectPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Demo\\Rpc.Demo.csproj",
+    "outputPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Demo\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -14,11 +14,7 @@
     ],
     "frameworks": {
       "netcoreapp2.1": {
-        "projectReferences": {
-          "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Demo\\Rpc.Demo.csproj": {
-            "projectPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Demo\\Rpc.Demo.csproj"
-          }
-        }
+        "projectReferences": {}
       }
     },
     "warningProperties": {
@@ -35,6 +31,10 @@
           "target": "Package",
           "version": "[2.1.0, )",
           "autoReferenced": true
+        },
+        "protobuf-net": {
+          "target": "Package",
+          "version": "[2.4.0, )"
         }
       },
       "imports": [
