@@ -1,0 +1,4 @@
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Server\obj\Debug\netcoreapp2.1\Rpc.Server.csprojAssemblyReference.cache
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Server\obj\Debug\netcoreapp2.1\Rpc.Server.csproj.CoreCompileInputs.cache
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Server\obj\Debug\netcoreapp2.1\Rpc.Server.AssemblyInfoInputs.cache
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Server\obj\Debug\netcoreapp2.1\Rpc.Server.AssemblyInfo.cs

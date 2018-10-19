@@ -27,7 +27,7 @@ namespace Rpc.Demo
 
         #region 复杂数据类型
 
-        Task<UserModel> TestLong(UserModel userModel);
+        Task<UserModel> TestModel(UserModel userModel);
 
         Task<List<string>> TestDictionary(List<string> dictionary);
 
@@ -36,9 +36,6 @@ namespace Rpc.Demo
         Task<List<Dictionary<string, string>>> TestCollections(List<Dictionary<string, string>> collection);
 
         #endregion
-
-        [RpcService(IsWaitExecution = false)]
-        Task Try();
     }
 }
 
