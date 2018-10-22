@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Rabbit.Rpc.Runtime.Server.Implementation.ServiceDiscovery.Attributes;
+//using Rabbit.Rpc.Runtime.Server.Implementation.ServiceDiscovery.Attributes;
 
 namespace Rpc.Demo
 {
     /// <summary>
     /// 接口DemoService的定义，一些常用类型的传参，返回测试
     /// </summary>
-    [RpcServiceBundle] // 在 protobuf 的服务绑定中，需要对传输的数据结构（或模板）进行rpc特性绑定, 该特性在Rabbit.Rpc框架中
+//    [RpcServiceBundle] // 在 protobuf 的服务绑定中，需要对传输的数据结构（或模板）进行rpc特性绑定, 该特性在Rabbit.Rpc框架中
     public interface IDemoService
     {
         #region 简单数据类型

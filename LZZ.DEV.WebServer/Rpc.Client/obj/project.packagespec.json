@@ -15,8 +15,8 @@
     "frameworks": {
       "netcoreapp2.1": {
         "projectReferences": {
-          "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Demo\\Rpc.Demo.csproj": {
-            "projectPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Demo\\Rpc.Demo.csproj"
+          "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Common\\Rpc.Common.csproj": {
+            "projectPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Common\\Rpc.Common.csproj"
           }
         }
       }

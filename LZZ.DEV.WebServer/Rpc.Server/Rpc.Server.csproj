@@ -5,8 +5,29 @@
         <TargetFramework>netcoreapp2.1</TargetFramework>
     </PropertyGroup>
 
+    
+
     <ItemGroup>
-      <ProjectReference Include="..\Rpc.Demo\Rpc.Demo.csproj" />
+      <Reference Include="Rabbit.Rpc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\libs\Rabbit.Rpc.dll</HintPath>
+      </Reference>
+      <Reference Include="Rabbit.Transport.DotNetty, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\libs\Rabbit.Transport.DotNetty.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
+    
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json">
+        <Version>9.0.1</Version>
+      </PackageReference>
+    </ItemGroup>
+
+    
+
+    <ItemGroup>
+      <ProjectReference Include="..\Rpc.Common\Rpc.Common.csproj" />
+    </ItemGroup>
+    
 </Project>

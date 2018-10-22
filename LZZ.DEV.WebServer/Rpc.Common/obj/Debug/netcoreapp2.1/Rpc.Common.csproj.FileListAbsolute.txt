@@ -1,0 +1,11 @@
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Common\bin\Debug\netcoreapp2.1\Rpc.Common.deps.json
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Common\bin\Debug\netcoreapp2.1\Rpc.Common.dll
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Common\bin\Debug\netcoreapp2.1\Rpc.Common.pdb
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Common\bin\Debug\netcoreapp2.1\Rabbit.Rpc.dll
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Common\obj\Debug\netcoreapp2.1\Rpc.Common.csprojAssemblyReference.cache
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Common\obj\Debug\netcoreapp2.1\Rpc.Common.csproj.CoreCompileInputs.cache
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Common\obj\Debug\netcoreapp2.1\Rpc.Common.AssemblyInfoInputs.cache
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Common\obj\Debug\netcoreapp2.1\Rpc.Common.AssemblyInfo.cs
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Common\obj\Debug\netcoreapp2.1\Rpc.Common.csproj.CopyComplete
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Common\obj\Debug\netcoreapp2.1\Rpc.Common.dll
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Common\obj\Debug\netcoreapp2.1\Rpc.Common.pdb

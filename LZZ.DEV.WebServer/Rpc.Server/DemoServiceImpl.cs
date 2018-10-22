@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Threading.Tasks;
 using Rpc.Demo;
 
@@ -11,6 +10,7 @@ namespace Rpc.Server
     /// </summary>
     public class DemoServiceImpl : IDemoService
     {
+        // ReSharper disable once RedundantAssignment
         public Task<string> TestInt(int id) => Task.FromResult((id++).ToString());
 
         public Task<int> TestString(string str) => Task.FromResult(int.Parse(str));

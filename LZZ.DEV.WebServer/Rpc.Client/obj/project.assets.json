@@ -286,17 +286,17 @@
           "lib/netstandard2.0/System.ServiceModel.dll": {}
         }
       },
-      "Rpc.Demo/1.0.0": {
+      "Rpc.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
           "protobuf-net": "2.4.0"
         },
         "compile": {
-          "bin/placeholder/Rpc.Demo.dll": {}
+          "bin/placeholder/Rpc.Common.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Rpc.Demo.dll": {}
+          "bin/placeholder/Rpc.Common.dll": {}
         }
       }
     }
@@ -955,16 +955,16 @@
         "version.txt"
       ]
     },
-    "Rpc.Demo/1.0.0": {
+    "Rpc.Common/1.0.0": {
       "type": "project",
-      "path": "../Rpc.Demo/Rpc.Demo.csproj",
-      "msbuildProject": "../Rpc.Demo/Rpc.Demo.csproj"
+      "path": "../Rpc.Common/Rpc.Common.csproj",
+      "msbuildProject": "../Rpc.Common/Rpc.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.NETCore.App >= 2.1.0",
-      "Rpc.Demo >= 1.0.0"
+      "Rpc.Common >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -998,8 +998,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Demo\\Rpc.Demo.csproj": {
-              "projectPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Demo\\Rpc.Demo.csproj"
+            "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Common\\Rpc.Common.csproj": {
+              "projectPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Common\\Rpc.Common.csproj"
             }
           }
         }
