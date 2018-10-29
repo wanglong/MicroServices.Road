@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace Rpc.Common.RuntimeType.Server.Impl
 {
+    /// <summary>
+    /// 实现一个默认的Services实体对象管理器
+    /// </summary>
     public class DefaultServiceEntryManager : IServiceEntryManager
     {
         private readonly IEnumerable<ServiceEntry> _serviceEntries;
@@ -26,7 +29,10 @@ namespace Rpc.Common.RuntimeType.Server.Impl
             _serviceEntries = list.ToArray();
         }
 
-
+        /// <summary>
+        /// 获取服务实体对象
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<ServiceEntry> GetEntries()
         {
             return _serviceEntries;

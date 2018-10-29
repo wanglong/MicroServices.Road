@@ -14,7 +14,11 @@
     ],
     "frameworks": {
       "netcoreapp2.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Common\\Rpc.Common.csproj": {
+            "projectPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Common\\Rpc.Common.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -26,6 +30,10 @@
   "frameworks": {
     "netcoreapp2.1": {
       "dependencies": {
+        "Microsoft.Extensions.DependencyInjection": {
+          "target": "Package",
+          "version": "[2.1.0, )"
+        },
         "Microsoft.NETCore.App": {
           "suppressParent": "All",
           "target": "Package",
