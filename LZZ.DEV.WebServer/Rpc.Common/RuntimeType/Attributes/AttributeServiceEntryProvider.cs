@@ -7,15 +7,15 @@ using Rpc.Common.RuntimeType.Server;
 
 namespace Rpc.Common.RuntimeType.Attributes
 {
+    /// <summary>
+    /// 特性提供者实现类
+    /// </summary>
     public class AttributeServiceEntryProvider : IServiceEntryProvider
     {
         private readonly IEnumerable<Type> _types;
         private readonly IClrServiceEntryFactory _clrServiceEntryFactory;
 
-
-        public AttributeServiceEntryProvider(IEnumerable<Type> types, IClrServiceEntryFactory clrServiceEntryFactory
-//            ,ILogger<AttributeServiceEntryProvider> logger
-        )
+        public AttributeServiceEntryProvider(IEnumerable<Type> types, IClrServiceEntryFactory clrServiceEntryFactory)
         {
             _types = types;
             _clrServiceEntryFactory = clrServiceEntryFactory;

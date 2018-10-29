@@ -59,6 +59,8 @@
             <e p="Convertibles" t="Include">
               <e p="Impl" t="Include">
                 <e p="DefaultTypeConvertibleService.cs" t="Include" />
+                <e p="ITypeConvertibleProvider.cs" t="Include" />
+                <e p="TypeConvertDelegate.cs" t="Include" />
               </e>
               <e p="ITypeConvertibleService.cs" t="Include" />
             </e>

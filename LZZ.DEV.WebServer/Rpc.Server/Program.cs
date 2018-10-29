@@ -16,18 +16,15 @@ namespace Rpc.Server
     {
         static void Main()
         {
+            // 实现自动装配
             var serviceCollection = new ServiceCollection();
             {
-                // 注入本地测试类
-                serviceCollection.AddTransient<IUserService, UserServiceImpl>();
-                // 注入服务管理器
-                serviceCollection.AddSingleton<IServiceEntryManager, DefaultServiceEntryManager>();
-                // 注入服务工厂器
-                serviceCollection.AddSingleton<IClrServiceEntryFactory, ClrServiceEntryFactory>();
-                // 注入服务ID生成器
-                serviceCollection.AddSingleton<IServiceIdGenerator, DefaultServiceIdGenerator>();
                 // 注入默认服务工厂
                 serviceCollection.AddSingleton<ITypeConvertibleService, DefaultTypeConvertibleService>();
+                // 注入服务ID生成器
+                serviceCollection.AddSingleton<IServiceIdGenerator, DefaultServiceIdGenerator>();
+                // 注入服务工厂器
+                serviceCollection.AddSingleton<IClrServiceEntryFactory, ClrServiceEntryFactory>();
                 // 注入服务提供者
                 serviceCollection.AddSingleton<IServiceEntryProvider>(provider =>
                 {
@@ -39,6 +36,10 @@ namespace Rpc.Server
                         provider.GetRequiredService<IClrServiceEntryFactory>()
                     );
                 });
+                // 注入服务管理器
+                serviceCollection.AddSingleton<IServiceEntryManager, DefaultServiceEntryManager>();
+                // ** 注入本地测试类
+                serviceCollection.AddSingleton<IUserService, UserServiceImpl>();
             }
             
             // 获取服务管理实体类
@@ -48,7 +49,7 @@ namespace Rpc.Server
             // 获取所有打上RpcTargetBundle特性的服务实体
             foreach (var entry in serviceEntryManager.GetEntries())
             {
-                Console.WriteLine($"Id:{entry.Descriptor.Id}");
+                Console.WriteLine($"Id: {entry.Descriptor.Id}");
             }
         }
     }
