@@ -1,0 +1,64 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\DotNetty.Demo\\Echo.Client\\Echo.Client.csproj",
+    "projectName": "Echo.Client",
+    "projectPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\DotNetty.Demo\\Echo.Client\\Echo.Client.csproj",
+    "outputPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\DotNetty.Demo\\Echo.Client\\obj\\",
+    "projectStyle": "PackageReference",
+    "crossTargeting": true,
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.0"
+    ],
+    "frameworks": {
+      "netcoreapp2.0": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.0": {
+      "dependencies": {
+        "DotNetty.Buffers": {
+          "target": "Package",
+          "version": "[0.6.0, )"
+        },
+        "DotNetty.Codecs": {
+          "target": "Package",
+          "version": "[0.6.0, )"
+        },
+        "DotNetty.Common": {
+          "target": "Package",
+          "version": "[0.6.0, )"
+        },
+        "DotNetty.Handlers": {
+          "target": "Package",
+          "version": "[0.6.0, )"
+        },
+        "DotNetty.Transport": {
+          "target": "Package",
+          "version": "[0.6.0, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.0.0, )",
+          "autoReferenced": true
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}
