@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Rpc.Common.RuntimeType;
+using Rpc.Common.RuntimeType.Attributes;
 
 namespace Rpc.Common
 {
@@ -9,7 +10,7 @@ namespace Rpc.Common
     /// 接口UserService的定义
     /// </summary>
     // 在 protobuf 的服务绑定中，需要对传输的数据结构（或模板）进行rpc特性绑定
-    [RpcTargetBundle]
+    [RpcTagBundle]
     public interface IUserService
     {
         Task<string> GetUserName(int id);

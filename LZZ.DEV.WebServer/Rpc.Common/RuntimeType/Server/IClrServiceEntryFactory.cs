@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Rpc.Common.RuntimeType.Entitys;
 
 namespace Rpc.Common.RuntimeType.Server
 {
@@ -14,6 +15,6 @@ namespace Rpc.Common.RuntimeType.Server
         /// <param name="service">服务类型。</param>
         /// <param name="serviceImplementation">服务实现类型。</param>
         /// <returns>服务条目集合。</returns>
-        IEnumerable<ServiceEntry> CreateServiceEntry(Type service, Type serviceImplementation);
+        IEnumerable<ServiceEntity> CreateServiceEntry(Type service, Type serviceImplementation);
     }
 }

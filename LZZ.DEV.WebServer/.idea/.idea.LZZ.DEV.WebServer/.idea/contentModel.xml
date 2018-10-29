@@ -53,12 +53,17 @@
           <e p="Attributes" t="Include">
             <e p="AttributeServiceEntryProvider.cs" t="Include" />
             <e p="RpcServiceDescriptorAttribute.cs" t="Include" />
+            <e p="RpcTagBundleAttribute.cs" t="Include" />
           </e>
           <e p="Convertibles" t="Include">
             <e p="Impl" t="Include">
               <e p="DefaultTypeConvertibleService.cs" t="Include" />
             </e>
             <e p="ITypeConvertibleService.cs" t="Include" />
+          </e>
+          <e p="Entitys" t="Include">
+            <e p="ServiceDescriptor.cs" t="Include" />
+            <e p="ServiceEntity.cs" t="Include" />
           </e>
           <e p="Exceptions" t="Include">
             <e p="RpcCommunicationException.cs" t="Include" />
@@ -71,7 +76,6 @@
             </e>
             <e p="IServiceIdGenerator.cs" t="Include" />
           </e>
-          <e p="RpcTargetBundleAttribute.cs" t="Include" />
           <e p="Server" t="Include">
             <e p="IClrServiceEntryFactory.cs" t="Include" />
             <e p="Impl" t="Include">
@@ -81,8 +85,6 @@
             <e p="IServiceEntryManager.cs" t="Include" />
             <e p="IServiceEntryProvider.cs" t="Include" />
           </e>
-          <e p="ServiceDescriptor.cs" t="Include" />
-          <e p="ServiceEntry.cs" t="Include" />
         </e>
         <e p="UserModel.cs" t="Include" />
         <e p="UserServiceImpl.cs" t="Include" />

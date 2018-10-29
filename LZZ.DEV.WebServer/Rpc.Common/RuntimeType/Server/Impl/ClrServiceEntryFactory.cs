@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using Rpc.Common.RuntimeType.Attributes;
 using Rpc.Common.RuntimeType.Convertibles;
+using Rpc.Common.RuntimeType.Entitys;
 using Rpc.Common.RuntimeType.IdGenerator;
+using ServiceDescriptor = Rpc.Common.RuntimeType.Entitys.ServiceDescriptor;
 
 namespace Rpc.Common.RuntimeType.Server.Impl
 {
@@ -24,7 +26,7 @@ namespace Rpc.Common.RuntimeType.Server.Impl
             _typeConvertibleService = typeConvertibleService;
         }
 
-        public IEnumerable<ServiceEntry> CreateServiceEntry(Type service, Type serviceImplementation)
+        public IEnumerable<ServiceEntity> CreateServiceEntry(Type service, Type serviceImplementation)
         {
             foreach (var methodInfo in service.GetTypeInfo().GetMethods())
             {
@@ -34,7 +36,7 @@ namespace Rpc.Common.RuntimeType.Server.Impl
             }
         }
 
-        private ServiceEntry Create(MethodInfo method, MethodBase implementationMethod)
+        private ServiceEntity Create(MethodInfo method, MethodBase implementationMethod)
         {
             var serviceId = _serviceIdGenerator.GenerateServiceId(method);
 
@@ -49,7 +51,7 @@ namespace Rpc.Common.RuntimeType.Server.Impl
                 descriptorAttribute.Apply(serviceDescriptor);
             }
 
-            return new ServiceEntry
+            return new ServiceEntity
             {
                 Descriptor = serviceDescriptor,
                 Func = parameters =>

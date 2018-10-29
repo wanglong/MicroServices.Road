@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Rpc.Common.RuntimeType
+namespace Rpc.Common.RuntimeType.Entitys
 {
     /// <summary>
     /// 服务描述符。
@@ -10,7 +10,7 @@ namespace Rpc.Common.RuntimeType
     public class ServiceDescriptor
     {
         /// <summary>
-        /// 初始化一个新的服务描述符。
+        /// 初始化一个新的服务描述符
         /// </summary>
         public ServiceDescriptor()
         {
@@ -18,17 +18,17 @@ namespace Rpc.Common.RuntimeType
         }
 
         /// <summary>
-        /// 服务Id。
+        /// 服务Id
         /// </summary>
         public string Id { get; set; }
 
         /// <summary>
-        /// 元数据。
+        /// 元数据
         /// </summary>
-        public IDictionary<string, object> Metadatas { get; set; }
+        private IDictionary<string, object> Metadatas { get; set; }
 
         /// <summary>
-        /// 获取一个元数据。
+        /// 获取一个元数据
         /// </summary>
         /// <typeparam name="T">元数据类型。</typeparam>
         /// <param name="name">元数据名称。</param>
@@ -42,11 +42,11 @@ namespace Rpc.Common.RuntimeType
             return (T) Metadatas[name];
         }
 
-        #region Equality members
-
-        /// <summary>Determines whether the specified object is equal to the current object.</summary>
-        /// <returns>true if the specified object  is equal to the current object; otherwise, false.</returns>
-        /// <param name="obj">The object to compare with the current object. </param>
+        /// <summary>
+        /// 确定指定的对象是否等于当前对象
+        /// </summary>
+        /// <param name="obj">要与当前对象进行比较的对象</param>
+        /// <returns>如果指定的对象等于当前对象，则为true；否则，为false。</returns>
         public override bool Equals(object obj)
         {
             var model = obj as ServiceDescriptor;
@@ -61,8 +61,7 @@ namespace Rpc.Common.RuntimeType
 
             return model.Metadatas.Count == Metadatas.Count && model.Metadatas.All(metadata =>
             {
-                object value;
-                if (!Metadatas.TryGetValue(metadata.Key, out value))
+                if (!Metadatas.TryGetValue(metadata.Key, out var value))
                     return false;
 
                 if (metadata.Value == null && value == null)
@@ -88,7 +87,5 @@ namespace Rpc.Common.RuntimeType
         {
             return !Equals(model1, model2);
         }
-
-        #endregion Equality members
     }
 }

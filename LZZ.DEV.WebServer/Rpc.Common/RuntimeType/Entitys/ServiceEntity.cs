@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Rpc.Common.RuntimeType
+namespace Rpc.Common.RuntimeType.Entitys
 {
     /// <summary>
-    /// 服务条目。
+    /// 服务实体
     /// </summary>
-    public class ServiceEntry
+    public class ServiceEntity
     {
         /// <summary>
         /// 执行委托。

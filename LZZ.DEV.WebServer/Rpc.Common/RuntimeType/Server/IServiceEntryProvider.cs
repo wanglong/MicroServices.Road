@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Rpc.Common.RuntimeType.Entitys;
 
 namespace Rpc.Common.RuntimeType.Server
 {
@@ -11,6 +12,6 @@ namespace Rpc.Common.RuntimeType.Server
         /// 获取服务条目集合。
         /// </summary>
         /// <returns>服务条目集合。</returns>
-        IEnumerable<ServiceEntry> GetEntries();
+        IEnumerable<ServiceEntity> GetEntries();
     }
 }

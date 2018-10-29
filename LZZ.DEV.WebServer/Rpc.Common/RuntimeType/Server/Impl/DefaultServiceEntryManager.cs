@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Rpc.Common.RuntimeType.Entitys;
 
 namespace Rpc.Common.RuntimeType.Server.Impl
 {
@@ -9,11 +10,11 @@ namespace Rpc.Common.RuntimeType.Server.Impl
     /// </summary>
     public class DefaultServiceEntryManager : IServiceEntryManager
     {
-        private readonly IEnumerable<ServiceEntry> _serviceEntries;
+        private readonly IEnumerable<ServiceEntity> _serviceEntries;
 
         public DefaultServiceEntryManager(IEnumerable<IServiceEntryProvider> providers)
         {
-            var list = new List<ServiceEntry>();
+            var list = new List<ServiceEntity>();
             foreach (var provider in providers)
             {
                 var entries = provider.GetEntries().ToArray();
@@ -33,7 +34,7 @@ namespace Rpc.Common.RuntimeType.Server.Impl
         /// 获取服务实体对象
         /// </summary>
         /// <returns></returns>
-        public IEnumerable<ServiceEntry> GetEntries()
+        public IEnumerable<ServiceEntity> GetEntries()
         {
             return _serviceEntries;
         }

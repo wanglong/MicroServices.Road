@@ -1,4 +1,5 @@
 ﻿using System;
+using Rpc.Common.RuntimeType.Entitys;
 
 namespace Rpc.Common.RuntimeType.Attributes
 {

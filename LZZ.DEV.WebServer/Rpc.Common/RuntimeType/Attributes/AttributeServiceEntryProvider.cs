@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using Rpc.Common.RuntimeType.Entitys;
 using Rpc.Common.RuntimeType.Server;
 
 namespace Rpc.Common.RuntimeType.Attributes
@@ -20,12 +21,12 @@ namespace Rpc.Common.RuntimeType.Attributes
             _clrServiceEntryFactory = clrServiceEntryFactory;
         }
 
-        public IEnumerable<ServiceEntry> GetEntries()
+        public IEnumerable<ServiceEntity> GetEntries()
         {
             var services = _types.Where(i =>
             {
                 var typeInfo = i.GetTypeInfo();
-                return typeInfo.IsInterface && typeInfo.GetCustomAttribute<RpcTargetBundleAttribute>() != null;
+                return typeInfo.IsInterface && typeInfo.GetCustomAttribute<RpcTagBundleAttribute>() != null;
             }).ToArray();
             var serviceImplementations = _types.Where(i =>
             {
@@ -35,7 +36,7 @@ namespace Rpc.Common.RuntimeType.Attributes
                        !i.Namespace.StartsWith("Microsoft");
             }).ToArray();
 
-            var entries = new List<ServiceEntry>();
+            var entries = new List<ServiceEntity>();
             foreach (var service in services)
             {
                 foreach (var serviceImplementation in serviceImplementations.Where(i =>
