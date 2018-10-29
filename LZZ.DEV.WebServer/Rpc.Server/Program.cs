@@ -3,10 +3,10 @@ using System.Linq;
 using Microsoft.Extensions.DependencyInjection;
 using Rpc.Common;
 using Rpc.Common.RuntimeType.Attributes;
-using Rpc.Common.RuntimeType.Convertibles;
-using Rpc.Common.RuntimeType.Convertibles.Impl;
-using Rpc.Common.RuntimeType.IdGenerator;
-using Rpc.Common.RuntimeType.IdGenerator.Impl;
+using Rpc.Common.RuntimeType.Communally.Convertibles;
+using Rpc.Common.RuntimeType.Communally.Convertibles.Impl;
+using Rpc.Common.RuntimeType.Communally.IdGenerator;
+using Rpc.Common.RuntimeType.Communally.IdGenerator.Impl;
 using Rpc.Common.RuntimeType.Server;
 using Rpc.Common.RuntimeType.Server.Impl;
 

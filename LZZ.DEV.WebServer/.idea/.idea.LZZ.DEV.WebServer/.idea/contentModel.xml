@@ -55,26 +55,28 @@
             <e p="RpcServiceDescriptorAttribute.cs" t="Include" />
             <e p="RpcTagBundleAttribute.cs" t="Include" />
           </e>
-          <e p="Convertibles" t="Include">
-            <e p="Impl" t="Include">
-              <e p="DefaultTypeConvertibleService.cs" t="Include" />
+          <e p="communally" t="Include">
+            <e p="Convertibles" t="Include">
+              <e p="Impl" t="Include">
+                <e p="DefaultTypeConvertibleService.cs" t="Include" />
+              </e>
+              <e p="ITypeConvertibleService.cs" t="Include" />
             </e>
-            <e p="ITypeConvertibleService.cs" t="Include" />
+            <e p="Exceptions" t="Include">
+              <e p="RpcCommunicationException.cs" t="Include" />
+              <e p="RpcException.cs" t="Include" />
+              <e p="RpcRemoteException.cs" t="Include" />
+            </e>
+            <e p="IdGenerator" t="Include">
+              <e p="Impl" t="Include">
+                <e p="DefaultServiceIdGenerator.cs" t="Include" />
+              </e>
+              <e p="IServiceIdGenerator.cs" t="Include" />
+            </e>
           </e>
           <e p="Entitys" t="Include">
             <e p="ServiceDescriptor.cs" t="Include" />
             <e p="ServiceEntity.cs" t="Include" />
-          </e>
-          <e p="Exceptions" t="Include">
-            <e p="RpcCommunicationException.cs" t="Include" />
-            <e p="RpcException.cs" t="Include" />
-            <e p="RpcRemoteException.cs" t="Include" />
-          </e>
-          <e p="IdGenerator" t="Include">
-            <e p="Impl" t="Include">
-              <e p="DefaultServiceIdGenerator.cs" t="Include" />
-            </e>
-            <e p="IServiceIdGenerator.cs" t="Include" />
           </e>
           <e p="Server" t="Include">
             <e p="IClrServiceEntryFactory.cs" t="Include" />

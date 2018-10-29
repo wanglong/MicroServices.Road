@@ -5,9 +5,9 @@ using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using Rpc.Common.RuntimeType.Attributes;
-using Rpc.Common.RuntimeType.Convertibles;
+using Rpc.Common.RuntimeType.Communally.Convertibles;
+using Rpc.Common.RuntimeType.Communally.IdGenerator;
 using Rpc.Common.RuntimeType.Entitys;
-using Rpc.Common.RuntimeType.IdGenerator;
 using ServiceDescriptor = Rpc.Common.RuntimeType.Entitys.ServiceDescriptor;
 
 namespace Rpc.Common.RuntimeType.Server.Impl

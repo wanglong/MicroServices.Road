@@ -1,6 +1,6 @@
 using System.Reflection;
 
-namespace Rpc.Common.RuntimeType.IdGenerator
+namespace Rpc.Common.RuntimeType.Communally.IdGenerator
 {
     /// <summary>
     /// 一个抽象的服务Id生成器。

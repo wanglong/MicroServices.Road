@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Rpc.Common.RuntimeType.Exceptions;
+using Rpc.Common.RuntimeType.Communally.Exceptions;
 
-namespace Rpc.Common.RuntimeType.Convertibles.Impl
+namespace Rpc.Common.RuntimeType.Communally.Convertibles.Impl
 {
     public class DefaultTypeConvertibleService : ITypeConvertibleService
     {

@@ -9,4 +9,8 @@
         <PackageReference Include="protobuf-net" Version="2.1.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="RuntimeType\communally" />
+    </ItemGroup>
+
 </Project>

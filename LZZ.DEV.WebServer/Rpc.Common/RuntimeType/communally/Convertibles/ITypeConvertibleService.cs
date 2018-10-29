@@ -1,6 +1,6 @@
 using System;
 
-namespace Rpc.Common.RuntimeType.Convertibles
+namespace Rpc.Common.RuntimeType.Communally.Convertibles
 {
     /// <summary>
     /// 一个抽象的类型转换服务。

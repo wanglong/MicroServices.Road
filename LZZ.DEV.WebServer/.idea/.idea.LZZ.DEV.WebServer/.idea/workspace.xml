@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7fc8ac6-fece-4bce-85af-055070c43c20" name="Default" comment="update rpc demo">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LZZ.DEV.WebServer/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LZZ.DEV.WebServer/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LZZ.DEV.WebServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LZZ.DEV.WebServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Common/IUserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/IUserService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Attributes/AttributeServiceEntryProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Attributes/AttributeServiceEntryProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Common/RuntimeType/RpcTargetBundleAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Attributes/RpcTagBundleAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceDescriptor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceDescriptor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceEntry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceEntry.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +80,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="101" />
+          <entry key="cs" value="102" />
           <entry key="csproj" value="8" />
           <entry key="http" value="1" />
           <entry key="json" value="1" />
@@ -94,7 +88,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="101" />
+          <entry key="C#" value="102" />
           <entry key="Csproj" value="8" />
           <entry key="JSON" value="1" />
           <entry key="Scratch" value="1" />
@@ -102,14 +96,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="2465" />
+          <entry key="cs" value="2466" />
           <entry key="csproj" value="16" />
           <entry key="txt" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="2465" />
+          <entry key="C#" value="2466" />
           <entry key="Csproj" value="16" />
           <entry key="PLAIN_TEXT" value="26" />
         </counts>
@@ -119,44 +113,15 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceEntry.cs">
+        <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Convertibles/ITypeConvertibleService.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="36">
+              <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="45" />
               <folding>
-                <marker date="1540801562000" expanded="true" signature="6:77" ph="..." />
-                <marker date="1540801562000" expanded="true" signature="111:477" ph="{...}" />
-                <marker date="1540801562000" expanded="true" signature="118:165" ph="/// 服务实体条目 ... " />
-                <marker date="1540801562000" expanded="true" signature="195:475" ph="{...}" />
-                <marker date="1540801562000" expanded="true" signature="210:264" ph="/// 执行委托。 ... " />
-                <marker date="1540801562000" expanded="true" signature="356:411" ph="/// 服务描述符。 ... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceDescriptor.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="34" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="34" />
-              <folding>
-                <marker date="1540801508000" expanded="true" signature="6:66" ph="..." />
-                <marker date="1540801508000" expanded="true" signature="100:2512" ph="{...}" />
-                <marker date="1540801508000" expanded="true" signature="107:154" ph="/// 服务描述符。 ... " />
-                <marker date="1540801508000" expanded="true" signature="189:2510" ph="{...}" />
-                <marker date="1540801508000" expanded="true" signature="204:265" ph="/// 初始化一个新的服务描述符 ... " />
-                <marker date="1540801508000" expanded="true" signature="300:410" ph="{...}" />
-                <marker date="1540801508000" expanded="true" signature="420:473" ph="/// 服务Id ... " />
-                <marker date="1540801508000" expanded="true" signature="522:574" ph="/// 元数据 ... " />
-                <marker date="1540801508000" expanded="true" signature="652:902" ph="/// 获取一个元数据 ... " />
-                <marker date="1540801508000" expanded="true" signature="967:1102" ph="{...}" />
-                <marker date="1540801508000" expanded="true" signature="1112:1291" ph="/// 确定指定的对象是否等于当前对象 ... " />
-                <marker date="1540801508000" expanded="true" signature="1339:2085" ph="{...}" />
-                <marker date="1540801508000" expanded="true" signature="1694:2073" ph="{...}" />
-                <marker date="1540801508000" expanded="true" signature="2128:2193" ph="{...}" />
-                <marker date="1540801508000" expanded="true" signature="2285:2348" ph="{...}" />
-                <marker date="1540801508000" expanded="true" signature="2440:2504" ph="{...}" />
+                <marker date="1540799362000" expanded="true" signature="60:464" ph="{...}" />
+                <marker date="1540799362000" expanded="true" signature="67:120" ph="/// 一个抽象的类型转换服务。 ... " />
+                <marker date="1540799362000" expanded="true" signature="165:462" ph="{...}" />
+                <marker date="1540799362000" expanded="true" signature="180:394" ph="/// 转换。 ... " />
               </folding>
             </state>
           </provider>
@@ -201,9 +166,9 @@
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Exceptions/RpcCommunicationException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/IServiceEntryManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Exceptions/RpcException.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceEntry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Entitys/ServiceEntity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Exceptions/RpcRemoteException.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceDescriptor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Entitys/ServiceDescriptor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Attributes/RpcServiceDescriptorAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/App_Code/NetworkHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceEntryManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -213,8 +178,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/LZZ.DEV.WebServer/appsettings.json" />
-        <option value="$PROJECT_DIR$/LZZ.DEV.WebServer/watch.json" />
         <option value="$PROJECT_DIR$/LZZ.DEV.WebServer/watch_config.json" />
         <option value="$PROJECT_DIR$/LZZ.DEV.Watch/Program.cs" />
         <option value="$PROJECT_DIR$/LZZ.DEV.Watch/Startup.cs" />
@@ -264,6 +227,8 @@
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/RpcTagBundleAttribute.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceDescriptor.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceEntry.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceEntity.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Entitys/ServiceDescriptor.cs" />
       </list>
     </option>
   </component>
@@ -310,6 +275,14 @@
               <item name="Rpc.Demo" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Rpc.Common" type="24d0babc:SolutionExplorerModelNode" />
               <item name="RuntimeType" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="LZZ.DEV.WebServer" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Rpc.Demo" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Rpc.Common" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="RuntimeType" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Convertibles" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
@@ -473,7 +446,7 @@
       <workItem from="1540739898191" duration="195000" />
       <workItem from="1540740488125" duration="342000" />
       <workItem from="1540776759885" duration="1412000" />
-      <workItem from="1540780561087" duration="14344000" />
+      <workItem from="1540780561087" duration="14603000" />
     </task>
     <task id="LOCAL-00001" summary="add rpc demo">
       <created>1539919457231</created>
@@ -545,11 +518,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540799589350</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update rpc demo">
+      <created>1540801790700</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1540801790700</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85442000" />
+    <option name="totallyTimeSpent" value="85701000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -839,10 +819,10 @@
         <state relative-caret-position="270">
           <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding>
-            <marker date="1540781262000" expanded="true" signature="74:345" ph="{...}" />
-            <marker date="1540781262000" expanded="true" signature="81:135" ph="/// 一个抽象的服务条目管理者。 ... " />
-            <marker date="1540781262000" expanded="true" signature="177:343" ph="{...}" />
-            <marker date="1540781262000" expanded="true" signature="192:289" ph="/// 获取服务条目集合。 ... " />
+            <marker date="1540801658000" expanded="true" signature="112:384" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="119:173" ph="/// 一个抽象的服务条目管理者。 ... " />
+            <marker date="1540801658000" expanded="true" signature="215:382" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="230:327" ph="/// 获取服务条目集合。 ... " />
           </folding>
         </state>
       </provider>
@@ -876,11 +856,11 @@
         <state relative-caret-position="126">
           <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
           <folding>
-            <marker date="1540784458000" expanded="true" signature="6:47" ph="..." />
-            <marker date="1540784458000" expanded="true" signature="88:522" ph="{...}" />
-            <marker date="1540784458000" expanded="true" signature="95:151" ph="/// 一个抽象的Clr服务条目工厂。 ... " />
-            <marker date="1540784458000" expanded="true" signature="196:520" ph="{...}" />
-            <marker date="1540784458000" expanded="true" signature="211:418" ph="/// 创建服务条目。 ... " />
+            <marker date="1540801658000" expanded="true" signature="6:47" ph="..." />
+            <marker date="1540801658000" expanded="true" signature="126:561" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="133:189" ph="/// 一个抽象的Clr服务条目工厂。 ... " />
+            <marker date="1540801658000" expanded="true" signature="234:559" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="249:456" ph="/// 创建服务条目。 ... " />
           </folding>
         </state>
       </provider>
@@ -890,10 +870,10 @@
         <state relative-caret-position="198">
           <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding>
-            <marker date="1540781648000" expanded="true" signature="74:347" ph="{...}" />
-            <marker date="1540781648000" expanded="true" signature="81:136" ph="/// 一个抽象的服务条目提供程序。 ... " />
-            <marker date="1540781648000" expanded="true" signature="179:345" ph="{...}" />
-            <marker date="1540781648000" expanded="true" signature="194:291" ph="/// 获取服务条目集合。 ... " />
+            <marker date="1540801658000" expanded="true" signature="112:386" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="119:174" ph="/// 一个抽象的服务条目提供程序。 ... " />
+            <marker date="1540801658000" expanded="true" signature="217:384" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="232:329" ph="/// 获取服务条目集合。 ... " />
           </folding>
         </state>
       </provider>
@@ -921,19 +901,6 @@
             <marker date="1540799362000" expanded="true" signature="77:131" ph="/// 一个抽象的服务Id生成器。 ... " />
             <marker date="1540799362000" expanded="true" signature="172:404" ph="{...}" />
             <marker date="1540799362000" expanded="true" signature="187:338" ph="/// 生成一个服务Id。 ... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Convertibles/ITypeConvertibleService.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding>
-            <marker date="1540799362000" expanded="true" signature="60:464" ph="{...}" />
-            <marker date="1540799362000" expanded="true" signature="67:120" ph="/// 一个抽象的类型转换服务。 ... " />
-            <marker date="1540799362000" expanded="true" signature="165:462" ph="{...}" />
-            <marker date="1540799362000" expanded="true" signature="180:394" ph="/// 转换。 ... " />
           </folding>
         </state>
       </provider>
@@ -976,19 +943,19 @@
         <state relative-caret-position="72">
           <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding>
-            <marker date="1540799522000" expanded="false" signature="6:295" ph="..." />
-            <marker date="1540799522000" expanded="true" signature="341:3206" ph="{...}" />
-            <marker date="1540799522000" expanded="true" signature="409:3204" ph="{...}" />
-            <marker date="1540799522000" expanded="true" signature="788:972" ph="{...}" />
-            <marker date="1540799522000" expanded="true" signature="1075:1471" ph="{...}" />
-            <marker date="1540799522000" expanded="true" signature="1160:1461" ph="{...}" />
-            <marker date="1540799522000" expanded="true" signature="1560:3198" ph="{...}" />
-            <marker date="1540799522000" expanded="true" signature="1717:1763" ph="{...}" />
-            <marker date="1540799522000" expanded="true" signature="1935:2025" ph="{...}" />
-            <marker date="1540799522000" expanded="true" signature="2075:3187" ph="{...}" />
-            <marker date="1540799522000" expanded="true" signature="2161:3173" ph="{...}" />
-            <marker date="1540799522000" expanded="true" signature="2360:3155" ph="{...}" />
-            <marker date="1540799522000" expanded="true" signature="2633:2983" ph="{...}" />
+            <marker date="1540801658000" expanded="false" signature="6:333" ph="..." />
+            <marker date="1540801658000" expanded="true" signature="455:3323" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="523:3321" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="902:1086" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="1190:1586" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="1275:1576" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="1676:3315" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="1833:1879" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="2051:2141" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="2192:3304" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="2278:3290" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="2477:3272" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="2750:3100" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1005,15 +972,15 @@
         <state relative-caret-position="306">
           <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
           <folding>
-            <marker date="1540784282000" expanded="false" signature="6:66" ph="..." />
-            <marker date="1540784282000" expanded="true" signature="112:1191" ph="{...}" />
-            <marker date="1540784282000" expanded="true" signature="119:182" ph="/// 实现一个默认的Services实体对象管理器 ... " />
-            <marker date="1540784282000" expanded="true" signature="249:1189" ph="{...}" />
-            <marker date="1540784282000" expanded="true" signature="412:974" ph="{...}" />
-            <marker date="1540784282000" expanded="true" signature="519:917" ph="{...}" />
-            <marker date="1540784282000" expanded="true" signature="643:862" ph="{...}" />
-            <marker date="1540784282000" expanded="true" signature="984:1073" ph="/// 获取服务实体对象 ... " />
-            <marker date="1540784282000" expanded="true" signature="1127:1183" ph="{...}" />
+            <marker date="1540801676000" expanded="false" signature="6:66" ph="..." />
+            <marker date="1540801676000" expanded="true" signature="150:1232" ph="{...}" />
+            <marker date="1540801676000" expanded="true" signature="157:220" ph="/// 实现一个默认的Services实体对象管理器 ... " />
+            <marker date="1540801676000" expanded="true" signature="287:1230" ph="{...}" />
+            <marker date="1540801676000" expanded="true" signature="451:1014" ph="{...}" />
+            <marker date="1540801676000" expanded="true" signature="559:957" ph="{...}" />
+            <marker date="1540801676000" expanded="true" signature="683:902" ph="{...}" />
+            <marker date="1540801676000" expanded="true" signature="1024:1113" ph="/// 获取服务实体对象 ... " />
+            <marker date="1540801676000" expanded="true" signature="1168:1224" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1086,11 +1053,11 @@
         <state relative-caret-position="144">
           <caret line="11" column="20" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="20" />
           <folding>
-            <marker date="1540800662000" expanded="false" signature="6:107" ph="..." />
-            <marker date="1540800662000" expanded="true" signature="129:713" ph="{...}" />
-            <marker date="1540800662000" expanded="true" signature="136:193" ph="/// 接口UserService的定义 ... " />
-            <marker date="1540800662000" expanded="true" signature="296:711" ph="{...}" />
-            <marker date="1540800662000" expanded="true" signature="715:757" ph="/* 不支持的数据类型为array的数据类型，但支持List&lt;T&gt;类型 ... */" />
+            <marker date="1540801658000" expanded="false" signature="6:107" ph="..." />
+            <marker date="1540801658000" expanded="true" signature="170:754" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="177:234" ph="/// 接口UserService的定义 ... " />
+            <marker date="1540801658000" expanded="true" signature="337:752" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="756:798" ph="/* 不支持的数据类型为array的数据类型，但支持List&lt;T&gt;类型 ... */" />
           </folding>
         </state>
       </provider>
@@ -1150,10 +1117,10 @@
         <state relative-caret-position="126">
           <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
           <folding>
-            <marker date="1540799524000" expanded="true" signature="58:380" ph="{...}" />
-            <marker date="1540799524000" expanded="true" signature="65:117" ph="/// Rpc服务描述符标记。 ... " />
-            <marker date="1540799524000" expanded="true" signature="185:378" ph="{...}" />
-            <marker date="1540799524000" expanded="true" signature="200:306" ph="/// 应用标记。 ... " />
+            <marker date="1540801658000" expanded="true" signature="96:418" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="103:155" ph="/// Rpc服务描述符标记。 ... " />
+            <marker date="1540801658000" expanded="true" signature="223:416" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="238:344" ph="/// 应用标记。 ... " />
           </folding>
         </state>
       </provider>
@@ -1163,15 +1130,15 @@
         <state relative-caret-position="270">
           <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding>
-            <marker date="1540800662000" expanded="false" signature="6:128" ph="..." />
-            <marker date="1540800662000" expanded="true" signature="173:1818" ph="{...}" />
-            <marker date="1540800662000" expanded="true" signature="246:1816" ph="{...}" />
-            <marker date="1540800662000" expanded="true" signature="567:677" ph="{...}" />
-            <marker date="1540800662000" expanded="true" signature="732:1810" ph="{...}" />
-            <marker date="1540800662000" expanded="true" signature="787:972" ph="{...}" />
-            <marker date="1540800662000" expanded="true" signature="1043:1330" ph="{...}" />
-            <marker date="1540800662000" expanded="true" signature="1441:1771" ph="{...}" />
-            <marker date="1540800662000" expanded="true" signature="1607:1757" ph="{...}" />
+            <marker date="1540801658000" expanded="false" signature="6:166" ph="..." />
+            <marker date="1540801658000" expanded="true" signature="211:1858" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="284:1856" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="605:715" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="771:1850" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="826:1011" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="1082:1369" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="1481:1811" ph="{...}" />
+            <marker date="1540801658000" expanded="true" signature="1647:1797" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1181,9 +1148,9 @@
         <state relative-caret-position="252">
           <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding>
-            <marker date="1540800664000" expanded="true" signature="47:304" ph="{...}" />
-            <marker date="1540800664000" expanded="true" signature="54:190" ph="/// 服务集标记 ... " />
-            <marker date="1540800664000" expanded="true" signature="290:302" ph="{...}" />
+            <marker date="1540801676000" expanded="true" signature="58:315" ph="{...}" />
+            <marker date="1540801676000" expanded="true" signature="65:201" ph="/// 服务集标记 ... " />
+            <marker date="1540801676000" expanded="true" signature="301:313" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1195,42 +1162,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceDescriptor.cs">
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Entitys/ServiceDescriptor.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="34" />
+        <state relative-caret-position="108">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           <folding>
-            <marker date="1540801508000" expanded="true" signature="6:66" ph="..." />
-            <marker date="1540801508000" expanded="true" signature="100:2512" ph="{...}" />
-            <marker date="1540801508000" expanded="true" signature="107:154" ph="/// 服务描述符。 ... " />
-            <marker date="1540801508000" expanded="true" signature="189:2510" ph="{...}" />
-            <marker date="1540801508000" expanded="true" signature="204:265" ph="/// 初始化一个新的服务描述符 ... " />
-            <marker date="1540801508000" expanded="true" signature="300:410" ph="{...}" />
-            <marker date="1540801508000" expanded="true" signature="420:473" ph="/// 服务Id ... " />
-            <marker date="1540801508000" expanded="true" signature="522:574" ph="/// 元数据 ... " />
-            <marker date="1540801508000" expanded="true" signature="652:902" ph="/// 获取一个元数据 ... " />
-            <marker date="1540801508000" expanded="true" signature="967:1102" ph="{...}" />
-            <marker date="1540801508000" expanded="true" signature="1112:1291" ph="/// 确定指定的对象是否等于当前对象 ... " />
-            <marker date="1540801508000" expanded="true" signature="1339:2085" ph="{...}" />
-            <marker date="1540801508000" expanded="true" signature="1694:2073" ph="{...}" />
-            <marker date="1540801508000" expanded="true" signature="2128:2193" ph="{...}" />
-            <marker date="1540801508000" expanded="true" signature="2285:2348" ph="{...}" />
-            <marker date="1540801508000" expanded="true" signature="2440:2504" ph="{...}" />
+            <marker date="1540801674000" expanded="true" signature="6:66" ph="..." />
+            <marker date="1540801674000" expanded="true" signature="108:2520" ph="{...}" />
+            <marker date="1540801674000" expanded="true" signature="115:162" ph="/// 服务描述符。 ... " />
+            <marker date="1540801674000" expanded="true" signature="197:2518" ph="{...}" />
+            <marker date="1540801674000" expanded="true" signature="212:273" ph="/// 初始化一个新的服务描述符 ... " />
+            <marker date="1540801674000" expanded="true" signature="308:418" ph="{...}" />
+            <marker date="1540801674000" expanded="true" signature="428:481" ph="/// 服务Id ... " />
+            <marker date="1540801674000" expanded="true" signature="530:582" ph="/// 元数据 ... " />
+            <marker date="1540801674000" expanded="true" signature="660:910" ph="/// 获取一个元数据 ... " />
+            <marker date="1540801674000" expanded="true" signature="975:1110" ph="{...}" />
+            <marker date="1540801674000" expanded="true" signature="1120:1299" ph="/// 确定指定的对象是否等于当前对象 ... " />
+            <marker date="1540801674000" expanded="true" signature="1347:2093" ph="{...}" />
+            <marker date="1540801674000" expanded="true" signature="1702:2081" ph="{...}" />
+            <marker date="1540801674000" expanded="true" signature="2136:2201" ph="{...}" />
+            <marker date="1540801674000" expanded="true" signature="2293:2356" ph="{...}" />
+            <marker date="1540801674000" expanded="true" signature="2448:2512" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceEntry.cs">
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Entitys/ServiceEntity.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        <state relative-caret-position="318">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Convertibles/ITypeConvertibleService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="45" />
           <folding>
-            <marker date="1540801562000" expanded="true" signature="6:77" ph="..." />
-            <marker date="1540801562000" expanded="true" signature="111:477" ph="{...}" />
-            <marker date="1540801562000" expanded="true" signature="118:165" ph="/// 服务实体条目 ... " />
-            <marker date="1540801562000" expanded="true" signature="195:475" ph="{...}" />
-            <marker date="1540801562000" expanded="true" signature="210:264" ph="/// 执行委托。 ... " />
-            <marker date="1540801562000" expanded="true" signature="356:411" ph="/// 服务描述符。 ... " />
+            <marker date="1540799362000" expanded="true" signature="60:464" ph="{...}" />
+            <marker date="1540799362000" expanded="true" signature="67:120" ph="/// 一个抽象的类型转换服务。 ... " />
+            <marker date="1540799362000" expanded="true" signature="165:462" ph="{...}" />
+            <marker date="1540799362000" expanded="true" signature="180:394" ph="/// 转换。 ... " />
           </folding>
         </state>
       </provider>
