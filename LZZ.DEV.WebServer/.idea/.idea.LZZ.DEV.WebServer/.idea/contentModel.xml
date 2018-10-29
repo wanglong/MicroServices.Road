@@ -6,150 +6,41 @@
     <e p="C:\Users\Administrator\.Rider2018.2\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Administrator\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_LZZ.DEV.WebServer.1081918825.00" t="ExcludeRecursive" />
     <e p="G:\My_Project\MicroServices\LZZ.DEV.WebServer" t="IncludeFlat">
-      <e p="gRPC.Simple.Demo" t="Include" />
-      <e p="LZZ.DEV.Watch" t="IncludeRecursive">
-        <e p="appsettings.json" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="Controllers" t="Include">
-          <e p="HealthController.cs" t="Include" />
-          <e p="HomeController.cs" t="Include" />
-        </e>
-        <e p="LZZ.DEV.Watch.csproj" t="IncludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp2.1" t="Include">
-              <e p="LZZ.DEV.Watch.AssemblyInfo.cs" t="Include" />
-            </e>
+      <e p="DotNetty.Demo" t="Include">
+        <e p="Echo.Client" t="IncludeRecursive">
+          <e p="appsettings.json" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Echo.Client.csproj" t="IncludeRecursive" />
+          <e p="EchoClientHandler.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive" />
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="AssemblyInfo.cs" t="Include" />
           </e>
         </e>
-        <e p="Program.cs" t="Include" />
-        <e p="Properties" t="Include">
-          <e p="launchSettings.json" t="Include" />
+        <e p="Echo.Server" t="IncludeRecursive">
+          <e p="appsettings.json" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Echo.Server.csproj" t="IncludeRecursive" />
+          <e p="EchoServerHandler.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive" />
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="AssemblyInfo.cs" t="Include" />
+          </e>
         </e>
-        <e p="Startup.cs" t="Include" />
-        <e p="watch_config.json" t="Include" />
+      </e>
+      <e p="LZZ.DEV.Watch" t="IncludeRecursive">
+        <e p="LZZ.DEV.Watch.csproj" t="IncludeRecursive" />
       </e>
       <e p="LZZ.DEV.WebServer" t="IncludeRecursive">
-        <e p="App_Code" t="Include">
-          <e p="AppBuilderExtensions.cs" t="Include" />
-          <e p="NetworkHelper.cs" t="Include" />
-        </e>
-        <e p="appsettings.json" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="Controllers" t="Include">
-          <e p="ClientController.cs" t="Include" />
-          <e p="HealthController.cs" t="Include" />
-        </e>
         <e p="LZZ.DEV.WebServer.csproj" t="IncludeRecursive" />
-        <e p="Models" t="Include">
-          <e p="ErrorViewModel.cs" t="Include" />
-          <e p="ServiceEntity.cs" t="Include" />
-        </e>
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp2.1" t="Include">
-              <e p="LZZ.DEV.WebServer.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Program.cs" t="Include" />
-        <e p="Properties" t="Include">
-          <e p="launchSettings.json" t="Include" />
-        </e>
-        <e p="services_config.json" t="Include" />
-        <e p="Startup.cs" t="Include" />
-        <e p="Views" t="Include">
-          <e p="_ViewImports.cshtml" t="Include" />
-        </e>
-        <e p="wwwroot" t="Include">
-          <e p="css" t="Include">
-            <e p="site.css" t="Include" />
-            <e p="site.min.css" t="Include" />
-          </e>
-          <e p="favicon.ico" t="Include" />
-          <e p="images" t="Include">
-            <e p="banner1.svg" t="Include" />
-            <e p="banner2.svg" t="Include" />
-            <e p="banner3.svg" t="Include" />
-          </e>
-          <e p="js" t="Include">
-            <e p="site.js" t="Include" />
-            <e p="site.min.js" t="Include" />
-          </e>
-          <e p="lib" t="Include">
-            <e p="bootstrap" t="Include">
-              <e p=".bower.json" t="Include" />
-              <e p="dist" t="Include">
-                <e p="css" t="Include">
-                  <e p="bootstrap-theme.css" t="Include" />
-                  <e p="bootstrap-theme.css.map" t="Include" />
-                  <e p="bootstrap-theme.min.css" t="Include" />
-                  <e p="bootstrap-theme.min.css.map" t="Include" />
-                  <e p="bootstrap.css" t="Include" />
-                  <e p="bootstrap.css.map" t="Include" />
-                  <e p="bootstrap.min.css" t="Include" />
-                  <e p="bootstrap.min.css.map" t="Include" />
-                </e>
-                <e p="fonts" t="Include">
-                  <e p="glyphicons-halflings-regular.eot" t="Include" />
-                  <e p="glyphicons-halflings-regular.svg" t="Include" />
-                  <e p="glyphicons-halflings-regular.ttf" t="Include" />
-                  <e p="glyphicons-halflings-regular.woff" t="Include" />
-                  <e p="glyphicons-halflings-regular.woff2" t="Include" />
-                </e>
-                <e p="js" t="Include">
-                  <e p="bootstrap.js" t="Include" />
-                  <e p="bootstrap.min.js" t="Include" />
-                  <e p="npm.js" t="Include" />
-                </e>
-              </e>
-              <e p="LICENSE" t="Include" />
-            </e>
-            <e p="jquery" t="Include">
-              <e p=".bower.json" t="Include" />
-              <e p="dist" t="Include">
-                <e p="jquery.js" t="Include" />
-                <e p="jquery.min.js" t="Include" />
-                <e p="jquery.min.map" t="Include" />
-              </e>
-              <e p="LICENSE.txt" t="Include" />
-            </e>
-            <e p="jquery-validation" t="Include">
-              <e p=".bower.json" t="Include" />
-              <e p="dist" t="Include">
-                <e p="additional-methods.js" t="Include" />
-                <e p="additional-methods.min.js" t="Include" />
-                <e p="jquery.validate.js" t="Include" />
-                <e p="jquery.validate.min.js" t="Include" />
-              </e>
-              <e p="LICENSE.md" t="Include" />
-            </e>
-            <e p="jquery-validation-unobtrusive" t="Include">
-              <e p=".bower.json" t="Include" />
-              <e p="jquery.validate.unobtrusive.js" t="Include" />
-              <e p="jquery.validate.unobtrusive.min.js" t="Include" />
-              <e p="LICENSE.txt" t="Include" />
-            </e>
-          </e>
-        </e>
       </e>
       <e p="LZZ.DEV.WebServer.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
-      <e p="Rpc.Client" t="IncludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp2.1" t="Include">
-              <e p="Rpc.Client.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Program.cs" t="Include" />
-        <e p="Rpc.Client.csproj" t="IncludeRecursive" />
-      </e>
       <e p="Rpc.Common" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="IDemoService.cs" t="Include" />
+        <e p="IUserService.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.1" t="Include">
@@ -158,24 +49,22 @@
           </e>
         </e>
         <e p="Rpc.Common.csproj" t="IncludeRecursive" />
-        <e p="UserModel.cs" t="Include" />
-      </e>
-      <e p="Rpc.Server" t="IncludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="DemoServiceImpl.cs" t="Include" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp2.1" t="Include">
-              <e p="Rpc.Server.AssemblyInfo.cs" t="Include" />
+        <e p="RuntimeType" t="Include">
+          <e p="RpcTargetBundleAttribute.cs" t="Include" />
+          <e p="Server" t="Include">
+            <e p="Impl" t="Include">
+              <e p="DefaultServiceEntryManager.cs" t="Include" />
             </e>
+            <e p="IServiceEntryManager.cs" t="Include" />
           </e>
+          <e p="ServiceDescriptor.cs" t="Include" />
+          <e p="ServiceEntry.cs" t="Include" />
         </e>
-        <e p="Program.cs" t="Include" />
-        <e p="Rpc.Server.csproj" t="IncludeRecursive" />
-        <e p="SimpleTest" t="Include">
-          <e p="SerializerBinAndTxt.cs" t="Include" />
-        </e>
+        <e p="UserModel.cs" t="Include" />
+        <e p="UserServiceImpl.cs" t="Include" />
       </e>
+      <e p="Rpc.Demo" t="Include" />
+      <e p="Rpc.WebServer" t="Include" />
     </e>
   </component>
 </project>

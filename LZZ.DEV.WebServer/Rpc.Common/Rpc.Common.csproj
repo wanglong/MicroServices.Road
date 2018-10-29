@@ -5,15 +5,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="protobuf-net">
-        <Version>2.4.0</Version>
-      </PackageReference>
-    </ItemGroup>
-
-    <ItemGroup>
-      <Reference Include="Rabbit.Rpc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\libs\Rabbit.Rpc.dll</HintPath>
-      </Reference>
+        <PackageReference Include="protobuf-net" Version="2.1.0" />
     </ItemGroup>
 
 </Project>

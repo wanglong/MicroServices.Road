@@ -2,33 +2,70 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7fc8ac6-fece-4bce-85af-055070c43c20" name="Default" comment="update rpc demo">
-      <change afterPath="$PROJECT_DIR$/Rpc.Server/SimpleTest/SerializerBinAndTxt.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rpc.Common/IUserService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/RpcTargetBundleAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/IServiceEntryManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceEntryManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceDescriptor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceEntry.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rpc.Common/UserServiceImpl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LZZ.DEV.WebServer/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LZZ.DEV.WebServer/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LZZ.DEV.WebServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LZZ.DEV.WebServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LZZ.DEV.Watch/bin/Debug/netcoreapp2.1/LZZ.DEV.Watch.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/LZZ.DEV.Watch/bin/Debug/netcoreapp2.1/LZZ.DEV.Watch.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LZZ.DEV.Watch/obj/Debug/netcoreapp2.1/LZZ.DEV.Watch.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LZZ.DEV.Watch/obj/Debug/netcoreapp2.1/LZZ.DEV.Watch.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LZZ.DEV.Watch/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/LZZ.DEV.Watch/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LZZ.DEV.WebServer.sln" beforeDir="false" afterPath="$PROJECT_DIR$/LZZ.DEV.WebServer.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Client/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Client/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Client/Rpc.Client.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Client/Rpc.Client.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Client/bin/Debug/netcoreapp2.1/Rpc.Client.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Client/bin/Debug/netcoreapp2.1/Rpc.Client.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Client/obj/Debug/netcoreapp2.1/Rpc.Client.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Client/obj/Debug/netcoreapp2.1/Rpc.Client.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Client/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Client/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Client/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Client/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Demo/IDemoService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Demo/Rpc.Demo.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Demo/UserModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Demo/bin/Debug/netcoreapp2.1/Rpc.Demo.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Demo/obj/Debug/netcoreapp2.1/Rpc.Demo.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Demo/obj/Debug/netcoreapp2.1/Rpc.Demo.csproj.CopyComplete" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Demo/obj/Debug/netcoreapp2.1/Rpc.Demo.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Demo/obj/Rpc.Demo.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Demo/obj/Rpc.Demo.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Demo/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Demo/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Server/DemoServiceImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Server/DemoServiceImpl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Server/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Server/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Server/Rpc.Server.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Server/Rpc.Server.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Server/obj/Debug/netcoreapp2.1/Rpc.Server.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Server/obj/Debug/netcoreapp2.1/Rpc.Server.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Server/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Server/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Server/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Server/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LZZ.DEV.WebServer/LZZ.DEV.WebServer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/LZZ.DEV.WebServer/LZZ.DEV.WebServer.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LZZ.DEV.WebServer/Views/_ViewImports.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LZZ.DEV.WebServer/bin/Debug/netcoreapp2.1/LZZ.DEV.WebServer.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/LZZ.DEV.WebServer/bin/Debug/netcoreapp2.1/LZZ.DEV.WebServer.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LZZ.DEV.WebServer/obj/Debug/netcoreapp2.1/LZZ.DEV.WebServer.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LZZ.DEV.WebServer/obj/Debug/netcoreapp2.1/LZZ.DEV.WebServer.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LZZ.DEV.WebServer/obj/Debug/netcoreapp2.1/LZZ.DEV.WebServer.RazorTargetAssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LZZ.DEV.WebServer/obj/Debug/netcoreapp2.1/LZZ.DEV.WebServer.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LZZ.DEV.WebServer/obj/Debug/netcoreapp2.1/LZZ.DEV.WebServer.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LZZ.DEV.WebServer/obj/Debug/netcoreapp2.1/Razor/Views/_ViewImports.g.cshtml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LZZ.DEV.WebServer/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/LZZ.DEV.WebServer/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Client/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Client/Rpc.Client.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Client/bin/Debug/netcoreapp2.1/Rpc.Client.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Client/bin/Debug/netcoreapp2.1/Rpc.Client.runtimeconfig.dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Client/bin/Debug/netcoreapp2.1/Rpc.Client.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Client/obj/Debug/netcoreapp2.1/Rpc.Client.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Client/obj/Debug/netcoreapp2.1/Rpc.Client.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Client/obj/Debug/netcoreapp2.1/Rpc.Client.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Client/obj/Rpc.Client.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Client/obj/Rpc.Client.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Client/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Client/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/IDemoService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/Rpc.Common.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/Rpc.Common.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/UserModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/UserModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/bin/Debug/netcoreapp2.1/Rpc.Common.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/bin/Debug/netcoreapp2.1/Rpc.Common.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/bin/Debug/netcoreapp2.1/Rpc.Demo.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/obj/Debug/netcoreapp2.1/Rpc.Common.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/obj/Debug/netcoreapp2.1/Rpc.Common.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/obj/Debug/netcoreapp2.1/Rpc.Common.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/obj/Debug/netcoreapp2.1/Rpc.Common.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/obj/Debug/netcoreapp2.1/Rpc.Common.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/obj/Debug/netcoreapp2.1/Rpc.Demo.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/obj/Debug/netcoreapp2.1/Rpc.Demo.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/obj/Debug/netcoreapp2.1/Rpc.Demo.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/obj/Rpc.Demo.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/obj/Rpc.Demo.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Server/DemoServiceImpl.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Server/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Server/Rpc.Server.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Server/SimpleTest/SerializerBinAndTxt.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Server/bin/Debug/netcoreapp2.1/Rpc.Server.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Server/bin/Debug/netcoreapp2.1/Rpc.Server.runtimeconfig.dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Server/bin/Debug/netcoreapp2.1/Rpc.Server.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Server/bin/Debug/netcoreapp2.1/user.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Server/bin/Debug/netcoreapp2.1/user.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Server/obj/Debug/netcoreapp2.1/Rpc.Server.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Server/obj/Debug/netcoreapp2.1/Rpc.Server.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Server/obj/Debug/netcoreapp2.1/Rpc.Server.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Server/obj/Rpc.Server.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Server/obj/Rpc.Server.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Server/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Server/obj/project.packagespec.json" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,41 +132,41 @@
     <session id="430021869">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="31" />
-          <entry key="csproj" value="5" />
+          <entry key="cs" value="58" />
+          <entry key="csproj" value="8" />
           <entry key="http" value="1" />
           <entry key="json" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="31" />
-          <entry key="Csproj" value="5" />
+          <entry key="C#" value="58" />
+          <entry key="Csproj" value="8" />
           <entry key="JSON" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="1624" />
+          <entry key="cs" value="1811" />
           <entry key="csproj" value="16" />
           <entry key="txt" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="1624" />
+          <entry key="C#" value="1811" />
           <entry key="Csproj" value="16" />
           <entry key="PLAIN_TEXT" value="26" />
         </counts>
@@ -137,36 +174,16 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Rpc.Server/Program.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-              <folding>
-                <marker date="1540181082000" expanded="true" signature="20:160" ph="{...}" />
-                <marker date="1540181082000" expanded="true" signature="47:158" ph="{...}" />
-                <marker date="1540181082000" expanded="true" signature="80:151" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Rpc.Server/SimpleTest/SerializerBinAndTxt.cs">
+        <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceEntryManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+            <state relative-caret-position="198">
+              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding>
-                <marker date="1540182068000" expanded="true" signature="6:85" ph="..." />
-                <marker date="1540182068000" expanded="true" signature="118:1697" ph="{...}" />
-                <marker date="1540182068000" expanded="true" signature="164:1695" ph="{...}" />
-                <marker date="1540182068000" expanded="true" signature="204:363" ph="{...}" />
-                <marker date="1540182068000" expanded="true" signature="254:353" ph="{...}" />
-                <marker date="1540182068000" expanded="true" signature="409:1689" ph="{...}" />
-                <marker date="1540182068000" expanded="true" signature="474:709" ph="{...}" />
-                <marker date="1540182068000" expanded="true" signature="805:1067" ph="{...}" />
-                <marker date="1540182068000" expanded="true" signature="1562:1665" ph="{...}" />
+                <marker date="1540781454000" expanded="true" signature="79:292" ph="{...}" />
+                <marker date="1540781454000" expanded="true" signature="148:290" ph="{...}" />
+                <marker date="1540781454000" expanded="true" signature="208:284" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -180,32 +197,28 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ED07561A-F00F-4966-8EBC-547EA3E7CE17/3c/0e5c0a8f/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotNetty.Demo/Echo.Server/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC827311-54C7-4360-BE35-D7BB284A22FE/60/afbacb0c/RpcServiceBundleAttribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC827311-54C7-4360-BE35-D7BB284A22FE/84/9868053b/RpcServiceAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotNetty.Demo/Echo.Client/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LZZ.DEV.Watch/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LZZ.DEV.Watch/Controllers/HealthController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Server/DemoServiceImpl.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AC88FF9-9817-4BE7-8F0D-6AB05B5F222B/b8/96b46b9d/ConfigureServicesBuilder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8D506B5F-4E1A-4ACA-9C41-7C85929CCAED/1f/12a4021f/ProtoContractAttribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AC88FF9-9817-4BE7-8F0D-6AB05B5F222B/f9/f64703da/StartupLoader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotNetty.Demo/Echo.Client/EchoClientHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Models/ServiceEntity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Server/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Controllers/ClientController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Controllers/HealthController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/680D0A75-2A4E-40EB-A596-BAD88FBFB729/d9/d285de13/Thread.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/App_Code/AppBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Client/obj/Debug/netcoreapp2.1/Rpc.Client.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4B47B422-BC4C-4615-BBDE-BE1DF9B21B0D/be/88541376/ActivatorUtilities.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0ED0D170-86D1-4299-AAF7-8A390BA4CE98/12/6c5d41fd/IPEndPoint.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/IUserService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/UserModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/UserServiceImpl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LZZ.DEV.Watch/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Server/SimpleTest/SerializerBinAndTxt.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC827311-54C7-4360-BE35-D7BB284A22FE/c4/d7ea06ef/RpcServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LZZ.DEV.Watch/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC827311-54C7-4360-BE35-D7BB284A22FE/17/b59b269d/IServiceHost.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Client/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/RpcTargetBundleAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/IServiceEntryManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceEntry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceDescriptor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/App_Code/NetworkHelper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/IDemoService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceEntryManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -241,6 +254,23 @@
         <option value="$PROJECT_DIR$/Rpc.Server/Program.cs" />
         <option value="$PROJECT_DIR$/Rpc.Server/SimpleTest/TestSerializerBinAndTxt.cs" />
         <option value="$PROJECT_DIR$/Rpc.Server/SimpleTest/SerializerBinAndTxt.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Server/DotNettyTest.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Server/DotNettyTransport.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Server/SimpleTest/DotNettyTransport.cs" />
+        <option value="$PROJECT_DIR$/DotNetty.Demo/Echo.Client/Echo.Client.csproj" />
+        <option value="$PROJECT_DIR$/DotNetty.Demo/Echo.Server/Echo.Server.csproj" />
+        <option value="$PROJECT_DIR$/DotNetty.Demo/Echo.Server/Program.cs" />
+        <option value="$PROJECT_DIR$/DotNetty.Demo/Echo.Client/Program.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/Class1.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/Rpc.Common.csproj" />
+        <option value="$PROJECT_DIR$/Rpc.Common/UserModel.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/RpcBundle.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/RpcTargetBundle.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/IUserService.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/IServiceEntryManager.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceEntry.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceDescriptor.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceEntryManager.cs" />
       </list>
     </option>
   </component>
@@ -251,10 +281,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="85" />
-    <option name="y" value="25" />
-    <option name="width" value="1750" />
-    <option name="height" value="985" />
+    <option name="x" value="-9" />
+    <option name="width" value="978" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -274,32 +303,28 @@
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="LZZ.DEV.WebServer" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="gRPC.Simple.Demo" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Rpc.Demo" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="LZZ.DEV.WebServer" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="gRPC.Simple.Demo" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Rpc.Client" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="LZZ.DEV.WebServer" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="gRPC.Simple.Demo" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Rpc.Demo" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Rpc.Common" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="LZZ.DEV.WebServer" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="gRPC.Simple.Demo" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Rpc.Server" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Rpc.Demo" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Rpc.Common" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="RuntimeType" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="LZZ.DEV.WebServer" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="gRPC.Simple.Demo" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Rpc.Server" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="SimpleTest" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Rpc.Demo" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Rpc.Common" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="RuntimeType" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Server" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -313,7 +338,7 @@
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Rpc.Common/Rpc.Common.csproj" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/DotNetty.Demo/Echo.Client/Echo.Client.csproj" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -329,7 +354,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected=".NET Project.Rpc.Server">
+  <component name="RunManager" selected=".NET Project.Web.Server">
     <configuration name="Publish LZZ.DEV.Watch" type="DotNetFolderPublish" factoryName="Publish to folder" temporary="true">
       <riderPublish target_folder="$PROJECT_DIR$/../PublishWatch" uuid_high="3579522069984200626" uuid_low="-6060467951208971816" />
       <method v="2" />
@@ -339,9 +364,9 @@
       <method v="2" />
     </configuration>
     <configuration name="Rpc.Client" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/Rpc.Client/bin/Debug/netcoreapp2.1/Rpc.Client.dll" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/DotNetty.Demo/Echo.Client/bin/Debug/netcoreapp2.0/Echo.Client.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Rpc.Client" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DotNetty.Demo/Echo.Client" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <envs>
         <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
@@ -350,21 +375,21 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Rpc.Client/Rpc.Client.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/DotNetty.Demo/Echo.Client/Echo.Client.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.1" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.0" />
       <browser url="http://localhost:5000" />
       <method v="2">
         <option name="Build" enabled="true" />
       </method>
     </configuration>
     <configuration name="Rpc.Server" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/Rpc.Server/bin/Debug/netcoreapp2.1/Rpc.Server.dll" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/DotNetty.Demo/Echo.Server/bin/Debug/netcoreapp2.0/Echo.Server.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Rpc.Server" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DotNetty.Demo/Echo.Server" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <envs>
         <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
@@ -373,18 +398,18 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Rpc.Server/Rpc.Server.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/DotNetty.Demo/Echo.Server/Echo.Server.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.1" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.0" />
       <browser url="http://localhost:5000" />
       <method v="2">
         <option name="Build" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebServer" type="DotNetProject" factoryName=".NET Project">
+    <configuration name="Web.Server" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/LZZ.DEV.WebServer/bin/Debug/netcoreapp2.1/LZZ.DEV.WebServer.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LZZ.DEV.WebServer" />
@@ -396,14 +421,14 @@
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_KIND" value="Unloaded" />
       <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.1" />
       <browser start="true" url="http://localhost:5000" />
       <method v="2">
         <option name="Build" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebWatch" type="DotNetProject" factoryName=".NET Project">
+    <configuration name="Web.Watch" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/LZZ.DEV.Watch/bin/Debug/netcoreapp2.1/LZZ.DEV.Watch.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LZZ.DEV.Watch" />
@@ -415,7 +440,7 @@
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_KIND" value="Unloaded" />
       <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.1" />
       <browser start="true" url="https://localhost:5001" />
       <method v="2">
@@ -423,18 +448,13 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue=".NET Project.WebServer" />
       <item itemvalue=".NET Project.Rpc.Server" />
       <item itemvalue=".NET Project.Rpc.Client" />
-      <item itemvalue=".NET Project.WebWatch" />
       <item itemvalue="Publish to folder.Publish LZZ.DEV.WebServer" />
+      <item itemvalue=".NET Project.Web.Watch" />
+      <item itemvalue=".NET Project.Web.Server" />
       <item itemvalue="Publish to folder.Publish LZZ.DEV.Watch" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Publish to folder.Publish LZZ.DEV.Watch" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -456,7 +476,13 @@
       <workItem from="1539919323481" duration="7494000" />
       <workItem from="1540170167128" duration="8400000" />
       <workItem from="1540179699224" duration="2029000" />
-      <workItem from="1540181766564" duration="1604000" />
+      <workItem from="1540181766564" duration="5518000" />
+      <workItem from="1540218363425" duration="106000" />
+      <workItem from="1540447325570" duration="1974000" />
+      <workItem from="1540739898191" duration="195000" />
+      <workItem from="1540740488125" duration="342000" />
+      <workItem from="1540776759885" duration="1412000" />
+      <workItem from="1540780561087" duration="902000" />
     </task>
     <task id="LOCAL-00001" summary="add rpc demo">
       <created>1539919457231</created>
@@ -486,11 +512,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539935973810</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update rpc demo">
+      <created>1540187596413</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1540187596414</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63155000" />
+    <option name="totallyTimeSpent" value="72000000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -503,8 +536,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19571045" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2556894" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -514,17 +548,17 @@
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.19977038" />
-      <window_info anchor="bottom" id="NuGet" order="6" weight="0.3421355" />
+      <window_info anchor="bottom" id="NuGet" order="6" sideWeight="0.64544237" weight="0.39583334" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="DB Execution Console" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="10" />
       <window_info anchor="bottom" id="REST Client" order="11" weight="0.36165327" />
       <window_info anchor="bottom" id="Terminal" order="12" />
-      <window_info anchor="bottom" id="Run" order="13" sideWeight="0.5422252" side_tool="true" visible="true" weight="0.29971182" />
+      <window_info anchor="bottom" id="Run" order="13" sideWeight="0.708166" side_tool="true" weight="0.28055555" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="15" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Build" order="16" sideWeight="0.4577748" visible="true" weight="0.29971182" />
+      <window_info anchor="bottom" id="Version Control" order="15" visible="true" weight="0.38333333" />
+      <window_info anchor="bottom" id="Build" order="16" sideWeight="0.291834" weight="0.43194443" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -626,77 +660,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Models/ServiceEntity.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AC88FF9-9817-4BE7-8F0D-6AB05B5F222B/f9/f64703da/StartupLoader.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="155" column="10" selection-start-line="155" selection-start-column="10" selection-end-line="155" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AC88FF9-9817-4BE7-8F0D-6AB05B5F222B/b8/96b46b9d/ConfigureServicesBuilder.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/App_Code/NetworkHelper.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <marker date="1539583242000" expanded="false" signature="6:92" ph="..." />
-            <marker date="1539583242000" expanded="true" signature="161:1956" ph="{...}" />
-            <marker date="1539583242000" expanded="true" signature="176:231" ph="/// 得到本机IP ... " />
-            <marker date="1539583242000" expanded="true" signature="273:742" ph="{...}" />
-            <marker date="1539583242000" expanded="true" signature="509:708" ph="{...}" />
-            <marker date="1539583242000" expanded="true" signature="752:915" ph="/// 判断是否为正确的IP地址 ... " />
-            <marker date="1539583242000" expanded="true" signature="969:1464" ph="{...}" />
-            <marker date="1539583242000" expanded="true" signature="1245:1427" ph="{...}" />
-            <marker date="1539583242000" expanded="true" signature="1474:1633" ph="/// 尝试Ping指定IP是否能够Ping通 ... " />
-            <marker date="1539583242000" expanded="true" signature="1683:1950" ph="{...}" />
-            <marker date="1539583242000" expanded="true" signature="1709:1864" ph="{...}" />
-            <marker date="1539583242000" expanded="true" signature="1882:1940" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/appsettings.Development.json" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4B47B422-BC4C-4615-BBDE-BE1DF9B21B0D/be/88541376/ActivatorUtilities.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="320" column="67" lean-forward="true" selection-start-line="320" selection-start-column="67" selection-end-line="320" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/LZZ.DEV.WebServer.csproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/hosting.json" />
-    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Controllers/HomeController.cs" />
-    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Views/Home/About.cshtml" />
-    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Views/Home/Index.cshtml" />
-    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Views/Home/Privacy.cshtml" />
-    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Views/Shared/_ValidationScriptsPartial.cshtml" />
-    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Views/Shared/_Layout.cshtml" />
-    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Views/_ViewImports.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/App_Code/AppBuilderExtensions.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -712,31 +675,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/680D0A75-2A4E-40EB-A596-BAD88FBFB729/d9/d285de13/Thread.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="120" column="48" lean-forward="true" selection-start-line="120" selection-start-column="48" selection-end-line="120" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/680D0A75-2A4E-40EB-A596-BAD88FBFB729/d9/d285de13/Thread.cs" />
     <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LZZ.DEV.Watch/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LZZ.DEV.Watch/Startup.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
@@ -768,13 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Startup.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="45" column="29" lean-forward="true" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Controllers/ClientController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -796,13 +732,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api.http">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" />
     <entry file="file://$PROJECT_DIR$/LZZ.DEV.Watch/Controllers/HealthController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -810,113 +740,289 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC827311-54C7-4360-BE35-D7BB284A22FE/84/9868053b/RpcServiceAttribute.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC827311-54C7-4360-BE35-D7BB284A22FE/84/9868053b/RpcServiceAttribute.cs" />
     <entry file="file://$PROJECT_DIR$/Rpc.Demo/DemoServiceImpl.cs" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC827311-54C7-4360-BE35-D7BB284A22FE/60/afbacb0c/RpcServiceBundleAttribute.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8D506B5F-4E1A-4ACA-9C41-7C85929CCAED/1f/12a4021f/ProtoContractAttribute.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Server/DemoServiceImpl.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC827311-54C7-4360-BE35-D7BB284A22FE/17/b59b269d/IServiceHost.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Server/Rpc.Server.csproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC827311-54C7-4360-BE35-D7BB284A22FE/c4/d7ea06ef/RpcServiceCollectionExtensions.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="136" column="5" lean-forward="true" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC827311-54C7-4360-BE35-D7BB284A22FE/60/afbacb0c/RpcServiceBundleAttribute.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8D506B5F-4E1A-4ACA-9C41-7C85929CCAED/1f/12a4021f/ProtoContractAttribute.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC827311-54C7-4360-BE35-D7BB284A22FE/17/b59b269d/IServiceHost.cs" />
+    <entry file="file://$PROJECT_DIR$/Rpc.Server/Rpc.Server.csproj" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC827311-54C7-4360-BE35-D7BB284A22FE/c4/d7ea06ef/RpcServiceCollectionExtensions.cs" />
     <entry file="file://$PROJECT_DIR$/Rpc.Demo/IDemoService.cs" />
     <entry file="file://$PROJECT_DIR$/Rpc.Demo/UserModel.cs" />
     <entry file="file://$PROJECT_DIR$/Rpc.Demo/Rpc.Demo.csproj" />
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/IDemoService.cs">
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/IDemoService.cs" />
+    <entry file="file://$PROJECT_DIR$/Rpc.Client/Program.cs" />
+    <entry file="file://$PROJECT_DIR$/Rpc.Server/SimpleTest/SerializerBinAndTxt.cs" />
+    <entry file="file://$PROJECT_DIR$/Rpc.Server/DemoServiceImpl.cs" />
+    <entry file="file://$PROJECT_DIR$/Rpc.Server/Program.cs" />
+    <entry file="file://$PROJECT_DIR$/Rpc.Server/SimpleTest/DotNettyTransport.cs" />
+    <entry file="file://$PROJECT_DIR$/LZZ.DEV.Watch/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="144">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DotNetty.Demo/Echo.Server/Echo.Server.csproj" />
+    <entry file="file://$PROJECT_DIR$/DotNetty.Demo/Echo.Client/Echo.Client.csproj" />
+    <entry file="file://$PROJECT_DIR$/LZZ.DEV.Watch/LZZ.DEV.Watch.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0ED0D170-86D1-4299-AAF7-8A390BA4CE98/12/6c5d41fd/IPEndPoint.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DotNetty.Demo/Echo.Server/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
-            <marker date="1540171402000" expanded="false" signature="6:77" ph="..." />
-            <marker date="1540171402000" expanded="true" signature="175:1030" ph="{...}" />
-            <marker date="1540171402000" expanded="true" signature="182:254" ph="/// 接口DemoService的定义，一些常用类型的传参，返回测试 ... " />
-            <marker date="1540171402000" expanded="true" signature="378:1028" ph="{...}" />
-            <marker date="1540171402000" expanded="false" signature="393:645" ph="简单数据类型" />
-            <marker date="1540171402000" expanded="false" signature="655:1022" ph="复杂数据类型" />
-            <marker date="1540171402000" expanded="true" signature="1032:1074" ph="/* 不支持的数据类型为array的数据类型，但支持List&lt;T&gt;类型 ... */" />
+            <marker date="1540776924000" expanded="true" signature="0:150" ph="/* Copyright (c) Microsoft. All rights reserved. ... */" />
+            <marker date="1540776924000" expanded="true" signature="152:411" ph="/* Netty 是一个半成品，作用是在需要基于自定义协议的基础上完成自己的通信封装 ... */" />
+            <marker date="1540776924000" expanded="true" signature="447:671" ph="..." />
+            <marker date="1540776924000" expanded="true" signature="697:4875" ph="{...}" />
+            <marker date="1540776924000" expanded="true" signature="746:4813" ph="{...}" />
+            <marker date="1540776924000" expanded="true" signature="757:831" ph="/* ExampleHelper.SetConsoleLogger(); ... */" />
+            <marker date="1540776924000" expanded="true" signature="906:1242" ph="/* Netty 提供了许多不同的 EventLoopGroup 的实现用来处理不同的传输。 ... */" />
+            <marker date="1540776924000" expanded="true" signature="1452:4446" ph="{...}" />
+            <marker date="1540776924000" expanded="true" signature="2131:2435" ph="/* ChannelInitializer 是一个特殊的处理类，他的目的是帮助使用者配置一个新的 Channel。 ... */" />
+            <marker date="1540776924000" expanded="true" signature="2538:4100" ph="{...}" />
+            <marker date="1540776924000" expanded="true" signature="2601:2787" ph="/* 工作线程连接器是设置了一个管道，服务端主线程所有接收到的信息都会通过这个管道一层层往下传输， ... */" />
+            <marker date="1540776924000" expanded="true" signature="3025:3134" ph="/* 添加出栈消息，通过这个handler在消息顶部加上消息的长度。 ... */" />
+            <marker date="1540776924000" expanded="true" signature="3262:3813" ph="/* 入栈消息通过该Handler,解析消息的包长信息，并将正确的消息体发送给下一个处理Handler ... */" />
+            <marker date="1540776924000" expanded="true" signature="4466:4803" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Client/Program.cs">
+    <entry file="file://$PROJECT_DIR$/DotNetty.Demo/Echo.Client/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-756">
+          <folding>
+            <marker date="1540777132000" expanded="true" signature="34:342" ph="..." />
+            <marker date="1540777132000" expanded="true" signature="368:2559" ph="{...}" />
+            <marker date="1540777132000" expanded="true" signature="417:2497" ph="{...}" />
+            <marker date="1540777132000" expanded="true" signature="551:2329" ph="{...}" />
+            <marker date="1540777132000" expanded="true" signature="922:1438" ph="{...}" />
+            <marker date="1540777132000" expanded="true" signature="1631:2217" ph="{...}" />
+            <marker date="1540777132000" expanded="true" signature="2349:2487" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DotNetty.Demo/Echo.Client/EchoClientHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+          <folding>
+            <marker date="1540570072000" expanded="true" signature="0:150" ph="/* Copyright (c) Microsoft. All rights reserved. ... */" />
+            <marker date="1540570072000" expanded="false" signature="186:283" ph="..." />
+            <marker date="1540570072000" expanded="true" signature="343:1128" ph="{...}" />
+            <marker date="1540570072000" expanded="true" signature="612:809" ph="{...}" />
+            <marker date="1540570072000" expanded="true" signature="673:799" ph="{...}" />
+            <marker date="1540570072000" expanded="true" signature="1010:1122" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LZZ.DEV.Watch/Startup.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
           <folding>
-            <marker date="1540171474000" expanded="true" signature="35:142" ph="{...}" />
-            <marker date="1540171474000" expanded="true" signature="55:140" ph="{...}" />
-            <marker date="1540171474000" expanded="true" signature="101:134" ph="{...}" />
+            <marker date="1539747804000" expanded="true" signature="6:402" ph="..." />
+            <marker date="1539747804000" expanded="true" signature="454:1396" ph="{...}" />
+            <marker date="1539747804000" expanded="true" signature="513:576" ph="{...}" />
+            <marker date="1539747804000" expanded="true" signature="799:908" ph="{...}" />
+            <marker date="1539747804000" expanded="true" signature="1096:1390" ph="{...}" />
+            <marker date="1539747804000" expanded="true" signature="1107:1354" ph="/* if (env.IsDevelopment()) ... */" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Server/Program.cs">
+    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/App_Code/NetworkHelper.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="162">
+          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
           <folding>
-            <marker date="1540181082000" expanded="true" signature="20:160" ph="{...}" />
-            <marker date="1540181082000" expanded="true" signature="47:158" ph="{...}" />
-            <marker date="1540181082000" expanded="true" signature="80:151" ph="{...}" />
+            <marker date="1539583242000" expanded="true" signature="6:92" ph="..." />
+            <marker date="1539583242000" expanded="true" signature="161:1956" ph="{...}" />
+            <marker date="1539583242000" expanded="true" signature="176:231" ph="/// 得到本机IP ... " />
+            <marker date="1539583242000" expanded="true" signature="273:742" ph="{...}" />
+            <marker date="1539583242000" expanded="true" signature="509:708" ph="{...}" />
+            <marker date="1539583242000" expanded="true" signature="752:915" ph="/// 判断是否为正确的IP地址 ... " />
+            <marker date="1539583242000" expanded="true" signature="969:1464" ph="{...}" />
+            <marker date="1539583242000" expanded="true" signature="1245:1427" ph="{...}" />
+            <marker date="1539583242000" expanded="true" signature="1474:1633" ph="/// 尝试Ping指定IP是否能够Ping通 ... " />
+            <marker date="1539583242000" expanded="true" signature="1683:1950" ph="{...}" />
+            <marker date="1539583242000" expanded="true" signature="1709:1864" ph="{...}" />
+            <marker date="1539583242000" expanded="true" signature="1882:1940" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Server/SimpleTest/SerializerBinAndTxt.cs">
+    <entry file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Startup.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+        <state relative-caret-position="251">
+          <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="12" />
           <folding>
-            <marker date="1540182068000" expanded="true" signature="6:85" ph="..." />
-            <marker date="1540182068000" expanded="true" signature="118:1697" ph="{...}" />
-            <marker date="1540182068000" expanded="true" signature="164:1695" ph="{...}" />
-            <marker date="1540182068000" expanded="true" signature="204:363" ph="{...}" />
-            <marker date="1540182068000" expanded="true" signature="254:353" ph="{...}" />
-            <marker date="1540182068000" expanded="true" signature="409:1689" ph="{...}" />
-            <marker date="1540182068000" expanded="true" signature="474:709" ph="{...}" />
-            <marker date="1540182068000" expanded="true" signature="805:1067" ph="{...}" />
-            <marker date="1540182068000" expanded="true" signature="1562:1665" ph="{...}" />
+            <marker date="1539844396000" expanded="false" signature="6:390" ph="..." />
+            <marker date="1539844396000" expanded="true" signature="446:2436" ph="{...}" />
+            <marker date="1539844396000" expanded="true" signature="505:568" ph="{...}" />
+            <marker date="1539844396000" expanded="true" signature="791:1397" ph="{...}" />
+            <marker date="1539844396000" expanded="true" signature="864:1141" ph="{...}" />
+            <marker date="1539844396000" expanded="true" signature="1184:1295" ph="{...}" />
+            <marker date="1539844396000" expanded="true" signature="1616:2430" ph="{...}" />
+            <marker date="1539844396000" expanded="true" signature="1704:1808" ph="{...}" />
+            <marker date="1539844396000" expanded="true" signature="1922:2256" ph="{...}" />
+            <marker date="1539844396000" expanded="true" signature="2304:2418" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/Class1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/Rpc.Common.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/UserModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <marker date="1540780908000" expanded="true" signature="37:213" ph="{...}" />
+            <marker date="1540780908000" expanded="true" signature="86:211" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/IUserService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <marker date="1540781150000" expanded="true" signature="6:107" ph="..." />
+            <marker date="1540781150000" expanded="true" signature="129:716" ph="{...}" />
+            <marker date="1540781150000" expanded="true" signature="136:193" ph="/// 接口UserService的定义 ... " />
+            <marker date="1540781150000" expanded="true" signature="299:714" ph="{...}" />
+            <marker date="1540781150000" expanded="true" signature="718:760" ph="/* 不支持的数据类型为array的数据类型，但支持List&lt;T&gt;类型 ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceDescriptor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="92" column="5" lean-forward="true" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+          <folding>
+            <marker date="1540781358000" expanded="true" signature="6:66" ph="..." />
+            <marker date="1540781358000" expanded="true" signature="100:2724" ph="{...}" />
+            <marker date="1540781358000" expanded="true" signature="107:154" ph="/// 服务描述符。 ... " />
+            <marker date="1540781358000" expanded="true" signature="189:2722" ph="{...}" />
+            <marker date="1540781358000" expanded="true" signature="204:266" ph="/// 初始化一个新的服务描述符。 ... " />
+            <marker date="1540781358000" expanded="true" signature="301:411" ph="{...}" />
+            <marker date="1540781358000" expanded="true" signature="421:475" ph="/// 服务Id。 ... " />
+            <marker date="1540781358000" expanded="true" signature="524:577" ph="/// 元数据。 ... " />
+            <marker date="1540781358000" expanded="true" signature="654:905" ph="/// 获取一个元数据。 ... " />
+            <marker date="1540781358000" expanded="true" signature="970:1105" ph="{...}" />
+            <marker date="1540781358000" expanded="true" signature="1115:2716" ph="Equality members" />
+            <marker date="1540781358000" expanded="true" signature="1149:1440" ph="///Determines whether the specified object is equal to the current object. ... " />
+            <marker date="1540781358000" expanded="true" signature="1488:2260" ph="{...}" />
+            <marker date="1540781358000" expanded="true" signature="1843:2248" ph="{...}" />
+            <marker date="1540781358000" expanded="true" signature="2303:2368" ph="{...}" />
+            <marker date="1540781358000" expanded="true" signature="2460:2523" ph="{...}" />
+            <marker date="1540781358000" expanded="true" signature="2615:2679" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceEntry.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <marker date="1540781292000" expanded="true" signature="6:77" ph="..." />
+            <marker date="1540781292000" expanded="true" signature="111:476" ph="{...}" />
+            <marker date="1540781292000" expanded="true" signature="118:164" ph="/// 服务条目。 ... " />
+            <marker date="1540781292000" expanded="true" signature="194:474" ph="{...}" />
+            <marker date="1540781292000" expanded="true" signature="209:263" ph="/// 执行委托。 ... " />
+            <marker date="1540781292000" expanded="true" signature="355:410" ph="/// 服务描述符。 ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/IServiceEntryManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <marker date="1540781262000" expanded="true" signature="74:345" ph="{...}" />
+            <marker date="1540781262000" expanded="true" signature="81:135" ph="/// 一个抽象的服务条目管理者。 ... " />
+            <marker date="1540781262000" expanded="true" signature="177:343" ph="{...}" />
+            <marker date="1540781262000" expanded="true" signature="192:289" ph="/// 获取服务条目集合。 ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/RpcTargetBundleAttribute.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <marker date="1540781168000" expanded="true" signature="47:307" ph="{...}" />
+            <marker date="1540781168000" expanded="true" signature="54:190" ph="/// 服务集标记 ... " />
+            <marker date="1540781168000" expanded="true" signature="293:305" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/UserServiceImpl.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding>
+            <marker date="1540780920000" expanded="false" signature="6:77" ph="..." />
+            <marker date="1540780920000" expanded="true" signature="99:1505" ph="{...}" />
+            <marker date="1540780920000" expanded="true" signature="106:161" ph="/// UserService实现类 ... " />
+            <marker date="1540780920000" expanded="true" signature="209:1503" ph="{...}" />
+            <marker date="1540780920000" expanded="true" signature="224:1497" ph="Implementation of IUserService" />
+            <marker date="1540780920000" expanded="true" signature="311:400" ph="{...}" />
+            <marker date="1540780920000" expanded="true" signature="453:512" ph="{...}" />
+            <marker date="1540780920000" expanded="true" signature="573:643" ph="{...}" />
+            <marker date="1540780920000" expanded="true" signature="691:848" ph="{...}" />
+            <marker date="1540780920000" expanded="true" signature="763:836" ph="{...}" />
+            <marker date="1540780920000" expanded="true" signature="907:969" ph="{...}" />
+            <marker date="1540780920000" expanded="true" signature="1035:1171" ph="{...}" />
+            <marker date="1540780920000" expanded="true" signature="1204:1338" ph="{...}" />
+            <marker date="1540780920000" expanded="true" signature="1379:1446" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceEntryManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <marker date="1540781454000" expanded="true" signature="79:292" ph="{...}" />
+            <marker date="1540781454000" expanded="true" signature="148:290" ph="{...}" />
+            <marker date="1540781454000" expanded="true" signature="208:284" ph="{...}" />
           </folding>
         </state>
       </provider>

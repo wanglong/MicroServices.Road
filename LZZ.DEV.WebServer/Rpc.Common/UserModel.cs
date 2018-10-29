@@ -1,6 +1,6 @@
 using ProtoBuf;
 
-namespace Rpc.Demo
+namespace Rpc.Common
 {
     [ProtoContract]
     public class UserModel
@@ -8,7 +8,5 @@ namespace Rpc.Demo
         [ProtoMember(1)] public string Name { get; set; }
 
         [ProtoMember(2)] public int Age { get; set; }
-        
-        [ProtoMember(3)] public string Content { get; set; }
     }
 }
