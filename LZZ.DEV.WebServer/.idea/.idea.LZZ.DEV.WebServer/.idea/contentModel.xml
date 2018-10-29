@@ -50,6 +50,10 @@
         </e>
         <e p="Rpc.Common.csproj" t="IncludeRecursive" />
         <e p="RuntimeType" t="Include">
+          <e p="Attributes" t="Include">
+            <e p="AttributeServiceEntryProvider.cs" t="Include" />
+            <e p="RpcServiceDescriptorAttribute.cs" t="Include" />
+          </e>
           <e p="Convertibles" t="Include">
             <e p="Impl" t="Include">
               <e p="DefaultTypeConvertibleService.cs" t="Include" />
@@ -69,10 +73,6 @@
           </e>
           <e p="RpcTargetBundleAttribute.cs" t="Include" />
           <e p="Server" t="Include">
-            <e p="Attributes" t="Include">
-              <e p="AttributeServiceEntryProvider.cs" t="Include" />
-              <e p="RpcServiceDescriptorAttribute.cs" t="Include" />
-            </e>
             <e p="IClrServiceEntryFactory.cs" t="Include" />
             <e p="Impl" t="Include">
               <e p="ClrServiceEntryFactory.cs" t="Include" />

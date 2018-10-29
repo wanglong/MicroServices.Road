@@ -4,9 +4,9 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
+using Rpc.Common.RuntimeType.Attributes;
 using Rpc.Common.RuntimeType.Convertibles;
 using Rpc.Common.RuntimeType.IdGenerator;
-using Rpc.Common.RuntimeType.Server.Attributes;
 
 namespace Rpc.Common.RuntimeType.Server.Impl
 {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Rpc.Common.RuntimeType.Server.Attributes
+namespace Rpc.Common.RuntimeType.Attributes
 {
     /// <summary>
     /// Rpc服务描述符标记。

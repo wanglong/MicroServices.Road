@@ -2,8 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using Rpc.Common.RuntimeType.Server;
 
-namespace Rpc.Common.RuntimeType.Server.Attributes
+namespace Rpc.Common.RuntimeType.Attributes
 {
     public class AttributeServiceEntryProvider : IServiceEntryProvider
     {
