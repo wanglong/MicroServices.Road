@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using System.Reflection;
 
-namespace Rpc.Common.RuntimeType.Server.IdGenerator.Impl
+namespace Rpc.Common.RuntimeType.IdGenerator.Impl
 {
     public class DefaultServiceIdGenerator : IServiceIdGenerator
     {

@@ -2,12 +2,12 @@
 using System.Linq;
 using Microsoft.Extensions.DependencyInjection;
 using Rpc.Common;
+using Rpc.Common.RuntimeType.Convertibles;
+using Rpc.Common.RuntimeType.Convertibles.Impl;
+using Rpc.Common.RuntimeType.IdGenerator;
+using Rpc.Common.RuntimeType.IdGenerator.Impl;
 using Rpc.Common.RuntimeType.Server;
 using Rpc.Common.RuntimeType.Server.Attributes;
-using Rpc.Common.RuntimeType.Server.Convertibles;
-using Rpc.Common.RuntimeType.Server.Convertibles.Impl;
-using Rpc.Common.RuntimeType.Server.IdGenerator;
-using Rpc.Common.RuntimeType.Server.IdGenerator.Impl;
 using Rpc.Common.RuntimeType.Server.Impl;
 
 namespace Rpc.Server
@@ -18,6 +18,8 @@ namespace Rpc.Server
         {
             var serviceCollection = new ServiceCollection();
             {
+                // 注入本地测试类
+                serviceCollection.AddTransient<IUserService, UserServiceImpl>();
                 // 注入服务管理器
                 serviceCollection.AddSingleton<IServiceEntryManager, DefaultServiceEntryManager>();
                 // 注入服务工厂器
@@ -37,15 +39,13 @@ namespace Rpc.Server
                         provider.GetRequiredService<IClrServiceEntryFactory>()
                     );
                 });
-                // 注入本地测试类
-                serviceCollection.AddTransient<IUserService, UserServiceImpl>();
             }
             
             // 获取服务管理实体类
             var serviceEntryManager =
                 serviceCollection.BuildServiceProvider().GetRequiredService<IServiceEntryManager>();
 
-            // 获取所有服务实体
+            // 获取所有打上RpcTargetBundle特性的服务实体
             foreach (var entry in serviceEntryManager.GetEntries())
             {
                 Console.WriteLine($"Id:{entry.Descriptor.Id}");
