@@ -24,16 +24,19 @@ namespace Rpc.Server
                 // 注入服务ID生成器
                 serviceCollection.AddSingleton<IServiceIdGenerator, DefaultServiceIdGenerator>();
                 // 注入服务工厂器
-                serviceCollection.AddSingleton<IClrServiceEntryFactory, ClrServiceEntryFactory>();
+                serviceCollection.AddSingleton<IServiceEntryFactory, ServiceEntryFactory>();
                 // 注入服务提供者
                 serviceCollection.AddSingleton<IServiceEntryProvider>(provider =>
                 {
                     // 获取当前应用程序下的程序集，并排除动态（Dynamic）方法
-                    return new AttributeServiceEntryProvider(AppDomain.CurrentDomain.GetAssemblies()
+                    return new AttributeServiceEntryProvider(
+                        // List<Assembly>
+                        AppDomain.CurrentDomain.GetAssemblies()
                             .Where(i => i.IsDynamic == false)
                             .SelectMany(i => i.ExportedTypes)
                             .ToArray(),
-                        provider.GetRequiredService<IClrServiceEntryFactory>()
+                        // 获取的服务工厂器
+                        provider.GetRequiredService<IServiceEntryFactory>()
                     );
                 });
                 // 注入服务管理器
@@ -41,7 +44,7 @@ namespace Rpc.Server
                 // ** 注入本地测试类
                 serviceCollection.AddSingleton<IUserService, UserServiceImpl>();
             }
-            
+
             // 获取服务管理实体类
             var serviceEntryManager =
                 serviceCollection.BuildServiceProvider().GetRequiredService<IServiceEntryManager>();

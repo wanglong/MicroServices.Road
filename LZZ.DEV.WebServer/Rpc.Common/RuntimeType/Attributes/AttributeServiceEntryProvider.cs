@@ -13,12 +13,12 @@ namespace Rpc.Common.RuntimeType.Attributes
     public class AttributeServiceEntryProvider : IServiceEntryProvider
     {
         private readonly IEnumerable<Type> _types;
-        private readonly IClrServiceEntryFactory _clrServiceEntryFactory;
+        private readonly IServiceEntryFactory _serviceEntryFactory;
 
-        public AttributeServiceEntryProvider(IEnumerable<Type> types, IClrServiceEntryFactory clrServiceEntryFactory)
+        public AttributeServiceEntryProvider(IEnumerable<Type> types, IServiceEntryFactory serviceEntryFactory)
         {
             _types = types;
-            _clrServiceEntryFactory = clrServiceEntryFactory;
+            _serviceEntryFactory = serviceEntryFactory;
         }
 
         public IEnumerable<ServiceEntity> GetEntries()
@@ -42,7 +42,7 @@ namespace Rpc.Common.RuntimeType.Attributes
                 foreach (var serviceImplementation in serviceImplementations.Where(i =>
                     service.GetTypeInfo().IsAssignableFrom(i)))
                 {
-                    entries.AddRange(_clrServiceEntryFactory.CreateServiceEntry(service, serviceImplementation));
+                    entries.AddRange(_serviceEntryFactory.CreateServiceEntry(service, serviceImplementation));
                 }
             }
 

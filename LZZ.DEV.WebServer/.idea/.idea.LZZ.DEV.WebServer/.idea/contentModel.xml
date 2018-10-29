@@ -52,16 +52,16 @@
         <e p="RuntimeType" t="Include">
           <e p="Attributes" t="Include">
             <e p="AttributeServiceEntryProvider.cs" t="Include" />
-            <e p="RpcServiceDescriptorAttribute.cs" t="Include" />
+            <e p="RpcServiceDescriptorAttribute.cs_" t="Include" />
             <e p="RpcTagBundleAttribute.cs" t="Include" />
           </e>
           <e p="communally" t="Include">
             <e p="Convertibles" t="Include">
               <e p="Impl" t="Include">
                 <e p="DefaultTypeConvertibleService.cs" t="Include" />
-                <e p="ITypeConvertibleProvider.cs" t="Include" />
                 <e p="TypeConvertDelegate.cs" t="Include" />
               </e>
+              <e p="ITypeConvertibleProvider.cs" t="Include" />
               <e p="ITypeConvertibleService.cs" t="Include" />
             </e>
             <e p="Exceptions" t="Include">
@@ -81,11 +81,11 @@
             <e p="ServiceEntity.cs" t="Include" />
           </e>
           <e p="Server" t="Include">
-            <e p="IClrServiceEntryFactory.cs" t="Include" />
             <e p="Impl" t="Include">
-              <e p="ClrServiceEntryFactory.cs" t="Include" />
               <e p="DefaultServiceEntryManager.cs" t="Include" />
+              <e p="ServiceEntryFactory.cs" t="Include" />
             </e>
+            <e p="IServiceEntryFactory.cs" t="Include" />
             <e p="IServiceEntryManager.cs" t="Include" />
             <e p="IServiceEntryProvider.cs" t="Include" />
           </e>

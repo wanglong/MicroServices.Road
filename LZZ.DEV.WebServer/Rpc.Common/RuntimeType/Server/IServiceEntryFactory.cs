@@ -5,9 +5,9 @@ using Rpc.Common.RuntimeType.Entitys;
 namespace Rpc.Common.RuntimeType.Server
 {
     /// <summary>
-    /// 一个抽象的Clr服务条目工厂。
+    /// 一个抽象的服务条目工厂。
     /// </summary>
-    public interface IClrServiceEntryFactory
+    public interface IServiceEntryFactory
     {
         /// <summary>
         /// 创建服务条目。

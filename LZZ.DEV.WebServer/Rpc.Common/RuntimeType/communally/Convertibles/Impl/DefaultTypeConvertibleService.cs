@@ -6,6 +6,9 @@ using Rpc.Common.RuntimeType.Communally.Exceptions;
 
 namespace Rpc.Common.RuntimeType.Communally.Convertibles.Impl
 {
+    /// <summary>
+    /// 默认类型转换服务
+    /// </summary>
     public class DefaultTypeConvertibleService : ITypeConvertibleService
     {
         private readonly IEnumerable<TypeConvertDelegate> _converters;
@@ -16,33 +19,27 @@ namespace Rpc.Common.RuntimeType.Communally.Convertibles.Impl
         }
 
         /// <summary>
-        /// 转换。
+        /// 转换
         /// </summary>
-        /// <param name="instance">需要转换的实例。</param>
-        /// <param name="conversionType">转换的类型。</param>
-        /// <returns>转换之后的类型，如果无法转换则返回null。</returns>
+        /// <param name="instance">需要转换的实例</param>
+        /// <param name="conversionType">转换的类型</param>
+        /// <returns>转换之后的类型，如果无法转换则返回null</returns>
         public object Convert(object instance, Type conversionType)
         {
-            if (instance == null)
-                throw new ArgumentNullException(nameof(instance));
-            if (conversionType == null)
-                throw new ArgumentNullException(nameof(conversionType));
-
-            if (conversionType.GetTypeInfo().IsInstanceOfType(instance))
-                return instance;
+            if (instance == null) throw new ArgumentNullException(nameof(instance));
+            if (conversionType == null) throw new ArgumentNullException(nameof(conversionType));
+            if (conversionType.GetTypeInfo().IsInstanceOfType(instance)) return instance;
 
             object result = null;
             foreach (var converter in _converters)
             {
                 result = converter(instance, conversionType);
-                if (result != null)
-                    break;
+                if (result != null) break;
             }
 
-            if (result != null)
-                return result;
-            var exception = new RpcException($"无法将实例：{instance}转换为{conversionType}。");
+            if (result != null) return result;
             
+            var exception = new RpcException($"无法将实例：{instance}转换为{conversionType}。");
             throw exception;
         }
     }

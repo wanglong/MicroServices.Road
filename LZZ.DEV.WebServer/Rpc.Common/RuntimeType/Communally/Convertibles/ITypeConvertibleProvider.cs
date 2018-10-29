@@ -1,6 +1,7 @@
 using System.Collections.Generic;
+using Rpc.Common.RuntimeType.Communally.Convertibles.Impl;
 
-namespace Rpc.Common.RuntimeType.Communally.Convertibles.Impl
+namespace Rpc.Common.RuntimeType.Communally.Convertibles
 {
     /// <summary>
     /// 一个抽象的类型转换提供程序。

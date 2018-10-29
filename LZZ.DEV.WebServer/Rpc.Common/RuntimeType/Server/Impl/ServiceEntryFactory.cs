@@ -4,7 +4,6 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
-using Rpc.Common.RuntimeType.Attributes;
 using Rpc.Common.RuntimeType.Communally.Convertibles;
 using Rpc.Common.RuntimeType.Communally.IdGenerator;
 using Rpc.Common.RuntimeType.Entitys;
@@ -12,13 +11,24 @@ using ServiceDescriptor = Rpc.Common.RuntimeType.Entitys.ServiceDescriptor;
 
 namespace Rpc.Common.RuntimeType.Server.Impl
 {
-    public class ClrServiceEntryFactory : IClrServiceEntryFactory
+    public class ServiceEntryFactory : IServiceEntryFactory
     {
+        /// <summary>
+        /// 服务提供者
+        /// </summary>
         private readonly IServiceProvider _serviceProvider;
+
+        /// <summary>
+        /// 服务ID生成器
+        /// </summary>
         private readonly IServiceIdGenerator _serviceIdGenerator;
+
+        /// <summary>
+        /// 类型转换器
+        /// </summary>
         private readonly ITypeConvertibleService _typeConvertibleService;
 
-        public ClrServiceEntryFactory(IServiceProvider serviceProvider, IServiceIdGenerator serviceIdGenerator,
+        public ServiceEntryFactory(IServiceProvider serviceProvider, IServiceIdGenerator serviceIdGenerator,
             ITypeConvertibleService typeConvertibleService)
         {
             _serviceProvider = serviceProvider;
@@ -30,33 +40,30 @@ namespace Rpc.Common.RuntimeType.Server.Impl
         {
             foreach (var methodInfo in service.GetTypeInfo().GetMethods())
             {
-                var implementationMethodInfo = serviceImplementation.GetTypeInfo().GetMethod(methodInfo.Name,
-                    methodInfo.GetParameters().Select(p => p.ParameterType).ToArray());
+                // 获取方法名和参数名（MethodInfo）
+                var implementationMethodInfo = serviceImplementation.GetTypeInfo().GetMethod(
+                    methodInfo.Name,
+                    methodInfo.GetParameters().Select(p => p.ParameterType).ToArray()
+                );
                 yield return Create(methodInfo, implementationMethodInfo);
             }
         }
 
+        // 此方法严重依赖于Microsoft.Extensions.DependencyInjection库，需要拆分
+        // 通过容器实例化ServiceEntity实体
         private ServiceEntity Create(MethodInfo method, MethodBase implementationMethod)
         {
             var serviceId = _serviceIdGenerator.GenerateServiceId(method);
-
-            var serviceDescriptor = new ServiceDescriptor
-            {
-                Id = serviceId
-            };
-
-            var descriptorAttributes = method.GetCustomAttributes<RpcServiceDescriptorAttribute>();
-            foreach (var descriptorAttribute in descriptorAttributes)
-            {
-                descriptorAttribute.Apply(serviceDescriptor);
-            }
+            var serviceDescriptor = new ServiceDescriptor {Id = serviceId};
 
             return new ServiceEntity
             {
                 Descriptor = serviceDescriptor,
                 Func = parameters =>
                 {
+                    // 从Microsoft.Extensions.DependencyInjection获取当前范围
                     var serviceScopeFactory = _serviceProvider.GetRequiredService<IServiceScopeFactory>();
+
                     using (var scope = serviceScopeFactory.CreateScope())
                     {
                         var instance = scope.ServiceProvider.GetRequiredService(method.DeclaringType);
@@ -64,16 +71,17 @@ namespace Rpc.Common.RuntimeType.Server.Impl
                         var list = new List<object>();
                         foreach (var parameterInfo in implementationMethod.GetParameters())
                         {
-                            var value = parameters[parameterInfo.Name];
-                            var parameterType = parameterInfo.ParameterType;
-
-                            var parameter = _typeConvertibleService.Convert(value, parameterType);
-                            list.Add(parameter);
+                            list.Add(
+                                _typeConvertibleService.Convert(
+                                    parameters[parameterInfo.Name],
+                                    parameterInfo.ParameterType)
+                            );
                         }
 
-                        var result = implementationMethod.Invoke(instance, list.ToArray());
-
-                        return Task.FromResult(result);
+                        return Task.FromResult(implementationMethod.Invoke(
+                            instance,
+                            list.ToArray()
+                        ));
                     }
                 }
             };
