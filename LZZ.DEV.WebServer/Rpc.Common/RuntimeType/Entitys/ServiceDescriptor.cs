@@ -25,7 +25,7 @@ namespace Rpc.Common.RuntimeType.Entitys
         /// <summary>
         /// 元数据
         /// </summary>
-        private IDictionary<string, object> Metadatas { get; set; }
+        public IDictionary<string, object> Metadatas { get; set; }
 
         /// <summary>
         /// 获取一个元数据

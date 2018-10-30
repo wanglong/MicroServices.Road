@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Linq;
+using System.Net;
+using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using Rpc.Common;
 using Rpc.Common.RuntimeType.Attributes;
@@ -51,8 +53,22 @@ namespace Rpc.Server
                 #endregion
 
                 {
-//                    serviceCollection.AddSingleton<ITransportMessageCodecFactory, DotNettyTransportClientFactory>();
+                    // 注入服务执行者
+                    serviceCollection.AddSingleton<IServiceExecutor, DefaultServiceExecutor>();
+
                     serviceCollection.AddSingleton<DotNettyServerMessageListener>();
+                    
+                    serviceCollection.AddSingleton<IServiceHost, DefaultServiceHost>(
+                        provider => new DefaultServiceHost(
+                            async endPoint =>
+                            {
+                                var messageListener = provider.GetRequiredService<DotNettyServerMessageListener>();
+                                await messageListener.StartAsync(endPoint);
+                                return messageListener;
+                            },
+                            provider.GetRequiredService<IServiceExecutor>()
+                        )
+                    );
                 }
                 // ** 注入本地测试类
                 serviceCollection.AddSingleton<IUserService, UserServiceImpl>();
@@ -69,6 +85,15 @@ namespace Rpc.Server
             {
                 Console.WriteLine($"Id: {entry.Descriptor.Id}");
             }
+
+            // 获取服务管理
+            var serviceHost = buildServiceProvider.GetRequiredService<IServiceHost>();
+            Task.Factory.StartNew(async () =>
+            {
+                //启动主机
+                await serviceHost.StartAsync(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9981));
+                Console.WriteLine($"服务端启动成功，{DateTime.Now}。");
+            });
         }
     }
 }
