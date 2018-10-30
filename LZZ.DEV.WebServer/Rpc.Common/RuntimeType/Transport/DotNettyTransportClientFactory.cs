@@ -7,7 +7,6 @@ using DotNetty.Common.Utilities;
 using DotNetty.Transport.Bootstrapping;
 using DotNetty.Transport.Channels;
 using DotNetty.Transport.Channels.Sockets;
-using Microsoft.Extensions.Logging;
 using Rpc.Common.RuntimeType.Entitys.Messages;
 using Rpc.Common.RuntimeType.Server;
 using Rpc.Common.RuntimeType.Transport.Adaper;
@@ -25,7 +24,7 @@ namespace Rpc.Common.RuntimeType.Transport
 
         private readonly ITransportMessageEncoder _transportMessageEncoder;
         private readonly ITransportMessageDecoder _transportMessageDecoder;
-        private readonly ILogger<DotNettyTransportClientFactory> _logger;
+//        private readonly ILogger<DotNettyTransportClientFactory> _logger;
         private readonly IServiceExecutor _serviceExecutor;
 
         private readonly ConcurrentDictionary<EndPoint, Lazy<ITransportClient>> _clients =
@@ -46,18 +45,20 @@ namespace Rpc.Common.RuntimeType.Transport
 
         #region Constructor
 
-        public DotNettyTransportClientFactory(ITransportMessageCodecFactory codecFactory,
-            ILogger<DotNettyTransportClientFactory> logger)
-            : this(codecFactory, logger, null)
+        public DotNettyTransportClientFactory(ITransportMessageCodecFactory codecFactory
+//            ILogger<DotNettyTransportClientFactory> logger
+            )
+            : this(codecFactory, null)
         {
         }
 
         public DotNettyTransportClientFactory(ITransportMessageCodecFactory codecFactory,
-            ILogger<DotNettyTransportClientFactory> logger, IServiceExecutor serviceExecutor)
+//            ILogger<DotNettyTransportClientFactory> logger, 
+            IServiceExecutor serviceExecutor)
         {
             _transportMessageEncoder = codecFactory.GetEncoder();
             _transportMessageDecoder = codecFactory.GetDecoder();
-            _logger = logger;
+//            _logger = logger;
             _serviceExecutor = serviceExecutor;
             _bootstrap = GetBootstrap();
             _bootstrap.Handler(new ActionChannelInitializer<ISocketChannel>(c =>
@@ -82,8 +83,9 @@ namespace Rpc.Common.RuntimeType.Transport
         public ITransportClient CreateClient(EndPoint endPoint)
         {
             var key = endPoint;
-            if (_logger.IsEnabled(LogLevel.Debug))
-                _logger.LogDebug($"准备为服务端地址：{key}创建客户端。");
+//            if (_logger.IsEnabled(LogLevel.Debug))
+//                _logger.LogDebug($"准备为服务端地址：{key}创建客户端。");
+            Console.WriteLine($"准备为服务端地址：{key}创建客户端。");
             try
             {
                 return _clients.GetOrAdd(key
@@ -98,7 +100,7 @@ namespace Rpc.Common.RuntimeType.Transport
                             channel.GetAttribute(messageSenderKey).Set(messageSender);
                             channel.GetAttribute(origEndPointKey).Set(k);
 
-                            var client = new TransportClient(messageSender, messageListener, _logger, _serviceExecutor);
+                            var client = new TransportClient(messageSender, messageListener, _serviceExecutor);
                             return client;
                         }
                     )).Value;

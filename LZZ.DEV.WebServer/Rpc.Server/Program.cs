@@ -13,6 +13,7 @@ using Rpc.Common.RuntimeType.Server;
 using Rpc.Common.RuntimeType.Server.Impl;
 using Rpc.Common.RuntimeType.Transport;
 using Rpc.Common.RuntimeType.Transport.Codec;
+using Rpc.Common.RuntimeType.Transport.Codec.Implementation;
 
 namespace Rpc.Server
 {
@@ -23,7 +24,7 @@ namespace Rpc.Server
             // 实现自动装配
             var serviceCollection = new ServiceCollection();
             {
-                #region 注入服务相关类
+                #region 注入服务相关类，用于提供
 
                 {
                     // 注入默认服务工厂
@@ -32,6 +33,8 @@ namespace Rpc.Server
                     serviceCollection.AddSingleton<IServiceIdGenerator, DefaultServiceIdGenerator>();
                     // 注入服务工厂器
                     serviceCollection.AddSingleton<IServiceEntryFactory, ServiceEntryFactory>();
+                    // 注入服务转换器
+                    serviceCollection.AddSingleton<ITypeConvertibleService, DefaultTypeConvertibleService>();
                     // 注入服务提供者
                     serviceCollection.AddSingleton<IServiceEntryProvider>(provider =>
                     {
@@ -52,12 +55,20 @@ namespace Rpc.Server
 
                 #endregion
 
+                #region 注入服务宿主和方法执行者
+
                 {
                     // 注入服务执行者
                     serviceCollection.AddSingleton<IServiceExecutor, DefaultServiceExecutor>();
-
+                    // 注入DotNetty消息监听器
                     serviceCollection.AddSingleton<DotNettyServerMessageListener>();
-                    
+                    // 注入服务定位器
+                    serviceCollection.AddSingleton<IServiceEntryLocate, DefaultServiceEntryLocate>();
+                    // 注入服务执行者
+                    serviceCollection.AddSingleton<IServiceExecutor, DefaultServiceExecutor>();
+                    // 注入Json消息传输处理器
+                    serviceCollection.AddSingleton<ITransportMessageCodecFactory, JsonTransportMessageCodecFactory>();
+                    // 注入默认服务宿主
                     serviceCollection.AddSingleton<IServiceHost, DefaultServiceHost>(
                         provider => new DefaultServiceHost(
                             async endPoint =>
@@ -70,6 +81,9 @@ namespace Rpc.Server
                         )
                     );
                 }
+
+                #endregion
+
                 // ** 注入本地测试类
                 serviceCollection.AddSingleton<IUserService, UserServiceImpl>();
             }
@@ -91,9 +105,11 @@ namespace Rpc.Server
             Task.Factory.StartNew(async () =>
             {
                 //启动主机
-                await serviceHost.StartAsync(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9981));
+                serviceHost.StartAsync(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9981)).Wait();
                 Console.WriteLine($"服务端启动成功，{DateTime.Now}。");
             });
+            Console.WriteLine("press enter key to exit");
+            Console.ReadLine();
         }
     }
 }

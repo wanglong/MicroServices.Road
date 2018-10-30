@@ -100,6 +100,7 @@
           </e>
           <e p="Server" t="Include">
             <e p="Impl" t="Include">
+              <e p="DefaultServiceEntryLocate.cs" t="Include" />
               <e p="DefaultServiceEntryManager.cs" t="Include" />
               <e p="DefaultServiceExecutor.cs" t="Include" />
               <e p="DefaultServiceHost.cs" t="Include" />
@@ -118,6 +119,11 @@
               <e p="TransportMessageChannelHandlerAdapter.cs" t="Include" />
             </e>
             <e p="Codec" t="Include">
+              <e p="Implementation" t="Include">
+                <e p="JsonTransportMessageCodecFactory.cs" t="Include" />
+                <e p="JsonTransportMessageDecoder.cs" t="Include" />
+                <e p="JsonTransportMessageEncoder.cs" t="Include" />
+              </e>
               <e p="ITransportMessageCodecFactory.cs" t="Include" />
               <e p="ITransportMessageDecoder.cs" t="Include" />
               <e p="ITransportMessageEncoder.cs" t="Include" />

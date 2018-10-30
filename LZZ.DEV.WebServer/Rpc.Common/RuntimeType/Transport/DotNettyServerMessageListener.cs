@@ -5,7 +5,6 @@ using DotNetty.Codecs;
 using DotNetty.Transport.Bootstrapping;
 using DotNetty.Transport.Channels;
 using DotNetty.Transport.Channels.Sockets;
-using Microsoft.Extensions.Logging;
 using Rpc.Common.RuntimeType.Entitys.Messages;
 using Rpc.Common.RuntimeType.Transport.Adaper;
 using Rpc.Common.RuntimeType.Transport.Codec;
@@ -18,7 +17,8 @@ namespace Rpc.Common.RuntimeType.Transport
         private readonly ITransportMessageEncoder _transportMessageEncoder;
         private IChannel _channel;
 
-        public DotNettyServerMessageListener(ILogger<DotNettyServerMessageListener> logger,
+        public DotNettyServerMessageListener(
+//            ILogger<DotNettyServerMessageListener> logger,
             ITransportMessageCodecFactory codecFactory)
         {
             _transportMessageEncoder = codecFactory.GetEncoder();
