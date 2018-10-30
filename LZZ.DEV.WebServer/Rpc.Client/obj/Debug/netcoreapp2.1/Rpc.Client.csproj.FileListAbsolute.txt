@@ -1,0 +1,11 @@
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Client\bin\Debug\netcoreapp2.1\Rpc.Client.deps.json
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Client\bin\Debug\netcoreapp2.1\Rpc.Client.runtimeconfig.json
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Client\bin\Debug\netcoreapp2.1\Rpc.Client.runtimeconfig.dev.json
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Client\bin\Debug\netcoreapp2.1\Rpc.Client.dll
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Client\bin\Debug\netcoreapp2.1\Rpc.Client.pdb
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Client\obj\Debug\netcoreapp2.1\Rpc.Client.csprojAssemblyReference.cache
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Client\obj\Debug\netcoreapp2.1\Rpc.Client.csproj.CoreCompileInputs.cache
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Client\obj\Debug\netcoreapp2.1\Rpc.Client.AssemblyInfoInputs.cache
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Client\obj\Debug\netcoreapp2.1\Rpc.Client.AssemblyInfo.cs
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Client\obj\Debug\netcoreapp2.1\Rpc.Client.dll
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\Rpc.Client\obj\Debug\netcoreapp2.1\Rpc.Client.pdb

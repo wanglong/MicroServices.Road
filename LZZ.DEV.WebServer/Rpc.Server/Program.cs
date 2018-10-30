@@ -21,12 +21,18 @@ namespace Rpc.Server
     {
         static void Main()
         {
+            var bTime = DateTime.Now;
+
             // 实现自动装配
             var serviceCollection = new ServiceCollection();
             {
-                #region 注入服务相关类，用于提供
+                #region 注入服务相关类
 
                 {
+                    /*
+                     * 用于提供标记为RpcTagBundle的特性自动扫描到服务管理器中
+                     * 通过ServiceCollection完成自动装配
+                     */
                     // 注入默认服务工厂
                     serviceCollection.AddSingleton<ITypeConvertibleService, DefaultTypeConvertibleService>();
                     // 注入服务ID生成器
@@ -58,6 +64,10 @@ namespace Rpc.Server
                 #region 注入服务宿主和方法执行者
 
                 {
+                    /*
+                     * 用于提供本地服务宿主和服务管理器中的方法执行者
+                     * 通过ServiceCollection完成自动装配
+                     */
                     // 注入服务执行者
                     serviceCollection.AddSingleton<IServiceExecutor, DefaultServiceExecutor>();
                     // 注入DotNetty消息监听器
@@ -100,15 +110,18 @@ namespace Rpc.Server
                 Console.WriteLine($"Id: {entry.Descriptor.Id}");
             }
 
-            // 获取服务管理
+            // 获取服务宿主
             var serviceHost = buildServiceProvider.GetRequiredService<IServiceHost>();
+
             Task.Factory.StartNew(async () =>
             {
                 //启动主机
-                serviceHost.StartAsync(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9981)).Wait();
-                Console.WriteLine($"服务端启动成功，{DateTime.Now}。");
+                await serviceHost.StartAsync(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9981));
+                Console.WriteLine($"service is started: {DateTime.Now:hh:mm:ss fff}");
             });
-            Console.WriteLine("press enter key to exit");
+            var eTime = DateTime.Now;
+
+            Console.WriteLine($"service starting durtion is {eTime - bTime:c}");
             Console.ReadLine();
         }
     }
