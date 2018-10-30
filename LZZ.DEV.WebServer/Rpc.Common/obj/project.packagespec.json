@@ -26,6 +26,10 @@
   "frameworks": {
     "netcoreapp2.1": {
       "dependencies": {
+        "DotNetty.Codecs": {
+          "target": "Package",
+          "version": "[0.6.0, )"
+        },
         "Microsoft.Extensions.DependencyInjection": {
           "target": "Package",
           "version": "[2.1.0, )"

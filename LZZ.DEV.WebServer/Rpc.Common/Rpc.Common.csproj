@@ -5,12 +5,14 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="DotNetty.Codecs" Version="0.6.0" />
         <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.0" />
         <PackageReference Include="protobuf-net" Version="2.1.0" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="RuntimeType\communally" />
+      <Folder Include="RuntimeType\Transport\Adaper" />
     </ItemGroup>
 
 </Project>

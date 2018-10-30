@@ -38,6 +38,18 @@
       </e>
       <e p="LZZ.DEV.WebServer.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
+      <e p="Rpc.Client" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="Rpc.Client.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Rpc.Client.csproj" t="IncludeRecursive" />
+      </e>
       <e p="Rpc.Common" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="IUserService.cs" t="Include" />
@@ -77,6 +89,11 @@
             </e>
           </e>
           <e p="Entitys" t="Include">
+            <e p="Messages" t="Include">
+              <e p="RemoteInvokeMessage.cs" t="Include" />
+              <e p="RemoteInvokeResultMessage.cs" t="Include" />
+              <e p="TransportMessage.cs" t="Include" />
+            </e>
             <e p="ServiceDescriptor.cs" t="Include" />
             <e p="ServiceEntity.cs" t="Include" />
           </e>
@@ -88,6 +105,17 @@
             <e p="IServiceEntryFactory.cs" t="Include" />
             <e p="IServiceEntryManager.cs" t="Include" />
             <e p="IServiceEntryProvider.cs" t="Include" />
+          </e>
+          <e p="Transport" t="Include">
+            <e p="Adaper" t="Include" />
+            <e p="Codec" t="Include">
+              <e p="ITransportMessageCodecFactory.cs" t="Include" />
+              <e p="ITransportMessageDecoder.cs" t="Include" />
+              <e p="ITransportMessageEncoder.cs" t="Include" />
+            </e>
+            <e p="DotNettyServerMessageListener.cs" t="Include" />
+            <e p="IMessageListener.cs" t="Include" />
+            <e p="IMessageSender.cs" t="Include" />
           </e>
         </e>
         <e p="UserModel.cs" t="Include" />

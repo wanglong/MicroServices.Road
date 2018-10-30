@@ -54,6 +54,9 @@ namespace Rpc.Server
             {
                 Console.WriteLine($"Id: {entry.Descriptor.Id}");
             }
+            
+            
+            
         }
     }
 }
