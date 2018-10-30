@@ -100,11 +100,15 @@
           <e p="Server" t="Include">
             <e p="Impl" t="Include">
               <e p="DefaultServiceEntryManager.cs" t="Include" />
+              <e p="DefaultServiceHost.cs" t="Include" />
               <e p="ServiceEntryFactory.cs" t="Include" />
+              <e p="ServiceHostAbstract.cs" t="Include" />
             </e>
             <e p="IServiceEntryFactory.cs" t="Include" />
             <e p="IServiceEntryManager.cs" t="Include" />
             <e p="IServiceEntryProvider.cs" t="Include" />
+            <e p="IServiceExecutor.cs" t="Include" />
+            <e p="IServiceHost.cs" t="Include" />
           </e>
           <e p="Transport" t="Include">
             <e p="Adaper" t="Include">
@@ -117,8 +121,15 @@
             </e>
             <e p="DotNettyMessageSender.cs" t="Include" />
             <e p="DotNettyServerMessageListener.cs" t="Include" />
+            <e p="DotNettyTransportClientFactory.cs" t="Include" />
             <e p="IMessageListener.cs" t="Include" />
             <e p="IMessageSender.cs" t="Include" />
+            <e p="Impl" t="Include">
+              <e p="MessageListener.cs" t="Include" />
+              <e p="TransportClient.cs" t="Include" />
+            </e>
+            <e p="ITransportClient.cs" t="Include" />
+            <e p="ITransportClientFactory.cs" t="Include" />
           </e>
         </e>
         <e p="UserModel.cs" t="Include" />
