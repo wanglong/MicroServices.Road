@@ -1,6 +1,4 @@
-﻿using Rpc.Common.RuntimeType.Transport.Codec;
-
-namespace Rabbit.Rpc.Transport.Codec
+﻿namespace Rpc.Common.RuntimeType.Transport.Codec
 {
     /// <summary>
     /// 一个抽象的传输消息编解码器工厂。
