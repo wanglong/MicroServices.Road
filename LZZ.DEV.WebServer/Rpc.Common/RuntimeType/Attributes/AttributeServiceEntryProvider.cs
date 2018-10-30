@@ -44,8 +44,7 @@ namespace Rpc.Common.RuntimeType.Attributes
                            && !type.Namespace.StartsWith("System")
                            && !type.Namespace.StartsWith("Microsoft")
                            && !type.Namespace.StartsWith("Autofac")
-                           && !type.Namespace.StartsWith("Internal")
-                        ;
+                           && !type.Namespace.StartsWith("Internal");
                 }
             ).ToArray();
 

@@ -6,23 +6,21 @@ using Rpc.Common.RuntimeType.Transport;
 namespace Rpc.Common.RuntimeType.Server.Impl
 {
     /// <summary>
-    /// 一个默认的服务主机。
+    /// 一个默认的服务主机
     /// </summary>
+    /// <remarks>继承于ServiceHostAbstract抽象类，重写StartAsync方法，此模式也可以自定用于外部DLL扩展</remarks>
     public class DefaultServiceHost : ServiceHostAbstract
     {
-        #region Field
-
         private readonly Func<EndPoint, Task<IMessageListener>> _messageListenerFactory;
         private IMessageListener _serverMessageListener;
 
-        #endregion Field
 
-        public DefaultServiceHost(Func<EndPoint, Task<IMessageListener>> messageListenerFactory, IServiceExecutor serviceExecutor) : base(serviceExecutor)
+        public DefaultServiceHost(Func<EndPoint, Task<IMessageListener>> messageListenerFactory,
+            IServiceExecutor serviceExecutor) : base(serviceExecutor)
         {
             _messageListenerFactory = messageListenerFactory;
         }
 
-        #region Overrides of ServiceHostAbstract
 
         /// <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>
         public override void Dispose()
@@ -37,18 +35,12 @@ namespace Rpc.Common.RuntimeType.Server.Impl
         /// <returns>一个任务。</returns>
         public override async Task StartAsync(EndPoint endPoint)
         {
-            if (_serverMessageListener != null)
-                return;
+            if (_serverMessageListener != null) return;
             _serverMessageListener = await _messageListenerFactory(endPoint);
             _serverMessageListener.Received += async (sender, message) =>
             {
-                await Task.Run(() =>
-                {
-                    MessageListener.OnReceived(sender, message);
-                });
+                await Task.Run(() => { MessageListener.OnReceived(sender, message); });
             };
         }
-
-        #endregion Overrides of ServiceHostAbstract
     }
 }

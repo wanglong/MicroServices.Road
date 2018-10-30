@@ -5,7 +5,7 @@ using Rpc.Common.RuntimeType.Entitys;
 namespace Rpc.Common.RuntimeType.Server
 {
     /// <summary>
-    /// 一个抽象的服务条目工厂。
+    /// 服务条目工厂。
     /// </summary>
     public interface IServiceEntryFactory
     {

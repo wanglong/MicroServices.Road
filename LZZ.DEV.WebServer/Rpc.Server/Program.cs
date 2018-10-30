@@ -33,8 +33,6 @@ namespace Rpc.Server
                      * 用于提供标记为RpcTagBundle的特性自动扫描到服务管理器中
                      * 通过ServiceCollection完成自动装配
                      */
-                    // 注入默认服务工厂
-                    serviceCollection.AddSingleton<ITypeConvertibleService, DefaultTypeConvertibleService>();
                     // 注入服务ID生成器
                     serviceCollection.AddSingleton<IServiceIdGenerator, DefaultServiceIdGenerator>();
                     // 注入服务工厂器
@@ -119,9 +117,8 @@ namespace Rpc.Server
                 await serviceHost.StartAsync(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9981));
                 Console.WriteLine($"service is started: {DateTime.Now:hh:mm:ss fff}");
             });
-            var eTime = DateTime.Now;
 
-            Console.WriteLine($"service starting durtion is {eTime - bTime:c}");
+            Console.WriteLine($"service starting durtion is {DateTime.Now - bTime:c}");
             Console.ReadLine();
         }
     }

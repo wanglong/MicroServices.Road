@@ -25,7 +25,7 @@ namespace Rpc.Common
 
         Task<IDictionary<string, string>> GetDictionary();
 
-//        [RpcService(IsWaitExecution = false)]
+//        [RpcTagBundle(IsWaitExecution = false)]
         Task Try();
 
         Task TryThrowException();

@@ -1,4 +1,5 @@
-﻿using System;
+﻿// TODO: LocalExecuteAsync unknown 
+using System;
 using System.Reflection;
 using System.Threading.Tasks;
 using Rpc.Common.RuntimeType.Entitys;
@@ -9,32 +10,21 @@ namespace Rpc.Common.RuntimeType.Server.Impl
 {
     public class DefaultServiceExecutor : IServiceExecutor
     {
-        #region Field
-
         private readonly IServiceEntryLocate _serviceEntryLocate;
-
-        #endregion Field
-
-        #region Constructor
 
         public DefaultServiceExecutor(IServiceEntryLocate serviceEntryLocate)
         {
             _serviceEntryLocate = serviceEntryLocate;
         }
 
-        #endregion Constructor
-
-        #region Implementation of IServiceExecutor
-
         /// <summary>
-        /// 执行。
+        /// 执行消息转换后的服务
         /// </summary>
         /// <param name="sender">消息发送者。</param>
         /// <param name="message">调用消息。</param>
         public async Task ExecuteAsync(IMessageSender sender, TransportMessage message)
         {
-            if (!message.IsInvokeMessage())
-                return;
+            if (!message.IsInvokeMessage()) return;
 
             RemoteInvokeMessage remoteInvokeMessage;
             try
@@ -47,18 +37,15 @@ namespace Rpc.Common.RuntimeType.Server.Impl
                 return;
             }
 
+            // 定位远程调用的消息服务实体
             var entry = _serviceEntryLocate.Locate(remoteInvokeMessage);
-
             if (entry == null)
             {
                 Console.WriteLine($"根据服务Id：{remoteInvokeMessage.ServiceId}，找不到服务条目。");
-//                if (_logger.IsEnabled(LogLevel.Error))
-//                    _logger.LogError($"根据服务Id：{remoteInvokeMessage.ServiceId}，找不到服务条目。");
                 return;
             }
 
-//            if (_logger.IsEnabled(LogLevel.Debug))
-//                _logger.LogDebug("准备执行本地逻辑。");
+            Console.WriteLine("准备执行本地逻辑。");
 
             var resultMessage = new RemoteInvokeResultMessage();
 
@@ -76,16 +63,13 @@ namespace Rpc.Common.RuntimeType.Server.Impl
                 await SendRemoteInvokeResult(sender, message.Id, resultMessage);
                 //确保新起一个线程执行，不堵塞当前线程。
                 await Task.Factory.StartNew(async () =>
-                {
-                    //执行本地代码。
-                    await LocalExecuteAsync(entry, remoteInvokeMessage, resultMessage);
-                }, TaskCreationOptions.LongRunning);
+                    {
+                        //执行本地代码。
+                        await LocalExecuteAsync(entry, remoteInvokeMessage, resultMessage);
+                    },
+                    TaskCreationOptions.LongRunning);
             }
         }
-
-        #endregion Implementation of IServiceExecutor
-
-        #region Private Method
 
         private async Task LocalExecuteAsync(ServiceEntity entry, RemoteInvokeMessage remoteInvokeMessage,
             RemoteInvokeResultMessage resultMessage)
@@ -111,8 +95,6 @@ namespace Rpc.Common.RuntimeType.Server.Impl
             catch (Exception exception)
             {
                 Console.WriteLine(exception);
-//                if (_logger.IsEnabled(LogLevel.Error))
-//                    _logger.LogError("执行本地逻辑时候发生了错误。", exception);
                 resultMessage.ExceptionMessage = GetExceptionMessage(exception);
             }
         }
@@ -122,19 +104,13 @@ namespace Rpc.Common.RuntimeType.Server.Impl
         {
             try
             {
-//                if (_logger.IsEnabled(LogLevel.Debug))
-//                    _logger.LogDebug("准备发送响应消息。");
                 Console.WriteLine("准备发送响应消息。");
                 await sender.SendAndFlushAsync(TransportMessage.CreateInvokeResultMessage(messageId, resultMessage));
-//                if (_logger.IsEnabled(LogLevel.Debug))
-//                    _logger.LogDebug("响应消息发送成功。");
                 Console.WriteLine("响应消息发送成功。");
             }
             catch (Exception exception)
             {
                 Console.WriteLine("发送响应消息时候发生了异常。" + exception);
-//                if (_logger.IsEnabled(LogLevel.Error))
-//                    _logger.LogError("发送响应消息时候发生了异常。", exception);
             }
         }
 
@@ -149,9 +125,7 @@ namespace Rpc.Common.RuntimeType.Server.Impl
                 message += "|InnerException:" + GetExceptionMessage(exception.InnerException);
             }
 
-            return message;
+            return message; 
         }
-
-        #endregion Private Method
     }
 }
