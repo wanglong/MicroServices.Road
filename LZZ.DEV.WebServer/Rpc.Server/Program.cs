@@ -96,6 +96,7 @@ namespace Rpc.Server
 
                 // ** 注入本地测试类
                 serviceCollection.AddSingleton<IUserService, UserServiceImpl>();
+                
                 // ** 注入日志中间件
                 serviceCollection.AddLogging();
             }

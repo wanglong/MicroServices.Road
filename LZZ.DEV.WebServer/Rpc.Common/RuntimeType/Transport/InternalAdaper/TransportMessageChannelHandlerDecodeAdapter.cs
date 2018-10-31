@@ -5,7 +5,7 @@ using Rpc.Common.RuntimeType.Transport.Codec;
 namespace Rpc.Common.RuntimeType.Transport.InternalAdaper
 {
     /// <summary>
-    /// 一个标准通道的处理适配器
+    /// 一个标准通道的编码适配器
     /// </summary>
     internal class TransportMessageChannelHandlerDecodeAdapter : ChannelHandlerAdapter
     {

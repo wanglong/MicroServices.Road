@@ -67,6 +67,35 @@
             <e p="RpcServiceDescriptorAttribute.cs_" t="Include" />
             <e p="RpcTagBundleAttribute.cs" t="Include" />
           </e>
+          <e p="Client" t="Include">
+            <e p="Address" t="Include">
+              <e p="Resolvers" t="Include">
+                <e p="IAddressResolver.cs" t="Include" />
+                <e p="Implementation" t="Include">
+                  <e p="DefaultAddressResolver.cs" t="Include" />
+                  <e p="Selectors" t="Include">
+                    <e p="IAddressSelector.cs" t="Include" />
+                    <e p="Implementation" t="Include">
+                      <e p="AddressSelectorBase.cs" t="Include" />
+                      <e p="PollingAddressSelector.cs" t="Include" />
+                      <e p="RandomAddressSelector.cs" t="Include" />
+                    </e>
+                  </e>
+                </e>
+              </e>
+            </e>
+            <e p="HealthChecks" t="Include">
+              <e p="IHealthCheckService.cs" t="Include" />
+              <e p="Implementation" t="Include">
+                <e p="DefaultHealthCheckService.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Implementation" t="Include">
+              <e p="RemoteInvokeService.cs" t="Include" />
+            </e>
+            <e p="IRemoteInvokeService.cs" t="Include" />
+            <e p="RemoteInvokeContext.cs" t="Include" />
+          </e>
           <e p="communally" t="Include">
             <e p="Convertibles" t="Include">
               <e p="Impl" t="Include">
@@ -87,9 +116,20 @@
               </e>
               <e p="IServiceIdGenerator.cs" t="Include" />
             </e>
-            <e p="Journal" t="Include" />
+            <e p="Serialization" t="Include">
+              <e p="Implementation" t="Include">
+                <e p="JsonSerializer.cs" t="Include" />
+                <e p="StringByteArraySerializer.cs" t="Include" />
+                <e p="StringObjectSerializer.cs" t="Include" />
+              </e>
+              <e p="ISerializer.cs" t="Include" />
+            </e>
           </e>
           <e p="Entitys" t="Include">
+            <e p="Address" t="Include">
+              <e p="AddressModel.cs" t="Include" />
+              <e p="IpAddressModel.cs" t="Include" />
+            </e>
             <e p="Messages" t="Include">
               <e p="RemoteInvokeMessage.cs" t="Include" />
               <e p="RemoteInvokeResultMessage.cs" t="Include" />
@@ -98,6 +138,17 @@
             <e p="ServiceDescriptor.cs" t="Include" />
             <e p="ServiceDescriptorExtensions.cs" t="Include" />
             <e p="ServiceEntity.cs" t="Include" />
+          </e>
+          <e p="Routing" t="Include">
+            <e p="Implementation" t="Include">
+              <e p="DefaultServiceRouteFactory.cs" t="Include" />
+              <e p="ServiceRouteManagerBase.cs" t="Include" />
+              <e p="SharedFileServiceRouteManager.cs" t="Include" />
+            </e>
+            <e p="IServiceRouteFactory.cs" t="Include" />
+            <e p="IServiceRouteManager.cs" t="Include" />
+            <e p="ServiceRoute.cs" t="Include" />
+            <e p="ServiceRouteDescriptor.cs" t="Include" />
           </e>
           <e p="Server" t="Include">
             <e p="Impl" t="Include">
@@ -135,7 +186,7 @@
               <e p="DefaultDotNettyServerMessageSender.cs" t="Include" />
               <e p="DefaultDotNettyTransportClientFactory.cs_" t="Include" />
               <e p="MessageListener.cs" t="Include" />
-              <e p="TransportClient.cs" t="Include" />
+              <e p="TransportClient.cs_" t="Include" />
             </e>
             <e p="InternalAdaper" t="Include">
               <e p="TransportMessageChannelHandlerDecodeAdapter.cs" t="Include" />
