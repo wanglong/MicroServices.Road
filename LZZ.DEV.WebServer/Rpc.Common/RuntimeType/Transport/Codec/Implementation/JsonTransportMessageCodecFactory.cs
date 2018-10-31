@@ -12,18 +12,18 @@
         #region Implementation of ITransportMessageCodecFactory
 
         /// <summary>
-        /// 获取编码器。
+        /// 获取编码器
         /// </summary>
-        /// <returns>编码器实例。</returns>
+        /// <returns>编码器实例</returns>
         public ITransportMessageEncoder GetEncoder()
         {
             return _transportMessageEncoder;
         }
 
         /// <summary>
-        /// 获取解码器。
+        /// 获取解码器
         /// </summary>
-        /// <returns>解码器实例。</returns>
+        /// <returns>解码器实例</returns>
         public ITransportMessageDecoder GetDecoder()
         {
             return _transportMessageDecoder;

@@ -7,21 +7,19 @@ using Rpc.Common.RuntimeType.Entitys.Address;
 namespace Rpc.Common.RuntimeType.Routing
 {
     /// <summary>
-    /// 服务路由。
+    /// 服务路由
     /// </summary>
     public class ServiceRoute
     {
         /// <summary>
-        /// 服务可用地址。
+        /// 服务可用地址
         /// </summary>
         public IEnumerable<AddressModel> Address { get; set; }
 
         /// <summary>
-        /// 服务描述符。
+        /// 服务描述符
         /// </summary>
         public ServiceDescriptor ServiceDescriptor { get; set; }
-
-        #region Equality members
 
         /// <summary>Determines whether the specified object is equal to the current object.</summary>
         /// <returns>true if the specified object  is equal to the current object; otherwise, false.</returns>
@@ -38,7 +36,8 @@ namespace Rpc.Common.RuntimeType.Routing
             if (model.ServiceDescriptor != ServiceDescriptor)
                 return false;
 
-            return model.Address.Count() == Address.Count() && model.Address.All(addressModel => Address.Contains(addressModel));
+            return model.Address.Count() == Address.Count() &&
+                   model.Address.All(addressModel => Address.Contains(addressModel));
         }
 
         /// <summary>Serves as the default hash function. </summary>
@@ -57,7 +56,5 @@ namespace Rpc.Common.RuntimeType.Routing
         {
             return !Equals(model1, model2);
         }
-
-        #endregion Equality members
     }
 }

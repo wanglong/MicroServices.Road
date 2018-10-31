@@ -8,7 +8,7 @@ using Rpc.Common.RuntimeType.Entitys.Address;
 namespace Rpc.Common.RuntimeType.Routing.Implementation
 {
     /// <summary>
-    /// 一个默认的服务路由工厂实现。
+    /// 一个默认的服务路由工厂实现
     /// </summary>
     public class DefaultServiceRouteFactory : IServiceRouteFactory
     {
@@ -22,10 +22,10 @@ namespace Rpc.Common.RuntimeType.Routing.Implementation
         #region Implementation of IServiceRouteFactory
 
         /// <summary>
-        /// 根据服务路由描述符创建服务路由。
+        /// 根据服务路由描述符创建服务路由
         /// </summary>
-        /// <param name="descriptors">服务路由描述符。</param>
-        /// <returns>服务路由集合。</returns>
+        /// <param name="descriptors">服务路由描述符</param>
+        /// <returns>服务路由集合</returns>
         public Task<IEnumerable<ServiceRoute>> CreateServiceRoutesAsync(IEnumerable<ServiceRouteDescriptor> descriptors)
         {
             if (descriptors == null)

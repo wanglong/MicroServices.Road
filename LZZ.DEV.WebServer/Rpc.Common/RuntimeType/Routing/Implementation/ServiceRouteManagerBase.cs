@@ -7,7 +7,7 @@ using Rpc.Common.RuntimeType.Communally.Serialization;
 namespace Rpc.Common.RuntimeType.Routing.Implementation
 {
     /// <summary>
-    /// 服务路由事件参数。
+    /// 服务路由事件参数
     /// </summary>
     public class ServiceRouteEventArgs
     {
@@ -17,13 +17,13 @@ namespace Rpc.Common.RuntimeType.Routing.Implementation
         }
 
         /// <summary>
-        /// 服务路由信息。
+        /// 服务路由信息
         /// </summary>
         public ServiceRoute Route { get; private set; }
     }
 
     /// <summary>
-    /// 服务路由变更事件参数。
+    /// 服务路由变更事件参数
     /// </summary>
     public class ServiceRouteChangedEventArgs : ServiceRouteEventArgs
     {
@@ -33,13 +33,13 @@ namespace Rpc.Common.RuntimeType.Routing.Implementation
         }
 
         /// <summary>
-        /// 旧的服务路由信息。
+        /// 旧的服务路由信息
         /// </summary>
         public ServiceRoute OldRoute { get; set; }
     }
 
     /// <summary>
-    /// 服务路由管理者基类。
+    /// 服务路由管理者基类
     /// </summary>
     public abstract class ServiceRouteManagerBase : IServiceRouteManager
     {
@@ -56,7 +56,7 @@ namespace Rpc.Common.RuntimeType.Routing.Implementation
         #region Implementation of IServiceRouteManager
 
         /// <summary>
-        /// 服务路由被创建。
+        /// 服务路由被创建
         /// </summary>
         public event EventHandler<ServiceRouteEventArgs> Created
         {
@@ -65,7 +65,7 @@ namespace Rpc.Common.RuntimeType.Routing.Implementation
         }
 
         /// <summary>
-        /// 服务路由被删除。
+        /// 服务路由被删除
         /// </summary>
         public event EventHandler<ServiceRouteEventArgs> Removed
         {
@@ -74,7 +74,7 @@ namespace Rpc.Common.RuntimeType.Routing.Implementation
         }
 
         /// <summary>
-        /// 服务路由被修改。
+        /// 服务路由被修改
         /// </summary>
         public event EventHandler<ServiceRouteChangedEventArgs> Changed
         {
@@ -83,16 +83,16 @@ namespace Rpc.Common.RuntimeType.Routing.Implementation
         }
 
         /// <summary>
-        /// 获取所有可用的服务路由信息。
+        /// 获取所有可用的服务路由信息
         /// </summary>
-        /// <returns>服务路由集合。</returns>
+        /// <returns>服务路由集合</returns>
         public abstract Task<IEnumerable<ServiceRoute>> GetRoutesAsync();
 
         /// <summary>
-        /// 设置服务路由。
+        /// 设置服务路由
         /// </summary>
-        /// <param name="routes">服务路由集合。</param>
-        /// <returns>一个任务。</returns>
+        /// <param name="routes">服务路由集合</param>
+        /// <returns>一个任务</returns>
         Task IServiceRouteManager.SetRoutesAsync(IEnumerable<ServiceRoute> routes)
         {
             if (routes == null)
@@ -112,18 +112,18 @@ namespace Rpc.Common.RuntimeType.Routing.Implementation
         }
 
         /// <summary>
-        /// 清空所有的服务路由。
+        /// 清空所有的服务路由
         /// </summary>
-        /// <returns>一个任务。</returns>
+        /// <returns>一个任务</returns>
         public abstract Task ClearAsync();
 
         #endregion Implementation of IServiceRouteManager
 
         /// <summary>
-        /// 设置服务路由。
+        /// 设置服务路由
         /// </summary>
-        /// <param name="routes">服务路由集合。</param>
-        /// <returns>一个任务。</returns>
+        /// <param name="routes">服务路由集合</param>
+        /// <returns>一个任务</returns>
         protected abstract Task SetRoutesAsync(IEnumerable<ServiceRouteDescriptor> routes);
 
         protected void OnCreated(params ServiceRouteEventArgs[] args)

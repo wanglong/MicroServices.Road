@@ -13,7 +13,7 @@ using Rpc.Common.RuntimeType.Routing.Implementation;
 namespace Rpc.Common.RuntimeType.Client.Address.Resolvers.Implementation.Selectors.Implementation
 {
     /// <summary>
-    /// 轮询的地址选择器。
+    /// 轮询的地址选择器
     /// </summary>
     public class PollingAddressSelector : AddressSelectorBase
     {
@@ -25,7 +25,7 @@ namespace Rpc.Common.RuntimeType.Client.Address.Resolvers.Implementation.Selecto
         public PollingAddressSelector(IServiceRouteManager serviceRouteManager, IHealthCheckService healthCheckService)
         {
             _healthCheckService = healthCheckService;
-            //路由发生变更时重建地址条目。
+            //路由发生变更时重建地址条目
             serviceRouteManager.Changed += ServiceRouteManager_Removed;
             serviceRouteManager.Removed += ServiceRouteManager_Removed;
         }
@@ -33,14 +33,14 @@ namespace Rpc.Common.RuntimeType.Client.Address.Resolvers.Implementation.Selecto
         #region Overrides of AddressSelectorBase
 
         /// <summary>
-        /// 选择一个地址。
+        /// 选择一个地址
         /// </summary>
-        /// <param name="context">地址选择上下文。</param>
-        /// <returns>地址模型。</returns>
+        /// <param name="context">地址选择上下文</param>
+        /// <returns>地址模型</returns>
         protected override async Task<AddressModel> SelectAsync(AddressSelectContext context)
         {
             var key = GetCacheKey(context.Descriptor);
-            //根据服务id缓存服务地址。
+            //根据服务id缓存服务地址
             var addressEntry = _concurrent.GetOrAdd(key, k => new Lazy<AddressEntry>(() => new AddressEntry(context.Address))).Value;
 
             AddressModel addressModel;

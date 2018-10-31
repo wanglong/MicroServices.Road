@@ -10,7 +10,7 @@ using Rpc.Common.RuntimeType.Communally.Serialization;
 namespace Rpc.Common.RuntimeType.Routing.Implementation
 {
     /// <summary>
-    /// 基于共享文件的服务路由管理者。
+    /// 基于共享文件的服务路由管理者
     /// </summary>
     public class SharedFileServiceRouteManager : ServiceRouteManagerBase, IDisposable
     {
@@ -64,9 +64,9 @@ namespace Rpc.Common.RuntimeType.Routing.Implementation
         #region Overrides of ServiceRouteManagerBase
 
         /// <summary>
-        ///     获取所有可用的服务路由信息。
+        ///     获取所有可用的服务路由信息
         /// </summary>
-        /// <returns>服务路由集合。</returns>
+        /// <returns>服务路由集合</returns>
         public override async Task<IEnumerable<ServiceRoute>> GetRoutesAsync()
         {
             if (_routes == null)
@@ -75,9 +75,9 @@ namespace Rpc.Common.RuntimeType.Routing.Implementation
         }
 
         /// <summary>
-        ///     清空所有的服务路由。
+        ///     清空所有的服务路由
         /// </summary>
-        /// <returns>一个任务。</returns>
+        /// <returns>一个任务</returns>
         public override Task ClearAsync()
         {
             if (File.Exists(_filePath))
@@ -86,10 +86,10 @@ namespace Rpc.Common.RuntimeType.Routing.Implementation
         }
 
         /// <summary>
-        ///     设置服务路由。
+        ///     设置服务路由
         /// </summary>
-        /// <param name="routes">服务路由集合。</param>
-        /// <returns>一个任务。</returns>
+        /// <param name="routes">服务路由集合</param>
+        /// <returns>一个任务</returns>
         protected override async Task SetRoutesAsync(IEnumerable<ServiceRouteDescriptor> routes)
         {
             using (var fileStream = new FileStream(_filePath, FileMode.OpenOrCreate, FileAccess.Write, FileShare.None))
@@ -112,7 +112,7 @@ namespace Rpc.Common.RuntimeType.Routing.Implementation
             if (File.Exists(file))
             {
                 if (_logger.IsEnabled(LogLevel.Debug))
-                    _logger.LogDebug($"准备从文件：{file}中获取服务路由。");
+                    _logger.LogDebug($"准备从文件：{file}中获取服务路由");
                 string content;
                 while (true)
                 {
@@ -139,19 +139,19 @@ namespace Rpc.Common.RuntimeType.Routing.Implementation
                             serializer.Deserialize<string, ServiceRouteDescriptor[]>(content))).ToArray();
                     if (_logger.IsEnabled(LogLevel.Information))
                         _logger.LogInformation(
-                            $"成功获取到以下路由信息：{string.Join(",", routes.Select(i => i.ServiceDescriptor.Id))}。");
+                            $"成功获取到以下路由信息：{string.Join(",", routes.Select(i => i.ServiceDescriptor.Id))}");
                 }
                 catch (Exception exception)
                 {
                     if (_logger.IsEnabled(LogLevel.Error))
-                        _logger.LogError("获取路由信息时发生了错误。", exception);
+                        _logger.LogError("获取路由信息时发生了错误", exception);
                     routes = new ServiceRoute[0];
                 }
             }
             else
             {
                 if (_logger.IsEnabled(LogLevel.Warning))
-                    _logger.LogWarning($"无法获取路由信息，因为文件：{file}不存在。");
+                    _logger.LogWarning($"无法获取路由信息，因为文件：{file}不存在");
                 routes = new ServiceRoute[0];
             }
             return routes;
@@ -164,36 +164,36 @@ namespace Rpc.Common.RuntimeType.Routing.Implementation
             _routes = newRoutes;
             if (oldRoutes == null)
             {
-                //触发服务路由创建事件。
+                //触发服务路由创建事件
                 OnCreated(newRoutes.Select(route => new ServiceRouteEventArgs(route)).ToArray());
             }
             else
             {
-                //旧的服务Id集合。
+                //旧的服务Id集合
                 var oldServiceIds = oldRoutes.Select(i => i.ServiceDescriptor.Id).ToArray();
-                //新的服务Id集合。
+                //新的服务Id集合
                 var newServiceIds = newRoutes.Select(i => i.ServiceDescriptor.Id).ToArray();
 
                 //被删除的服务Id集合
                 var removeServiceIds = oldServiceIds.Except(newServiceIds).ToArray();
-                //新增的服务Id集合。
+                //新增的服务Id集合
                 var addServiceIds = newServiceIds.Except(oldServiceIds).ToArray();
-                //可能被修改的服务Id集合。
+                //可能被修改的服务Id集合
                 var mayModifyServiceIds = newServiceIds.Except(removeServiceIds).ToArray();
 
-                //触发服务路由创建事件。
+                //触发服务路由创建事件
                 OnCreated(
                     newRoutes.Where(i => addServiceIds.Contains(i.ServiceDescriptor.Id))
                         .Select(route => new ServiceRouteEventArgs(route))
                         .ToArray());
 
-                //触发服务路由删除事件。
+                //触发服务路由删除事件
                 OnRemoved(
                     oldRoutes.Where(i => removeServiceIds.Contains(i.ServiceDescriptor.Id))
                         .Select(route => new ServiceRouteEventArgs(route))
                         .ToArray());
 
-                //触发服务路由变更事件。
+                //触发服务路由变更事件
                 var currentMayModifyRoutes =
                     newRoutes.Where(i => mayModifyServiceIds.Contains(i.ServiceDescriptor.Id)).ToArray();
                 var oldMayModifyRoutes =
@@ -214,7 +214,7 @@ namespace Rpc.Common.RuntimeType.Routing.Implementation
         private async void _fileSystemWatcher_Changed(object sender, FileSystemEventArgs e)
         {
             if (_logger.IsEnabled(LogLevel.Information))
-                _logger.LogInformation($"文件{_filePath}发生了变更，将重新获取路由信息。");
+                _logger.LogInformation($"文件{_filePath}发生了变更，将重新获取路由信息");
 
             if (e.ChangeType == WatcherChangeTypes.Changed)
             {

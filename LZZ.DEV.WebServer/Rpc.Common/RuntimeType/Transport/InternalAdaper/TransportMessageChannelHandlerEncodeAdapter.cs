@@ -48,6 +48,6 @@ namespace Rpc.Common.RuntimeType.Transport.InternalAdaper
         /// exception happened
         /// </summary>
         public override void ExceptionCaught(IChannelHandlerContext context, Exception exception) =>
-            _logger.LogError($"与远程服务器：{context.Channel.RemoteAddress} 通信时发送了错误。", exception);
+            _logger.LogError($"与远程服务器：{context.Channel.RemoteAddress} 通信时发送了错误", exception);
     }
 }

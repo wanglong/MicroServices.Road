@@ -7,12 +7,12 @@ using Rpc.Common.RuntimeType.Transport.Impl;
 namespace Rpc.Common.RuntimeType.Server.Impl
 {
     /// <summary>
-    /// 服务主机基类。
+    /// 服务主机基类
     /// </summary>
     public abstract class ServiceHostAbstract : IServiceHost
     {
         /// <summary>
-        /// 消息监听者。
+        /// 消息监听者
         /// </summary>
         protected IMessageListener MessageListener { get; } = new MessageListener();
 
@@ -28,10 +28,10 @@ namespace Rpc.Common.RuntimeType.Server.Impl
         public abstract void Dispose();
 
         /// <summary>
-        /// 启动主机。
+        /// 启动主机
         /// </summary>
-        /// <param name="endPoint">主机终结点。</param>
-        /// <returns>一个任务。</returns>
+        /// <param name="endPoint">主机终结点</param>
+        /// <returns>一个任务</returns>
         public abstract Task StartAsync(EndPoint endPoint);
     }
 }

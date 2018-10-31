@@ -26,7 +26,7 @@ namespace Rpc.Common.RuntimeType.Server.Impl
                 foreach (var entry in entries)
                 {
                     if (list.Any(i => i.Descriptor.Id == entry.Descriptor.Id))
-                        throw new InvalidOperationException($"本地包含多个Id为：{entry.Descriptor.Id} 的服务条目。");
+                        throw new InvalidOperationException($"本地包含多个Id为：{entry.Descriptor.Id} 的服务条目");
                 }
 
                 list.AddRange(entries);

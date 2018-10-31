@@ -29,10 +29,10 @@ namespace Rpc.Common.RuntimeType.Server.Impl
         }
 
         /// <summary>
-        /// 启动主机。
+        /// 启动主机
         /// </summary>
-        /// <param name="endPoint">主机终结点。</param>
-        /// <returns>一个任务。</returns>
+        /// <param name="endPoint">主机终结点</param>
+        /// <returns>一个任务</returns>
         public override async Task StartAsync(EndPoint endPoint)
         {
             if (_serverMessageListener != null) return;

@@ -6,7 +6,7 @@ using Rpc.Common.RuntimeType.Entitys.Address;
 namespace Rpc.Common.RuntimeType.Client.Address.Resolvers.Implementation.Selectors.Implementation
 {
     /// <summary>
-    /// 一个随机的地址选择器。
+    /// 一个随机的地址选择器
     /// </summary>
     public class RandomAddressSelector : AddressSelectorBase
     {
@@ -20,7 +20,7 @@ namespace Rpc.Common.RuntimeType.Client.Address.Resolvers.Implementation.Selecto
         #region Constructor
 
         /// <summary>
-        /// 初始化一个以Random生成随机数的随机地址选择器。
+        /// 初始化一个以Random生成随机数的随机地址选择器
         /// </summary>
         public RandomAddressSelector()
         {
@@ -29,9 +29,9 @@ namespace Rpc.Common.RuntimeType.Client.Address.Resolvers.Implementation.Selecto
         }
 
         /// <summary>
-        /// 初始化一个自定义的随机地址选择器。
+        /// 初始化一个自定义的随机地址选择器
         /// </summary>
-        /// <param name="generate">随机数生成委托，第一个参数为最小值，第二个参数为最大值（不可以超过该值）。</param>
+        /// <param name="generate">随机数生成委托，第一个参数为最小值，第二个参数为最大值（不可以超过该值）</param>
         public RandomAddressSelector(Func<int, int, int> generate)
         {
             if (generate == null)
@@ -44,10 +44,10 @@ namespace Rpc.Common.RuntimeType.Client.Address.Resolvers.Implementation.Selecto
         #region Overrides of AddressSelectorBase
 
         /// <summary>
-        /// 选择一个地址。
+        /// 选择一个地址
         /// </summary>
-        /// <param name="context">地址选择上下文。</param>
-        /// <returns>地址模型。</returns>
+        /// <param name="context">地址选择上下文</param>
+        /// <returns>地址模型</returns>
         protected override Task<AddressModel> SelectAsync(AddressSelectContext context)
         {
             var address = context.Address.ToArray();

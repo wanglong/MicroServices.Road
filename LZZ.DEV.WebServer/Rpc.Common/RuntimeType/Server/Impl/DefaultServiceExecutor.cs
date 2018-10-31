@@ -21,8 +21,8 @@ namespace Rpc.Common.RuntimeType.Server.Impl
         /// <summary>
         /// 执行消息转换后的服务
         /// </summary>
-        /// <param name="sender">消息发送者。</param>
-        /// <param name="message">调用消息。</param>
+        /// <param name="sender">消息发送者</param>
+        /// <param name="message">调用消息</param>
         public async Task ExecuteAsync(IMessageSender sender, TransportMessage message)
         {
             if (!message.IsInvokeMessage()) return;
@@ -34,7 +34,7 @@ namespace Rpc.Common.RuntimeType.Server.Impl
             }
             catch (Exception exception)
             {
-                Console.WriteLine($"将接收到的消息反序列化成 TransportMessage<RemoteInvokeMessage> 时发送了错误。{exception}");
+                Console.WriteLine($"将接收到的消息反序列化成 TransportMessage<RemoteInvokeMessage> 时发送了错误{exception}");
                 return;
             }
 
@@ -42,30 +42,30 @@ namespace Rpc.Common.RuntimeType.Server.Impl
             var entry = _serviceEntryLocate.Locate(remoteInvokeMessage);
             if (entry == null)
             {
-                Console.WriteLine($"根据服务Id：{remoteInvokeMessage.ServiceId}，找不到服务条目。");
+                Console.WriteLine($"根据服务Id：{remoteInvokeMessage.ServiceId}，找不到服务条目");
                 return;
             }
 
-            Console.WriteLine("准备执行本地逻辑。");
+            Console.WriteLine("准备执行本地逻辑");
 
             var resultMessage = new RemoteInvokeResultMessage();
 
-            // 是否需要等待执行。
+            // 是否需要等待执行
             if (entry.Descriptor.WaitExecution())
             {
-                //执行本地代码。
+                //执行本地代码
                 await LocalExecuteAsync(entry, remoteInvokeMessage, resultMessage);
-                //向客户端发送调用结果。
+                //向客户端发送调用结果
                 await SendRemoteInvokeResult(sender, message.Id, resultMessage);
             }
             else
             {
-                //通知客户端已接收到消息。
+                //通知客户端已接收到消息
                 await SendRemoteInvokeResult(sender, message.Id, resultMessage);
-                //确保新起一个线程执行，不堵塞当前线程。
+                //确保新起一个线程执行，不堵塞当前线程
                 await Task.Factory.StartNew(async () =>
                     {
-                        //执行本地代码。
+                        //执行本地代码
                         await LocalExecuteAsync(entry, remoteInvokeMessage, resultMessage);
                     },
                     TaskCreationOptions.LongRunning);
@@ -105,13 +105,13 @@ namespace Rpc.Common.RuntimeType.Server.Impl
         {
             try
             {
-                Console.WriteLine("准备发送响应消息。");
+                Console.WriteLine("准备发送响应消息");
                 await sender.SendAndFlushAsync(TransportMessage.CreateInvokeResultMessage(messageId, resultMessage));
-                Console.WriteLine("响应消息发送成功。");
+                Console.WriteLine("响应消息发送成功");
             }
             catch (Exception exception)
             {
-                Console.WriteLine("发送响应消息时候发生了异常。" + exception);
+                Console.WriteLine("发送响应消息时候发生了异常" + exception);
             }
         }
 

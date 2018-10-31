@@ -5,7 +5,7 @@ using System.Linq;
 namespace Rpc.Common.RuntimeType.Entitys
 {
     /// <summary>
-    /// 服务描述符。
+    /// 服务描述符
     /// </summary>
     public class ServiceDescriptor
     {
@@ -30,10 +30,10 @@ namespace Rpc.Common.RuntimeType.Entitys
         /// <summary>
         /// 获取一个元数据
         /// </summary>
-        /// <typeparam name="T">元数据类型。</typeparam>
-        /// <param name="name">元数据名称。</param>
-        /// <param name="def">如果指定名称的元数据不存在则返回这个参数。</param>
-        /// <returns>元数据值。</returns>
+        /// <typeparam name="T">元数据类型</typeparam>
+        /// <param name="name">元数据名称</param>
+        /// <param name="def">如果指定名称的元数据不存在则返回这个参数</param>
+        /// <returns>元数据值</returns>
         public T GetMetadata<T>(string name, T def = default(T))
         {
             if (!Metadatas.ContainsKey(name))
@@ -46,7 +46,7 @@ namespace Rpc.Common.RuntimeType.Entitys
         /// 确定指定的对象是否等于当前对象
         /// </summary>
         /// <param name="obj">要与当前对象进行比较的对象</param>
-        /// <returns>如果指定的对象等于当前对象，则为true；否则，为false。</returns>
+        /// <returns>如果指定的对象等于当前对象，则为true；否则，为false</returns>
         public override bool Equals(object obj)
         {
             var model = obj as ServiceDescriptor;

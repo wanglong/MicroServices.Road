@@ -6,7 +6,7 @@ using Rpc.Common.RuntimeType.Transport.Codec;
 namespace Rpc.Common.RuntimeType.Transport.Impl
 {
     /// <summary>
-    /// 基于DotNetty服务端的消息发送者。
+    /// 基于DotNetty服务端的消息发送者
     /// </summary>
     public class DefaultDotNettyServerMessageSender : DefaultDotNettyMessageSender, IMessageSender
     {
@@ -18,10 +18,10 @@ namespace Rpc.Common.RuntimeType.Transport.Impl
         }
 
         /// <summary>
-        /// 发送消息。
+        /// 发送消息
         /// </summary>
-        /// <param name="message">消息内容。</param>
-        /// <returns>一个任务。</returns>
+        /// <param name="message">消息内容</param>
+        /// <returns>一个任务</returns>
         public Task SendAsync(TransportMessage message)
         {
             var buffer = GetByteBuffer(message);
@@ -29,10 +29,10 @@ namespace Rpc.Common.RuntimeType.Transport.Impl
         }
 
         /// <summary>
-        /// 发送消息并清空缓冲区。
+        /// 发送消息并清空缓冲区
         /// </summary>
-        /// <param name="message">消息内容。</param>
-        /// <returns>一个任务。</returns>
+        /// <param name="message">消息内容</param>
+        /// <returns>一个任务</returns>
         public Task SendAndFlushAsync(TransportMessage message)
         {
             var buffer = GetByteBuffer(message);

@@ -3,24 +3,24 @@ using System.Net;
 namespace Rpc.Common.RuntimeType.Entitys.Address
 {
     /// <summary>
-    /// ip地址模型。
+    /// ip地址模型
     /// </summary>
     public sealed class IpAddressModel : AddressModel
     {
         #region Constructor
 
         /// <summary>
-        /// 初始化一个新的ip地址模型实例。
+        /// 初始化一个新的ip地址模型实例
         /// </summary>
         public IpAddressModel()
         {
         }
 
         /// <summary>
-        /// 初始化一个新的ip地址模型实例。
+        /// 初始化一个新的ip地址模型实例
         /// </summary>
-        /// <param name="ip">ip地址。</param>
-        /// <param name="port">端口。</param>
+        /// <param name="ip">ip地址</param>
+        /// <param name="port">端口</param>
         public IpAddressModel(string ip, int port)
         {
             Ip = ip;
@@ -32,12 +32,12 @@ namespace Rpc.Common.RuntimeType.Entitys.Address
         #region Property
 
         /// <summary>
-        /// ip地址。
+        /// ip地址
         /// </summary>
         public string Ip { get; set; }
 
         /// <summary>
-        /// 端口。
+        /// 端口
         /// </summary>
         public int Port { get; set; }
 
@@ -46,7 +46,7 @@ namespace Rpc.Common.RuntimeType.Entitys.Address
         #region Overrides of AddressModel
 
         /// <summary>
-        /// 创建终结点。
+        /// 创建终结点
         /// </summary>
         /// <returns></returns>
         public override EndPoint CreateEndPoint()

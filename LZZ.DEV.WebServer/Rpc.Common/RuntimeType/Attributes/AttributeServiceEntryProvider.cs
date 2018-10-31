@@ -28,7 +28,7 @@ namespace Rpc.Common.RuntimeType.Attributes
             var services = _types.Where(type =>
                 {
                     var typeInfo = type.GetTypeInfo();
-                    // 限定为打上RpcTagBundleAttribute特性的接口。
+                    // 限定为打上RpcTagBundleAttribute特性的接口
                     return typeInfo.IsInterface && typeInfo.GetCustomAttribute<RpcTagBundleAttribute>() != null;
                 }
             ).ToArray();

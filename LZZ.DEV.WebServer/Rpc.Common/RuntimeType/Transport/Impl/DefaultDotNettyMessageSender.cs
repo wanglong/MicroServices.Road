@@ -5,7 +5,7 @@ using Rpc.Common.RuntimeType.Transport.Codec;
 namespace Rpc.Common.RuntimeType.Transport.Impl
 {
     /// <summary>
-    /// 基于DotNetty的消息发送者基类。
+    /// 基于DotNetty的消息发送者基类
     /// </summary>
     public abstract class DefaultDotNettyMessageSender
     {

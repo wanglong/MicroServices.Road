@@ -26,18 +26,18 @@ namespace Rpc.Common.RuntimeType.Client.HealthChecks.Implementation
                 Check(_dictionary.ToArray().Select(i => i.Value));
             }, null, timeSpan, timeSpan);
 
-            //去除监控。
+            //去除监控
             serviceRouteManager.Removed += (s, e) =>
             {
                 Remove(e.Route.Address);
             };
-            //重新监控。
+            //重新监控
             serviceRouteManager.Created += (s, e) =>
             {
                 var keys = e.Route.Address.Select(i => i.ToString());
                 Check(_dictionary.Where(i => keys.Contains(i.Key)).Select(i => i.Value));
             };
-            //重新监控。
+            //重新监控
             serviceRouteManager.Changed += (s, e) =>
             {
                 var keys = e.Route.Address.Select(i => i.ToString());
@@ -48,20 +48,20 @@ namespace Rpc.Common.RuntimeType.Client.HealthChecks.Implementation
         #region Implementation of IHealthCheckService
 
         /// <summary>
-        /// 监控一个地址。
+        /// 监控一个地址
         /// </summary>
-        /// <param name="address">地址模型。</param>
-        /// <returns>一个任务。</returns>
+        /// <param name="address">地址模型</param>
+        /// <returns>一个任务</returns>
         public Task Monitor(AddressModel address)
         {
             return Task.Run(() => { _dictionary.GetOrAdd(address.ToString(), k => new MonitorEntry(address)); });
         }
 
         /// <summary>
-        /// 判断一个地址是否健康。
+        /// 判断一个地址是否健康
         /// </summary>
-        /// <param name="address">地址模型。</param>
-        /// <returns>健康返回true，否则返回false。</returns>
+        /// <param name="address">地址模型</param>
+        /// <returns>健康返回true，否则返回false</returns>
         public Task<bool> IsHealth(AddressModel address)
         {
             return Task.Run(() =>
@@ -74,10 +74,10 @@ namespace Rpc.Common.RuntimeType.Client.HealthChecks.Implementation
         }
 
         /// <summary>
-        /// 标记一个地址为失败的。
+        /// 标记一个地址为失败的
         /// </summary>
-        /// <param name="address">地址模型。</param>
-        /// <returns>一个任务。</returns>
+        /// <param name="address">地址模型</param>
+        /// <returns>一个任务</returns>
         public Task MarkFailure(AddressModel address)
         {
             return Task.Run(() =>
