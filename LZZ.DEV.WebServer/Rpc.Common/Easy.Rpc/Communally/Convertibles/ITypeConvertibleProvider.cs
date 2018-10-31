@@ -4,7 +4,7 @@ using Rpc.Common.Easy.Rpc.Communally.Convertibles.Impl;
 namespace Rpc.Common.Easy.Rpc.Communally.Convertibles
 {
     /// <summary>
-    //抽象的类型转换提供程序
+    /// 抽象的类型转换提供程序
     /// </summary>
     public interface ITypeConvertibleProvider
     {

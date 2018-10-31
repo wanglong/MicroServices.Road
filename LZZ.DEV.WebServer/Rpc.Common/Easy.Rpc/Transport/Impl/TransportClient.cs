@@ -2,14 +2,14 @@
 using System.Collections.Concurrent;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
-using Rpc.Common.RuntimeType.Communally.Exceptions;
-using Rpc.Common.RuntimeType.Entitys.Messages;
-using Rpc.Common.RuntimeType.Server;
+using Rpc.Common.Easy.Rpc.Communally.Entitys.Messages;
+using Rpc.Common.Easy.Rpc.Communally.Exceptions;
+using Rpc.Common.Easy.Rpc.Runtime.Server;
 
-namespace Rpc.Common.RuntimeType.Transport.Impl
+namespace Rpc.Common.Easy.Rpc.Transport.Impl
 {
     /// <summary>
-    //默认的传输客户端实现, 包含默认接收和方法发送
+    /// 默认的传输客户端实现, 包含默认接收和方法发送
     /// </summary>
     public class TransportClient : ITransportClient, IDisposable
     {

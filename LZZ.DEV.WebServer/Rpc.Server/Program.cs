@@ -46,12 +46,12 @@ namespace Rpc.Server
                         // 获取当前应用程序下的程序集，并排除动态（Dynamic）方法
                         return new AttributeServiceEntryProvider(
                             // List<Assembly>
-                            AppDomain.CurrentDomain.GetAssemblies()
-                                .Where(i => i.IsDynamic == false)
-                                .SelectMany(i => i.ExportedTypes)
-                                .ToArray(),
+                            AppDomain.CurrentDomain.GetAssemblies().Where(i => i.IsDynamic == false)
+                                .SelectMany(i => i.ExportedTypes).ToArray(),
                             // 获取的服务工厂器
-                            provider.GetRequiredService<IServiceEntryFactory>()
+                            provider.GetRequiredService<IServiceEntryFactory>(),
+                            // 获取日志
+                            provider.GetRequiredService<ILogger<AttributeServiceEntryProvider>>()
                         );
                     });
                     // 注入服务管理器
@@ -96,7 +96,7 @@ namespace Rpc.Server
 
                 // ** 注入本地测试类
                 serviceCollection.AddSingleton<IUserService, UserServiceImpl>();
-                
+
                 // ** 注入日志中间件
                 serviceCollection.AddLogging();
             }
@@ -123,7 +123,7 @@ namespace Rpc.Server
             Task.Factory.StartNew(async () =>
             {
                 //启动主机
-                await serviceHost.StartAsync(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9981));
+                await serviceHost.StartAsync(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8007));
                 Console.WriteLine($"service is started: {DateTime.Now:hh:mm:ss fff}");
             });
 

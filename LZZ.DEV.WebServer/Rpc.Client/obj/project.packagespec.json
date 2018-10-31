@@ -30,6 +30,10 @@
   "frameworks": {
     "netcoreapp2.1": {
       "dependencies": {
+        "Microsoft.Extensions.Logging.Console": {
+          "target": "Package",
+          "version": "[2.1.0, )"
+        },
         "Microsoft.NETCore.App": {
           "suppressParent": "All",
           "target": "Package",

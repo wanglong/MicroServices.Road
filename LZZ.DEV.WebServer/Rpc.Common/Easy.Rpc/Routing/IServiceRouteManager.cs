@@ -7,7 +7,7 @@ using Rpc.Common.Easy.Rpc.Routing.Implementation;
 namespace Rpc.Common.Easy.Rpc.Routing
 {
     /// <summary>
-    //抽象的服务路由发现者
+    /// 抽象的服务路由发现者
     /// </summary>
     public interface IServiceRouteManager
     {

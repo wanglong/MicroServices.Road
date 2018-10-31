@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using Microsoft.Extensions.Logging;
 using Rpc.Common.Easy.Rpc.Communally.Entitys;
 using Rpc.Common.Easy.Rpc.Runtime.Server;
 
@@ -14,11 +15,13 @@ namespace Rpc.Common.Easy.Rpc.Attributes
     {
         private readonly IEnumerable<Type> _types;
         private readonly IServiceEntryFactory _serviceEntryFactory;
+        private readonly ILogger<AttributeServiceEntryProvider> _logger;
 
-        public AttributeServiceEntryProvider(IEnumerable<Type> types, IServiceEntryFactory serviceEntryFactory)
+        public AttributeServiceEntryProvider(IEnumerable<Type> types, IServiceEntryFactory serviceEntryFactory, ILogger<AttributeServiceEntryProvider> logger)
         {
             _types = types;
             _serviceEntryFactory = serviceEntryFactory;
+            _logger = logger;
         }
 
         public IEnumerable<ServiceEntity> GetEntries()

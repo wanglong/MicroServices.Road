@@ -14,18 +14,13 @@ namespace Rpc.Common.Easy.Rpc.Runtime.Client.Address.Resolvers.Implementation
     /// </summary>
     public class DefaultAddressResolver : IAddressResolver
     {
-        #region Field
-
         private readonly IServiceRouteManager _serviceRouteManager;
         private readonly ILogger<DefaultAddressResolver> _logger;
         private readonly IAddressSelector _addressSelector;
         private readonly IHealthCheckService _healthCheckService;
 
-        #endregion Field
-
-        #region Constructor
-
-        public DefaultAddressResolver(IServiceRouteManager serviceRouteManager, ILogger<DefaultAddressResolver> logger, IAddressSelector addressSelector, IHealthCheckService healthCheckService)
+        public DefaultAddressResolver(IServiceRouteManager serviceRouteManager, ILogger<DefaultAddressResolver> logger,
+            IAddressSelector addressSelector, IHealthCheckService healthCheckService)
         {
             _serviceRouteManager = serviceRouteManager;
             _logger = logger;
@@ -33,9 +28,6 @@ namespace Rpc.Common.Easy.Rpc.Runtime.Client.Address.Resolvers.Implementation
             _healthCheckService = healthCheckService;
         }
 
-        #endregion Constructor
-
-        #region Implementation of IAddressResolver
 
         /// <summary>
         /// 解析服务地址
@@ -83,7 +75,5 @@ namespace Rpc.Common.Easy.Rpc.Runtime.Client.Address.Resolvers.Implementation
                 Address = address
             });
         }
-
-        #endregion Implementation of IAddressResolver
     }
 }

@@ -8,26 +8,10 @@
     <e p="G:\My_Project\MicroServices\LZZ.DEV.WebServer" t="IncludeFlat">
       <e p="DotNetty.Demo" t="Include">
         <e p="Echo.Client" t="IncludeRecursive">
-          <e p="appsettings.json" t="Include" />
-          <e p="bin" t="ExcludeRecursive" />
           <e p="Echo.Client.csproj" t="IncludeRecursive" />
-          <e p="EchoClientHandler.cs" t="Include" />
-          <e p="obj" t="ExcludeRecursive" />
-          <e p="Program.cs" t="Include" />
-          <e p="Properties" t="Include">
-            <e p="AssemblyInfo.cs" t="Include" />
-          </e>
         </e>
         <e p="Echo.Server" t="IncludeRecursive">
-          <e p="appsettings.json" t="Include" />
-          <e p="bin" t="ExcludeRecursive" />
           <e p="Echo.Server.csproj" t="IncludeRecursive" />
-          <e p="EchoServerHandler.cs" t="Include" />
-          <e p="obj" t="ExcludeRecursive" />
-          <e p="Program.cs" t="Include" />
-          <e p="Properties" t="Include">
-            <e p="AssemblyInfo.cs" t="Include" />
-          </e>
         </e>
       </e>
       <e p="LZZ.DEV.Watch" t="IncludeRecursive">
@@ -61,6 +45,7 @@
           <e p="communally" t="Include">
             <e p="Convertibles" t="Include">
               <e p="Impl" t="Include">
+                <e p="DefaultTypeConvertibleProvider.cs" t="Include" />
                 <e p="DefaultTypeConvertibleService.cs" t="Include" />
                 <e p="TypeConvertDelegate.cs" t="Include" />
               </e>
@@ -124,6 +109,7 @@
             <e p="ServiceRoute.cs" t="Include" />
             <e p="ServiceRouteDescriptor.cs" t="Include" />
           </e>
+          <e p="RpcServiceCollectionExtensions.cs" t="Include" />
           <e p="Runtime" t="Include">
             <e p="Client" t="Include">
               <e p="Address" t="Include">
@@ -189,9 +175,9 @@
               <e p="DefaultDotNettyMessageSender.cs" t="Include" />
               <e p="DefaultDotNettyServerMessageListener.cs" t="Include" />
               <e p="DefaultDotNettyServerMessageSender.cs" t="Include" />
-              <e p="DefaultDotNettyTransportClientFactory.cs_" t="Include" />
+              <e p="DefaultDotNettyTransportClientFactory.cs" t="Include" />
               <e p="MessageListener.cs" t="Include" />
-              <e p="TransportClient.cs_" t="Include" />
+              <e p="TransportClient.cs" t="Include" />
             </e>
             <e p="InternalAdaper" t="Include">
               <e p="TransportMessageChannelHandlerDecodeAdapter.cs" t="Include" />

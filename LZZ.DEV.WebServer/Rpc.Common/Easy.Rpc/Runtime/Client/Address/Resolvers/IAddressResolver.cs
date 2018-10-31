@@ -4,7 +4,7 @@ using Rpc.Common.Easy.Rpc.Communally.Entitys.Address;
 namespace Rpc.Common.Easy.Rpc.Runtime.Client.Address.Resolvers
 {
     /// <summary>
-    //抽象的服务地址解析器
+    /// 抽象的服务地址解析器
     /// </summary>
     public interface IAddressResolver
     {

@@ -1,14 +1,27 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using System;
+using System.Linq;
+using System.Reflection;
+using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Rpc.Common;
 using Rpc.Common.Easy.Rpc.Communally.Convertibles;
 using Rpc.Common.Easy.Rpc.Communally.Convertibles.Impl;
 using Rpc.Common.Easy.Rpc.Communally.IdGenerator;
 using Rpc.Common.Easy.Rpc.Communally.IdGenerator.Impl;
+using Rpc.Common.Easy.Rpc.ProxyGenerator;
+using Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation;
+using Rpc.Common.Easy.Rpc.Routing;
 using Rpc.Common.Easy.Rpc.Runtime.Client;
 using Rpc.Common.Easy.Rpc.Runtime.Client.Address.Resolvers;
 using Rpc.Common.Easy.Rpc.Runtime.Client.Address.Resolvers.Implementation;
 using Rpc.Common.Easy.Rpc.Runtime.Client.HealthChecks;
 using Rpc.Common.Easy.Rpc.Runtime.Client.HealthChecks.Implementation;
 using Rpc.Common.Easy.Rpc.Runtime.Client.Implementation;
+using Rpc.Common.Easy.Rpc.Runtime.Server;
+using Rpc.Common.Easy.Rpc.Runtime.Server.Impl;
+using Rpc.Common.Easy.Rpc.Transport;
+using Rpc.Common.Easy.Rpc.Transport.Impl;
 
 namespace Rpc.Client
 {
@@ -18,6 +31,7 @@ namespace Rpc.Client
         {
             var serviceCollection = new ServiceCollection();
             {
+                // 注入日志
                 serviceCollection.AddLogging();
                 // 注入ID生成器
                 serviceCollection.AddSingleton<IServiceIdGenerator, DefaultServiceIdGenerator>();
@@ -29,6 +43,55 @@ namespace Rpc.Client
                 serviceCollection.AddSingleton<IAddressResolver, DefaultAddressResolver>();
                 // 注入远程调用服务
                 serviceCollection.AddSingleton<IRemoteInvokeService, RemoteInvokeService>();
+                // 注入客户端传输工厂服务
+                serviceCollection.AddSingleton<ITransportClientFactory, DefaultDotNettyTransportClientFactory>();
+                // 注入服务代理生成器
+                serviceCollection.AddSingleton<IServiceProxyGenerater, ServiceProxyGenerater>();
+                // 注入服务代理工厂
+                serviceCollection.AddSingleton<IServiceProxyFactory, ServiceProxyFactory>();
+                // 注入DotNetty服务监听者
+                serviceCollection.AddSingleton<DefaultDotNettyServerMessageListener>();
+                // 注入默认宿主
+                serviceCollection.AddSingleton<IServiceHost, DefaultServiceHost>(
+                    provider => new DefaultServiceHost(
+                        async endPoint =>
+                        {
+                            var messageListener = provider.GetRequiredService<DefaultDotNettyServerMessageListener>();
+                            await messageListener.StartAsync(endPoint);
+                            return messageListener;
+                        },
+                        provider.GetRequiredService<IServiceExecutor>()
+                    )
+                );
+            }
+
+            var serviceProvider = serviceCollection.BuildServiceProvider();
+            
+            serviceProvider.GetRequiredService<ILoggerFactory>().AddConsole((console, logLevel) => (int) logLevel >= 0);
+            
+            var services = serviceProvider.GetRequiredService<IServiceProxyGenerater>()
+                .GenerateProxys(new[] {typeof(IUserService)}).ToArray();
+            
+            var userService = serviceProvider.GetRequiredService<IServiceProxyFactory>().CreateProxy<IUserService>(
+                services.Single(typeof(IUserService).GetTypeInfo().IsAssignableFrom)
+            );
+
+
+            while (true)
+            {
+                Task.Run(async () =>
+                {
+                    Console.WriteLine($"userService.GetUserName:{await userService.GetUserName(1)}");
+                    Console.WriteLine($"userService.GetUserId:{await userService.GetUserId("rabbit")}");
+                    Console.WriteLine($"userService.GetUserLastSignInTime:{await userService.GetUserLastSignInTime(1)}");
+                    var user = await userService.GetUser(1);
+                    Console.WriteLine($"userService.GetUser:name={user.Name},age={user.Age}");
+                    Console.WriteLine($"userService.Update:{await userService.Update(1, user)}");
+                    Console.WriteLine($"userService.GetDictionary:{(await userService.GetDictionary())["key"]}");
+                    await userService.Try();
+                    Console.WriteLine("client function completed！");
+                }).Wait();
+                Console.ReadKey();
             }
         }
     }

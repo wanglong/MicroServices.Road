@@ -7,12 +7,13 @@ using DotNetty.Common.Utilities;
 using DotNetty.Transport.Bootstrapping;
 using DotNetty.Transport.Channels;
 using DotNetty.Transport.Channels.Sockets;
-using Rpc.Common.RuntimeType.Entitys.Messages;
-using Rpc.Common.RuntimeType.Server;
-using Rpc.Common.RuntimeType.Transport.Codec;
-using Rpc.Common.RuntimeType.Transport.InternalAdaper;
+using Microsoft.Extensions.Logging;
+using Rpc.Common.Easy.Rpc.Communally.Entitys.Messages;
+using Rpc.Common.Easy.Rpc.Runtime.Server;
+using Rpc.Common.Easy.Rpc.Transport.Codec;
+using Rpc.Common.Easy.Rpc.Transport.InternalAdaper;
 
-namespace Rpc.Common.RuntimeType.Transport.Impl
+namespace Rpc.Common.Easy.Rpc.Transport.Impl
 {
     /// <summary>
     /// 基于DotNetty的传输客户端工厂
@@ -21,6 +22,7 @@ namespace Rpc.Common.RuntimeType.Transport.Impl
     {
         private readonly ITransportMessageEncoder _transportMessageEncoder;
         private readonly IServiceExecutor _serviceExecutor;
+        private readonly ILogger<DefaultDotNettyTransportClientFactory> _logger;
 
         private readonly ConcurrentDictionary<EndPoint, Lazy<ITransportClient>> _clients =
             new ConcurrentDictionary<EndPoint, Lazy<ITransportClient>>();
@@ -38,9 +40,10 @@ namespace Rpc.Common.RuntimeType.Transport.Impl
             AttributeKey<EndPoint>.ValueOf(typeof(DefaultDotNettyTransportClientFactory), nameof(EndPoint));
 
 
-        public DefaultDotNettyTransportClientFactory(ITransportMessageCodecFactory codecFactory,
+        public DefaultDotNettyTransportClientFactory(ITransportMessageCodecFactory codecFactory, ILogger<DefaultDotNettyTransportClientFactory> logger, 
             IServiceExecutor serviceExecutor = null)
         {
+            _logger = logger;
             _transportMessageEncoder = codecFactory.GetEncoder();
             var transportMessageDecoder = codecFactory.GetDecoder();
             _serviceExecutor = serviceExecutor;
@@ -50,7 +53,7 @@ namespace Rpc.Common.RuntimeType.Transport.Impl
                 var pipeline = c.Pipeline;
                 pipeline.AddLast(new LengthFieldPrepender(4));
                 pipeline.AddLast(new LengthFieldBasedFrameDecoder(int.MaxValue, 0, 4, 0, 4));
-                pipeline.AddLast(new TransportMessageChannelHandlerAdapter(transportMessageDecoder));
+                pipeline.AddLast(new TransportMessageChannelHandlerDecodeAdapter(transportMessageDecoder));
                 pipeline.AddLast(new DefaultChannelHandler(this));
             }));
         }
@@ -80,7 +83,7 @@ namespace Rpc.Common.RuntimeType.Transport.Impl
                             channel.GetAttribute(MessageSenderKey).Set(messageSender);
                             channel.GetAttribute(OrigEndPointKey).Set(k);
 
-                            var client = new TransportClient(messageSender, messageListener, _serviceExecutor);
+                            var client = new TransportClient(messageSender, messageListener, _serviceExecutor, _logger);
                             return client;
                         }
                     )).Value;

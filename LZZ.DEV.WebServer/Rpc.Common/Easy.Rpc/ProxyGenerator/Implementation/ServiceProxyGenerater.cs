@@ -79,8 +79,8 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation
                     SyntaxFactory.NamespaceDeclaration(
                         SyntaxFactory.QualifiedName(
                             SyntaxFactory.QualifiedName(
-                                SyntaxFactory.IdentifierName("Easy"),
-                                SyntaxFactory.IdentifierName("Rpc")),
+                                SyntaxFactory.IdentifierName("Rpc"),
+                                SyntaxFactory.IdentifierName("Common")),
                             SyntaxFactory.IdentifierName("ClientProxys"))).WithMembers(
                         SyntaxFactory.SingletonList<MemberDeclarationSyntax>(
                             SyntaxFactory.ClassDeclaration(className).WithModifiers(
