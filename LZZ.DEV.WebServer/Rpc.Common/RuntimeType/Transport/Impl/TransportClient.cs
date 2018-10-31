@@ -12,31 +12,44 @@ namespace Rpc.Common.RuntimeType.Transport.Impl
     /// </summary>
     public class TransportClient : ITransportClient, IDisposable
     {
-        #region Field
-
         private readonly IMessageSender _messageSender;
         private readonly IMessageListener _messageListener;
-        private readonly IServiceExecutor _serviceExecutor;
 
         private readonly ConcurrentDictionary<string, TaskCompletionSource<TransportMessage>> _resultDictionary =
             new ConcurrentDictionary<string, TaskCompletionSource<TransportMessage>>();
 
-        #endregion Field
-
-        #region Constructor
-
         public TransportClient(IMessageSender messageSender, IMessageListener messageListener,
             IServiceExecutor serviceExecutor)
         {
+            var serviceExecutor1 = serviceExecutor;
+            
             _messageSender = messageSender;
             _messageListener = messageListener;
-            _serviceExecutor = serviceExecutor;
-            messageListener.Received += MessageListener_Received;
+            
+            messageListener.Received += async (sender, message) =>
+            {
+                Console.WriteLine("接收到消息。");
+
+                if (!_resultDictionary.TryGetValue(message.Id, out var task))
+                    return;
+
+                if (message.IsInvokeResultMessage())
+                {
+                    var content = message.GetContent<RemoteInvokeResultMessage>();
+                    if (!string.IsNullOrEmpty(content.ExceptionMessage))
+                    {
+                        task.TrySetException(new RpcRemoteException(content.ExceptionMessage));
+                    }
+                    else
+                    {
+                        task.SetResult(message);
+                    }
+                }
+
+                if (serviceExecutor1 != null && message.IsInvokeMessage())
+                    await serviceExecutor1.ExecuteAsync(sender, message);
+            };
         }
-
-        #endregion Constructor
-
-        #region Implementation of ITransportClient
 
         /// <summary>
         /// 发送消息。
@@ -71,15 +84,10 @@ namespace Rpc.Common.RuntimeType.Transport.Impl
             catch (Exception exception)
             {
                 Console.WriteLine("消息发送失败。" + exception);
-//                if (_logger.IsEnabled(LogLevel.Error))
-//                    _logger.LogError("消息发送失败。", exception);
                 throw;
             }
         }
 
-        #endregion Implementation of ITransportClient
-
-        #region Implementation of IDisposable
 
         /// <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>
         public void Dispose()
@@ -93,9 +101,6 @@ namespace Rpc.Common.RuntimeType.Transport.Impl
             }
         }
 
-        #endregion Implementation of IDisposable
-
-        #region Private Method
 
         /// <summary>
         /// 注册指定消息的回调任务。
@@ -116,38 +121,9 @@ namespace Rpc.Common.RuntimeType.Transport.Impl
             finally
             {
                 //删除回调任务
-                TaskCompletionSource<TransportMessage> value;
-                _resultDictionary.TryRemove(id, out value);
+//                TaskCompletionSource<TransportMessage> value;
+                _resultDictionary.TryRemove(id, out _);
             }
         }
-
-        private async Task MessageListener_Received(IMessageSender sender, TransportMessage message)
-        {
-//            if (_logger.IsEnabled(LogLevel.Information))
-//                _logger.LogInformation("接收到消息。");
-            Console.WriteLine("接收到消息。");
-
-            TaskCompletionSource<TransportMessage> task;
-            if (!_resultDictionary.TryGetValue(message.Id, out task))
-                return;
-
-            if (message.IsInvokeResultMessage())
-            {
-                var content = message.GetContent<RemoteInvokeResultMessage>();
-                if (!string.IsNullOrEmpty(content.ExceptionMessage))
-                {
-                    task.TrySetException(new RpcRemoteException(content.ExceptionMessage));
-                }
-                else
-                {
-                    task.SetResult(message);
-                }
-            }
-
-            if (_serviceExecutor != null && message.IsInvokeMessage())
-                await _serviceExecutor.ExecuteAsync(sender, message);
-        }
-
-        #endregion Private Method
     }
 }

@@ -1,4 +1,5 @@
 ﻿// TODO: LocalExecuteAsync unknown 
+
 using System;
 using System.Reflection;
 using System.Threading.Tasks;
@@ -125,7 +126,7 @@ namespace Rpc.Common.RuntimeType.Server.Impl
                 message += "|InnerException:" + GetExceptionMessage(exception.InnerException);
             }
 
-            return message; 
+            return message;
         }
     }
 }

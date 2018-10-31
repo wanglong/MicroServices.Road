@@ -87,6 +87,7 @@
               </e>
               <e p="IServiceIdGenerator.cs" t="Include" />
             </e>
+            <e p="Journal" t="Include" />
           </e>
           <e p="Entitys" t="Include">
             <e p="Messages" t="Include">
@@ -125,17 +126,20 @@
               <e p="ITransportMessageDecoder.cs" t="Include" />
               <e p="ITransportMessageEncoder.cs" t="Include" />
             </e>
-            <e p="DotNettyMessageSender.cs" t="Include" />
-            <e p="DotNettyServerMessageListener.cs" t="Include" />
-            <e p="DotNettyTransportClientFactory.cs" t="Include" />
             <e p="IMessageListener.cs" t="Include" />
             <e p="IMessageSender.cs" t="Include" />
             <e p="Impl" t="Include">
+              <e p="DefaultDotNettyMessageClientSender.cs" t="Include" />
+              <e p="DefaultDotNettyMessageSender.cs" t="Include" />
+              <e p="DefaultDotNettyServerMessageListener.cs" t="Include" />
+              <e p="DefaultDotNettyServerMessageSender.cs" t="Include" />
+              <e p="DefaultDotNettyTransportClientFactory.cs_" t="Include" />
               <e p="MessageListener.cs" t="Include" />
               <e p="TransportClient.cs" t="Include" />
             </e>
             <e p="InternalAdaper" t="Include">
-              <e p="TransportMessageChannelHandlerAdapter.cs" t="Include" />
+              <e p="TransportMessageChannelHandlerDecodeAdapter.cs" t="Include" />
+              <e p="TransportMessageChannelHandlerEncodeAdapter.cs" t="Include" />
             </e>
             <e p="ITransportClient.cs" t="Include" />
             <e p="ITransportClientFactory.cs" t="Include" />

@@ -7,11 +7,11 @@ namespace Rpc.Common.RuntimeType.Transport.InternalAdaper
     /// <summary>
     /// 一个标准通道的处理适配器
     /// </summary>
-    internal class TransportMessageChannelHandlerAdapter : ChannelHandlerAdapter
+    internal class TransportMessageChannelHandlerDecodeAdapter : ChannelHandlerAdapter
     {
         private readonly ITransportMessageDecoder _transportMessageDecoder;
 
-        public TransportMessageChannelHandlerAdapter(ITransportMessageDecoder transportMessageDecoder)
+        public TransportMessageChannelHandlerDecodeAdapter(ITransportMessageDecoder transportMessageDecoder)
         {
             _transportMessageDecoder = transportMessageDecoder;
         }

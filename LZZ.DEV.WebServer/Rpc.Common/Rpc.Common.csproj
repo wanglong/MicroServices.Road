@@ -13,6 +13,7 @@
 
     <ItemGroup>
       <Folder Include="RuntimeType\communally" />
+      <Folder Include="RuntimeType\Communally\Journal" />
     </ItemGroup>
 
 </Project>

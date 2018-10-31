@@ -3,6 +3,7 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Rpc.Common;
 using Rpc.Common.RuntimeType.Attributes;
 using Rpc.Common.RuntimeType.Communally.Convertibles;
@@ -11,9 +12,9 @@ using Rpc.Common.RuntimeType.Communally.IdGenerator;
 using Rpc.Common.RuntimeType.Communally.IdGenerator.Impl;
 using Rpc.Common.RuntimeType.Server;
 using Rpc.Common.RuntimeType.Server.Impl;
-using Rpc.Common.RuntimeType.Transport;
 using Rpc.Common.RuntimeType.Transport.Codec;
 using Rpc.Common.RuntimeType.Transport.Codec.Implementation;
+using Rpc.Common.RuntimeType.Transport.Impl;
 
 namespace Rpc.Server
 {
@@ -69,7 +70,7 @@ namespace Rpc.Server
                     // 注入服务执行者
                     serviceCollection.AddSingleton<IServiceExecutor, DefaultServiceExecutor>();
                     // 注入DotNetty消息监听器
-                    serviceCollection.AddSingleton<DotNettyServerMessageListener>();
+                    serviceCollection.AddSingleton<DefaultDotNettyServerMessageListener>();
                     // 注入服务定位器
                     serviceCollection.AddSingleton<IServiceEntryLocate, DefaultServiceEntryLocate>();
                     // 注入服务执行者
@@ -81,7 +82,8 @@ namespace Rpc.Server
                         provider => new DefaultServiceHost(
                             async endPoint =>
                             {
-                                var messageListener = provider.GetRequiredService<DotNettyServerMessageListener>();
+                                var messageListener =
+                                    provider.GetRequiredService<DefaultDotNettyServerMessageListener>();
                                 await messageListener.StartAsync(endPoint);
                                 return messageListener;
                             },
@@ -94,6 +96,8 @@ namespace Rpc.Server
 
                 // ** 注入本地测试类
                 serviceCollection.AddSingleton<IUserService, UserServiceImpl>();
+                // ** 注入日志中间件
+                serviceCollection.AddLogging();
             }
 
             // 构建当前容器
@@ -101,6 +105,10 @@ namespace Rpc.Server
 
             // 获取服务管理实体类
             var serviceEntryManager = buildServiceProvider.GetRequiredService<IServiceEntryManager>();
+
+            // 构建内部日志处理
+            buildServiceProvider.GetRequiredService<ILoggerFactory>()
+                .AddConsole((console, logLevel) => (int) logLevel >= 0);
 
             // 获取所有打上RpcTargetBundle特性的服务实体
             foreach (var entry in serviceEntryManager.GetEntries())

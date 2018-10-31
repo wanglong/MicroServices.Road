@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/DotNettyServerMessageListener.cs" line="17" />
+    <bookmark url="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/DefaultDotNettyServerMessageListener.cs" line="35" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7fc8ac6-fece-4bce-85af-055070c43c20" name="Default" comment="update rpc server demo">
+      <change afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/DefaultDotNettyMessageClientSender.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/DefaultDotNettyServerMessageSender.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/InternalAdaper/TransportMessageChannelHandlerEncodeAdapter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LZZ.DEV.WebServer/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LZZ.DEV.WebServer/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LZZ.DEV.WebServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LZZ.DEV.WebServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetty.Demo/Echo.Client/obj/Echo.Client.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetty.Demo/Echo.Client/obj/Echo.Client.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetty.Demo/Echo.Client/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetty.Demo/Echo.Client/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetty.Demo/Echo.Server/obj/Echo.Server.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetty.Demo/Echo.Server/obj/Echo.Server.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetty.Demo/Echo.Server/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetty.Demo/Echo.Server/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Client/obj/Rpc.Client.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Client/obj/Rpc.Client.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Client/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Client/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Adaper/TransportMessageChannelHandlerAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/InternalAdaper/TransportMessageChannelHandlerAdapter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/ITransportMessageCodecFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/ITransportMessageCodecFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/ITransportMessageDecoder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/ITransportMessageDecoder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/Rpc.Common.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/Rpc.Common.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceExecutor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/ITransportMessageEncoder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/ITransportMessageEncoder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/Implementation/JsonTransportMessageDecoder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/Implementation/JsonTransportMessageDecoder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/DotNettyServerMessageListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/DotNettyServerMessageListener.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/DotNettyTransportClientFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/DotNettyTransportClientFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc.Server/obj/Rpc.Server.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Server/obj/Rpc.Server.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/Implementation/JsonTransportMessageEncoder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/Implementation/JsonTransportMessageEncoder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/DotNettyMessageSender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/DefaultDotNettyMessageSender.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/DotNettyServerMessageListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/DefaultDotNettyServerMessageListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/DotNettyTransportClientFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/DefaultDotNettyTransportClientFactory.cs_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/ITransportClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/ITransportClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/MessageListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/MessageListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/TransportClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/TransportClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/InternalAdaper/TransportMessageChannelHandlerAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/InternalAdaper/TransportMessageChannelHandlerDecodeAdapter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Server/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Server/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Server/Rpc.Server.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Server/Rpc.Server.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Server/bin/Debug/netcoreapp2.1/Rpc.Server.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Server/bin/Debug/netcoreapp2.1/Rpc.Server.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rpc.Server/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Server/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc.Server/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc.Server/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,9 +104,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="267" />
+          <entry key="cs" value="318" />
           <entry key="cs_" value="1" />
-          <entry key="csproj" value="8" />
+          <entry key="csproj" value="9" />
           <entry key="dgml" value="1" />
           <entry key="http" value="1" />
           <entry key="json" value="1" />
@@ -111,8 +115,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="267" />
-          <entry key="Csproj" value="8" />
+          <entry key="C#" value="318" />
+          <entry key="Csproj" value="9" />
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Scratch" value="1" />
@@ -121,14 +125,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="4508" />
+          <entry key="cs" value="5330" />
           <entry key="csproj" value="16" />
           <entry key="txt" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="4508" />
+          <entry key="C#" value="5330" />
           <entry key="Csproj" value="16" />
           <entry key="PLAIN_TEXT" value="38" />
         </counts>
@@ -141,21 +145,42 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/Implementation/JsonTransportMessageDecoder.cs">
+        <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/DefaultDotNettyServerMessageListener.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+            <state relative-caret-position="345">
+              <caret line="72" column="59" lean-forward="true" selection-start-line="72" selection-start-column="59" selection-end-line="72" selection-end-column="59" />
               <folding>
-                <marker date="1540951984000" expanded="false" signature="6:105" ph="..." />
-                <marker date="1540951984000" expanded="true" signature="170:1457" ph="{...}" />
-                <marker date="1540951984000" expanded="true" signature="251:1455" ph="{...}" />
-                <marker date="1540951984000" expanded="true" signature="309:478" ph="{...}" />
-                <marker date="1540951984000" expanded="true" signature="531:781" ph="{...}" />
-                <marker date="1540951984000" expanded="true" signature="597:771" ph="{...}" />
-                <marker date="1540951984000" expanded="true" signature="834:943" ph="{...}" />
-                <marker date="1540951984000" expanded="true" signature="1017:1449" ph="{...}" />
-                <marker date="1540951984000" expanded="true" signature="1070:1212" ph="{...}" />
-                <marker date="1540951984000" expanded="true" signature="1262:1410" ph="{...}" />
+                <marker date="1540965836000" expanded="true" signature="6:386" ph="..." />
+                <marker date="1540965836000" expanded="true" signature="435:3712" ph="{...}" />
+                <marker date="1540965836000" expanded="true" signature="442:499" ph="/// 基于DotNetty的消息监听者 ... " />
+                <marker date="1540965836000" expanded="true" signature="585:3710" ph="{...}" />
+                <marker date="1540965836000" expanded="true" signature="1085:1356" ph="{...}" />
+                <marker date="1540965836000" expanded="true" signature="1415:1609" ph="/// 触发接收到消息事件。 ... " />
+                <marker date="1540965836000" expanded="true" signature="1695:1897" ph="{...}" />
+                <marker date="1540965836000" expanded="true" signature="1954:3425" ph="{...}" />
+                <marker date="1540965836000" expanded="true" signature="2400:3189" ph="{...}" />
+                <marker date="1540965836000" expanded="true" signature="2903:3135" ph="{...}" />
+                <marker date="1540965836000" expanded="true" signature="3435:3574" ph="///Performs application-defined tasks associated with freeing, releasing, ... " />
+                <marker date="1540965836000" expanded="true" signature="3604:3704" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/InternalAdaper/TransportMessageChannelHandlerEncodeAdapter.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <marker date="1540965820000" expanded="false" signature="6:161" ph="..." />
+                <marker date="1540965820000" expanded="true" signature="220:1307" ph="{...}" />
+                <marker date="1540965820000" expanded="true" signature="307:1305" ph="{...}" />
+                <marker date="1540965820000" expanded="true" signature="579:667" ph="{...}" />
+                <marker date="1540965820000" expanded="true" signature="757:958" ph="{...}" />
+                <marker date="1540965820000" expanded="true" signature="794:946" ph="{...}" />
+                <marker date="1540965820000" expanded="true" signature="1040:1089" ph="{...}" />
+                <marker date="1540965820000" expanded="true" signature="1188:1299" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -172,6 +197,8 @@
       <find>ITypeConvertibleProvider</find>
       <find>DefaultTypeConvertibleService</find>
       <find>ChannelRead</find>
+      <find>。</find>
+      <find>logger</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -181,42 +208,80 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/DotNetty.Demo/Echo.Server/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotNetty.Demo/Echo.Client/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0B1E95C3-117B-403B-95BD-433D56CB87F1/64/d0d7b522/ChannelHandlerAdapter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/IMessageListener.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotNetty.Demo/Echo.Client/EchoClientHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0B1E95C3-117B-403B-95BD-433D56CB87F1/af/e9dcd388/IChannelHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceHost.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Controllers/ClientController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0B1E95C3-117B-403B-95BD-433D56CB87F1/59/7e315b7f/IChannelHandlerContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Controllers/HealthController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/DefaultDotNettyMessageClientSender.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/DefaultDotNettyServerMessageSender.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/App_Code/AppBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/IUserService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/UserModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/UserServiceImpl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/IServiceHost.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A5971172-D9AE-4584-83EE-ADAFCF0E5AB4/d7/983264ec/ConsoleLoggerExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E1CF177E-521D-4B93-AD2C-73D2115F88E8/2e/9bd06018/LogLevel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Attributes/RpcTagBundleAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/IServiceEntryManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Entitys/ServiceEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Entitys/ServiceDescriptor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceEntryManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/IServiceEntryProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0B1E95C3-117B-403B-95BD-433D56CB87F1/c0/b2697178/AbstractBootstrap`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Server/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0B1E95C3-117B-403B-95BD-433D56CB87F1/a7/2245d5ec/TcpServerSocketChannel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/DefaultDotNettyTransportClientFactory.cs_" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/DefaultDotNettyMessageSender.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0B1E95C3-117B-403B-95BD-433D56CB87F1/37/781908cf/ChannelOption.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/InternalAdaper/TransportMessageChannelHandlerEncodeAdapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Models/ServiceEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/260565CF-1D1B-4216-B781-C1D142FE5CC4/34/3d0b468c/ServiceCollectionContainerBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0ED0D170-86D1-4299-AAF7-8A390BA4CE98/12/6c5d41fd/IPEndPoint.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Attributes/AttributeServiceEntryProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/IServiceEntryFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/IServiceExecutor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/ServiceEntryFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/DefaultDotNettyServerMessageListener.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/ServiceHostAbstract.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/IdGenerator/IServiceIdGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/IdGenerator/Impl/DefaultServiceIdGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/Convertibles/ITypeConvertibleService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/Convertibles/Impl/DefaultTypeConvertibleService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/Exceptions/RpcCommunicationException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/Exceptions/RpcException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/Exceptions/RpcRemoteException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Attributes/RpcServiceDescriptorAttribute.cs_" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7540A5DA-343D-4E6A-AC2A-6190E339F993/3b/86951a95/CustomAttributeExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0483C335-F48F-4670-9723-603C1A3A0703/57/704c407f/ServiceProviderServiceExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/DotNetty.Demo/Echo.Server/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7540A5DA-343D-4E6A-AC2A-6190E339F993/e3/598f147a/Task.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7540A5DA-343D-4E6A-AC2A-6190E339F993/e9/e0077c89/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/InternalAdaper/TransportMessageChannelHandlerAdapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/InternalAdaper/TransportMessageChannelHandlerDecodeAdapter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/ITransportMessageEncoder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/DotNetty.Demo/Echo.Client/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/27FAC526-A042-4B73-AEC3-616A6586AC97/82/bea3c770/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LZZ.DEV.Watch/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LZZ.DEV.Watch/Controllers/HealthController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/Convertibles/ITypeConvertibleProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0B1E95C3-117B-403B-95BD-433D56CB87F1/64/d0d7b522/ChannelHandlerAdapter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/Convertibles/Impl/TypeConvertDelegate.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/IMessageListener.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/DotNetty.Demo/Echo.Client/EchoClientHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/260565CF-1D1B-4216-B781-C1D142FE5CC4/1d/36fbce85/CallSiteRuntimeResolver.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7540A5DA-343D-4E6A-AC2A-6190E339F993/bd/3e4950a2/Type.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0B1E95C3-117B-403B-95BD-433D56CB87F1/af/e9dcd388/IChannelHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceHost.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Controllers/ClientController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/540A30D0-A031-4084-807D-B058D5033896/30/ef92d5fd/CustomAttributeExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0B1E95C3-117B-403B-95BD-433D56CB87F1/59/7e315b7f/IChannelHandlerContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Controllers/HealthController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/680D0A75-2A4E-40EB-A596-BAD88FBFB729/d9/d285de13/Thread.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/Implementation/JsonTransportMessageCodecFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/App_Code/AppBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/540A30D0-A031-4084-807D-B058D5033896/52/fcd9867d/MemberInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/IUserService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/Implementation/JsonTransportMessageEncoder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/UserModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/Implementation/JsonTransportMessageDecoder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/UserServiceImpl.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/IServiceHost.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0483C335-F48F-4670-9723-603C1A3A0703/4e/2cf67cd6/IServiceScopeFactory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B7FE8232-F1A2-43FB-B2AA-C8E240E3BD9F/27/4bdd033a/IPAddress.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/540A30D0-A031-4084-807D-B058D5033896/6f/3bce1f62/MethodBase.cs" root0="SKIP_HIGHLIGHTING" />
@@ -228,58 +293,23 @@
     <setting file="file://$PROJECT_DIR$/LZZ.DEV.Watch/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BA399DFF-A4FA-48C8-99FD-3733603F660D/af/1454178f/AppDomain.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/ITransportMessageCodecFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Attributes/RpcTagBundleAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Client/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/IServiceEntryManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Entitys/ServiceEntity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Entitys/ServiceDescriptor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/App_Code/NetworkHelper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceEntryManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/IServiceEntryProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Server/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ED07561A-F00F-4966-8EBC-547EA3E7CE17/3c/0e5c0a8f/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/DotNettyTransportClientFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/DotNettyMessageSender.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/IMessageSender.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Entitys/Messages/RemoteInvokeResultMessage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceExecutor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Entitys/Messages/RemoteInvokeMessage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Entitys/Messages/TransportMessage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LZZ.DEV.WebServer/Models/ServiceEntity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceEntryLocate.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/260565CF-1D1B-4216-B781-C1D142FE5CC4/34/3d0b468c/ServiceCollectionContainerBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0ED0D170-86D1-4299-AAF7-8A390BA4CE98/12/6c5d41fd/IPEndPoint.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Attributes/AttributeServiceEntryProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/IServiceEntryFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/IServiceExecutor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/ServiceEntryFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/DotNettyServerMessageListener.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/ServiceHostAbstract.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/IdGenerator/IServiceIdGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/ITransportClientFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/IdGenerator/Impl/DefaultServiceIdGenerator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/Convertibles/ITypeConvertibleService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/ITransportClient.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/Convertibles/Impl/DefaultTypeConvertibleService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/Exceptions/RpcCommunicationException.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/Exceptions/RpcException.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/Exceptions/RpcRemoteException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/TransportClient.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Attributes/RpcServiceDescriptorAttribute.cs_" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/MessageListener.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/RpcTagBundleAttribute.cs" />
-        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceDescriptor.cs" />
-        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceEntry.cs" />
-        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/ServiceEntity.cs" />
-        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/communally/Convertibles/ITypeConvertibleService.cs" />
-        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/Convertibles/ITypeConvertibleService.cs" />
-        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/IdGenerator/Impl/DefaultServiceIdGenerator.cs" />
-        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/Convertibles/Impl/ITypeConvertibleProvider.cs" />
-        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/Convertibles/ITypeConvertibleProvider.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/ClrServiceEntryFactory.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceEntryManager.cs" />
         <option value="$PROJECT_DIR$/Rpc.Client/Program.cs" />
@@ -291,26 +321,20 @@
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/DotNettyMessageSender.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/IServiceHost.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/IServiceExecutor.cs" />
-        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/MessageListener.cs" />
-        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/ITransportClient.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/ITransportClientFactory.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/IServiceEntryLocate.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Entitys/ServiceDescriptorExtensions.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Entitys/ServiceDescriptor.cs" />
-        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/TransportClient.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/DotNettyTransportClientFactory.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/DotNettyServerMessageListener.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/Implementation/JsonTransportMessageCodecFactory.cs" />
-        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/Implementation/JsonTransportMessageEncoder.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Attributes/AttributeServiceEntryProvider.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/IUserService.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Attributes/RpcTagBundleAttribute.cs" />
-        <option value="$PROJECT_DIR$/Rpc.Server/Program.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/Convertibles/Impl/DefaultTypeConvertibleService.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/Convertibles/Impl/TypeConvertDelegate.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/Exceptions/RpcCommunicationException.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Communally/Exceptions/RpcRemoteException.cs" />
-        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceExecutor.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceEntryLocate.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/ServiceHostAbstract.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceHost.cs" />
@@ -320,8 +344,23 @@
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/InternalAdaper/TransportMessageChannelHandlerAdapter.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/ITransportMessageCodecFactory.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/ITransportMessageDecoder.cs" />
-        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/ITransportMessageEncoder.cs" />
         <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/Implementation/JsonTransportMessageDecoder.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/ITransportMessageEncoder.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/Implementation/JsonTransportMessageEncoder.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/MessageListener.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/ITransportClient.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/TransportClient.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/DefaultDotNettyMessageSender.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/DefaultDotNettyMessageClientSender.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/DefaultDotNettyServerMessageSender.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/DefaultDotNettyTransportClientFactory.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceExecutor.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Server/Program.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/ServerHandler.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/DefaultDotNettyServerMessageListener.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/InternalAdaper/TransportMessageChannelHandlerDecodeAdapter.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/TransportMessageChannelHandlerEncodeAdapter.cs" />
+        <option value="$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/InternalAdaper/TransportMessageChannelHandlerEncodeAdapter.cs" />
       </list>
     </option>
   </component>
@@ -370,7 +409,30 @@
               <item name="LZZ.DEV.WebServer" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Rpc.Demo" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Rpc.Common" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Dependencies" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="LZZ.DEV.WebServer" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Rpc.Demo" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Rpc.Common" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Dependencies" type="24d0babc:SolutionExplorerModelNode" />
+              <item name=".NETCoreApp 2.1" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="LZZ.DEV.WebServer" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Rpc.Demo" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Rpc.Common" type="24d0babc:SolutionExplorerModelNode" />
               <item name="RuntimeType" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="LZZ.DEV.WebServer" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Rpc.Demo" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Rpc.Common" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="RuntimeType" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Communally" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
@@ -387,17 +449,7 @@
               <item name="Rpc.Common" type="24d0babc:SolutionExplorerModelNode" />
               <item name="RuntimeType" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Transport" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Codec" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="LZZ.DEV.WebServer" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Rpc.Demo" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Rpc.Common" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="RuntimeType" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Transport" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Codec" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Implementation" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Impl" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
@@ -413,6 +465,30 @@
               <item name="LZZ.DEV.WebServer" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Rpc.Demo" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Rpc.Server" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="LZZ.DEV.WebServer" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Rpc.Demo" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Rpc.Server" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Dependencies" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="LZZ.DEV.WebServer" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Rpc.Demo" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Rpc.Server" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Dependencies" type="24d0babc:SolutionExplorerModelNode" />
+              <item name=".NETCoreApp 2.1" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="LZZ.DEV.WebServer" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Rpc.Demo" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Rpc.Server" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Dependencies" type="24d0babc:SolutionExplorerModelNode" />
+              <item name=".NETCoreApp 2.1" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Packages" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -573,7 +649,7 @@
       <workItem from="1540861934484" duration="7326000" />
       <workItem from="1540884567580" duration="4243000" />
       <workItem from="1540888863337" duration="6188000" />
-      <workItem from="1540948311390" duration="2541000" />
+      <workItem from="1540948311390" duration="12840000" />
     </task>
     <task id="LOCAL-00001" summary="add rpc demo">
       <created>1539919457231</created>
@@ -715,11 +791,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540890553816</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="update rpc server demo">
+      <created>1540952249655</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1540952249655</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114350000" />
+    <option name="totallyTimeSpent" value="124649000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -732,28 +815,29 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.57028115" visible="true" weight="0.2764391" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.57028115" visible="true" weight="0.29451138" />
       <window_info id="Structure" order="1" sideWeight="0.42971888" side_tool="true" weight="0.27710843" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.26666668" side_tool="true" weight="0.27710843" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.60053617" weight="0.35843793" />
+      <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.5997323" weight="0.35833332" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.49798927" visible="true" weight="0.25833333" />
-      <window_info anchor="bottom" id="NuGet" order="6" sideWeight="0.60117775" weight="0.308204" />
+      <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.49798927" weight="0.25833333" />
+      <window_info anchor="bottom" id="NuGet" order="6" sideWeight="0.6004016" weight="0.39305556" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="DB Execution Console" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="10" sideWeight="0.49799198" weight="0.32916668" />
       <window_info anchor="bottom" id="REST Client" order="11" weight="0.36165327" />
       <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49865952" weight="0.32914925" />
-      <window_info anchor="bottom" id="Run" order="13" sideWeight="0.5020107" side_tool="true" visible="true" weight="0.25941423" />
+      <window_info anchor="bottom" id="Run" order="13" sideWeight="0.706158" side_tool="true" visible="true" weight="0.30833334" />
       <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.7248996" side_tool="true" weight="0.29444444" />
       <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.6639893" weight="0.35" />
-      <window_info anchor="bottom" id="Build" order="16" sideWeight="0.25603217" weight="0.35843793" />
+      <window_info anchor="bottom" id="Build" order="16" sideWeight="0.29384205" visible="true" weight="0.30833334" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -833,24 +917,34 @@
           </properties>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceExecutor.cs</url>
-          <line>31</line>
-          <properties documentPath="$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceExecutor.cs" initialLine="30">
-            <startOffsets>
-              <option value="977" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1041" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="DotNetProject">
+        <watch expression="_logger.LogWarning(&quot;12312312&quot;)" language="C#" custom="RiderImportsList:" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>_logger.LogWarning(&quot;12312312&quot;)</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>_logger.IsEnabled</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>_logger.IsEnabled()</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>Configuration[&quot;Service&quot;]</expression-string>
         <language-id>C#</language-id>
@@ -893,151 +987,9 @@
         <custom-info>RiderImportsList:</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>Configuration[&quot;Service:Name&quot;]</expression-string>
-        <language-id>C#</language-id>
-        <custom-info>RiderImportsList:</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Configuration[&quot;Server.Ip.Address&quot;]</expression-string>
-        <language-id>C#</language-id>
-        <custom-info>RiderImportsList:</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/ITransportClient.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/ITransportClientFactory.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Entitys/ServiceDescriptor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B7FE8232-F1A2-43FB-B2AA-C8E240E3BD9F/27/4bdd033a/IPAddress.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="175" column="6" selection-start-line="175" selection-start-column="6" selection-end-line="175" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/260565CF-1D1B-4216-B781-C1D142FE5CC4/1d/36fbce85/CallSiteRuntimeResolver.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="100" column="6" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B7FE8232-F1A2-43FB-B2AA-C8E240E3BD9F/fd/a22846e5/IPEndPoint.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/TransportClient.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="126" column="51" selection-start-line="125" selection-start-column="14" selection-end-line="126" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/680D0A75-2A4E-40EB-A596-BAD88FBFB729/d9/d285de13/Thread.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="112" column="8" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/DotNettyTransportClientFactory.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-550">
-          <caret line="86" column="56" selection-start-line="86" selection-start-column="56" selection-end-line="86" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/DotNettyServerMessageListener.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-594">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-          <folding>
-            <marker date="1540951304000" expanded="true" signature="6:295" ph="..." />
-            <marker date="1540951304000" expanded="true" signature="475:4048" ph="{...}" />
-            <marker date="1540951304000" expanded="true" signature="832:984" ph="{...}" />
-            <marker date="1540951304000" expanded="true" signature="1043:1237" ph="/// 触发接收到消息事件。 ... " />
-            <marker date="1540951304000" expanded="true" signature="1323:1446" ph="{...}" />
-            <marker date="1540951304000" expanded="true" signature="1503:2679" ph="{...}" />
-            <marker date="1540951304000" expanded="true" signature="1949:2606" ph="{...}" />
-            <marker date="1540951304000" expanded="true" signature="2376:2585" ph="{...}" />
-            <marker date="1540951304000" expanded="true" signature="2846:2946" ph="{...}" />
-            <marker date="1540951304000" expanded="true" signature="3007:4042" ph="{...}" />
-            <marker date="1540951304000" expanded="true" signature="3203:3273" ph="{...}" />
-            <marker date="1540951304000" expanded="true" signature="3367:3596" ph="{...}" />
-            <marker date="1540951304000" expanded="true" signature="3412:3580" ph="{...}" />
-            <marker date="1540951304000" expanded="true" signature="3682:3743" ph="{...}" />
-            <marker date="1540951304000" expanded="true" signature="3846:4032" ph="{...}" />
-            <marker date="1540951304000" expanded="true" signature="3861:4018" ph="/* if (_logger.IsEnabled(LogLevel.Error)) ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/Implementation/JsonTransportMessageEncoder.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/Implementation/JsonTransportMessageCodecFactory.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/IServiceHost.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Attributes/RpcServiceDescriptorAttribute.cs_">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/IServiceEntryProvider.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Attributes/AttributeServiceEntryProvider.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="46" column="68" selection-start-line="46" selection-start-column="68" selection-end-line="46" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Rpc.Common/IUserService.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -1146,50 +1098,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceExecutor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding>
-            <marker date="1540892988000" expanded="false" signature="42:229" ph="..." />
-            <marker date="1540892988000" expanded="true" signature="336:4388" ph="{...}" />
-            <marker date="1540892988000" expanded="true" signature="487:561" ph="{...}" />
-            <marker date="1540892988000" expanded="true" signature="571:726" ph="/// 执行消息转换后的服务 ... " />
-            <marker date="1540892988000" expanded="true" signature="814:2451" ph="{...}" />
-            <marker date="1540892988000" expanded="true" signature="946:1055" ph="{...}" />
-            <marker date="1540892988000" expanded="true" signature="1095:1256" ph="{...}" />
-            <marker date="1540892988000" expanded="true" signature="1390:1529" ph="{...}" />
-            <marker date="1540892988000" expanded="true" signature="1716:1965" ph="{...}" />
-            <marker date="1540892988000" expanded="true" signature="1982:2441" ph="{...}" />
-            <marker date="1540892988000" expanded="true" signature="2202:2372" ph="{...}" />
-            <marker date="1540892988000" expanded="true" signature="2612:3413" ph="{...}" />
-            <marker date="1540892988000" expanded="true" signature="2638:3208" ph="{...}" />
-            <marker date="1540892988000" expanded="true" signature="2809:2896" ph="{...}" />
-            <marker date="1540892988000" expanded="true" signature="2917:3194" ph="{...}" />
-            <marker date="1540892988000" expanded="true" signature="3248:3403" ph="{...}" />
-            <marker date="1540892988000" expanded="true" signature="3558:3969" ph="{...}" />
-            <marker date="1540892988000" expanded="true" signature="3584:3826" ph="{...}" />
-            <marker date="1540892988000" expanded="true" signature="3866:3959" ph="{...}" />
-            <marker date="1540892988000" expanded="true" signature="4041:4382" ph="{...}" />
-            <marker date="1540892988000" expanded="true" signature="4219:4342" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceEntryManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/IMessageListener.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7540A5DA-343D-4E6A-AC2A-6190E339F993/e3/598f147a/Task.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1293,8 +1201,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/ITransportMessageCodecFactory.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        <state relative-caret-position="342">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
           <folding>
             <marker date="1540951428000" expanded="true" signature="48:473" ph="{...}" />
             <marker date="1540951428000" expanded="true" signature="55:111" ph="/// 一个抽象的传输消息编解码器工厂 ... " />
@@ -1305,104 +1213,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Server/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
-          <folding>
-            <marker date="1540891772000" expanded="false" signature="6:637" ph="..." />
-            <marker date="1540891772000" expanded="true" signature="659:5048" ph="{...}" />
-            <marker date="1540891772000" expanded="true" signature="686:5046" ph="{...}" />
-            <marker date="1540891772000" expanded="true" signature="719:5040" ph="{...}" />
-            <marker date="1540891772000" expanded="false" signature="882:2378" ph="注入服务相关类" />
-            <marker date="1540891772000" expanded="true" signature="937:1069" ph="/* 用于提供标记为RpcTagBundle的特性自动扫描到服务管理器中 ... */" />
-            <marker date="1540891772000" expanded="true" signature="1590:2195" ph="{...}" />
-            <marker date="1540891772000" expanded="true" signature="2396:3949" ph="注入服务宿主和方法执行者" />
-            <marker date="1540891772000" expanded="true" signature="2456:2578" ph="/* 用于提供本地服务宿主和服务管理器中的方法执行者 ... */" />
-            <marker date="1540891772000" expanded="true" signature="3469:3777" ph="{...}" />
-            <marker date="1540891772000" expanded="true" signature="4421:4514" ph="{...}" />
-            <marker date="1540891772000" expanded="true" signature="4671:4907" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/InternalAdaper/TransportMessageChannelHandlerAdapter.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding>
-            <marker date="1540951306000" expanded="false" signature="6:104" ph="..." />
-            <marker date="1540951306000" expanded="true" signature="163:801" ph="{...}" />
-            <marker date="1540951306000" expanded="true" signature="170:223" ph="/// 一个标准通道的处理适配器 ... " />
-            <marker date="1540951306000" expanded="true" signature="304:799" ph="{...}" />
-            <marker date="1540951306000" expanded="true" signature="490:574" ph="{...}" />
-            <marker date="1540951306000" expanded="true" signature="672:793" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/DotNettyMessageSender.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-          <folding>
-            <marker date="1540865720000" expanded="false" signature="6:195" ph="..." />
-            <marker date="1540865720000" expanded="true" signature="239:3689" ph="{...}" />
-            <marker date="1540865720000" expanded="true" signature="246:306" ph="/// 基于DotNetty的消息发送者基类。 ... " />
-            <marker date="1540865720000" expanded="true" signature="354:886" ph="{...}" />
-            <marker date="1540865720000" expanded="true" signature="527:611" ph="{...}" />
-            <marker date="1540865720000" expanded="true" signature="682:880" ph="{...}" />
-            <marker date="1540865720000" expanded="true" signature="892:953" ph="/// 基于DotNetty客户端的消息发送者。 ... " />
-            <marker date="1540865720000" expanded="true" signature="1051:2486" ph="{...}" />
-            <marker date="1540865720000" expanded="true" signature="1245:1297" ph="{...}" />
-            <marker date="1540865720000" expanded="false" signature="1307:1701" ph="Implementation of IDisposable" />
-            <marker date="1540865720000" expanded="true" signature="1511:1651" ph="{...}" />
-            <marker date="1540865720000" expanded="true" signature="1554:1632" ph="{...}" />
-            <marker date="1540865720000" expanded="false" signature="1711:2480" ph="Implementation of IMessageSender" />
-            <marker date="1540865720000" expanded="true" signature="1761:1900" ph="/// 发送消息。 ... " />
-            <marker date="1540865720000" expanded="true" signature="1962:2078" ph="{...}" />
-            <marker date="1540865720000" expanded="true" signature="2088:2233" ph="/// 发送消息并清空缓冲区。 ... " />
-            <marker date="1540865720000" expanded="true" signature="2303:2427" ph="{...}" />
-            <marker date="1540865720000" expanded="true" signature="2492:2553" ph="/// 基于DotNetty服务端的消息发送者。 ... " />
-            <marker date="1540865720000" expanded="true" signature="2638:3687" ph="{...}" />
-            <marker date="1540865720000" expanded="true" signature="2860:2912" ph="{...}" />
-            <marker date="1540865720000" expanded="false" signature="2922:3681" ph="Implementation of IMessageSender" />
-            <marker date="1540865720000" expanded="true" signature="2972:3111" ph="/// 发送消息。 ... " />
-            <marker date="1540865720000" expanded="true" signature="3167:3284" ph="{...}" />
-            <marker date="1540865720000" expanded="true" signature="3294:3439" ph="/// 发送消息并清空缓冲区。 ... " />
-            <marker date="1540865720000" expanded="true" signature="3503:3628" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/ITransportMessageEncoder.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-          <folding>
-            <marker date="1540951706000" expanded="true" signature="6:63" ph="..." />
-            <marker date="1540951706000" expanded="true" signature="113:224" ph="{...}" />
-            <marker date="1540951706000" expanded="true" signature="161:222" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/ITransportMessageDecoder.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-          <folding>
-            <marker date="1540951470000" expanded="true" signature="6:63" ph="..." />
-            <marker date="1540951470000" expanded="true" signature="113:315" ph="{...}" />
-            <marker date="1540951470000" expanded="true" signature="161:313" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/Implementation/JsonTransportMessageDecoder.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        <state relative-caret-position="471">
+          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
           <folding>
             <marker date="1540951984000" expanded="false" signature="6:105" ph="..." />
             <marker date="1540951984000" expanded="true" signature="170:1457" ph="{...}" />
@@ -1414,6 +1228,376 @@
             <marker date="1540951984000" expanded="true" signature="1017:1449" ph="{...}" />
             <marker date="1540951984000" expanded="true" signature="1070:1212" ph="{...}" />
             <marker date="1540951984000" expanded="true" signature="1262:1410" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/ITransportMessageDecoder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding>
+            <marker date="1540951470000" expanded="false" signature="6:63" ph="..." />
+            <marker date="1540951470000" expanded="true" signature="113:315" ph="{...}" />
+            <marker date="1540951470000" expanded="true" signature="161:313" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Entitys/Messages/TransportMessage.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <marker date="1540864886000" expanded="true" signature="64:2445" ph="{...}" />
+            <marker date="1540864886000" expanded="true" signature="71:119" ph="/// 传输消息模型。 ... " />
+            <marker date="1540864886000" expanded="true" signature="153:2443" ph="{...}" />
+            <marker date="1540864886000" expanded="true" signature="193:213" ph="{...}" />
+            <marker date="1540864886000" expanded="true" signature="262:467" ph="{...}" />
+            <marker date="1540864886000" expanded="true" signature="477:531" ph="/// 消息Id。 ... " />
+            <marker date="1540864886000" expanded="true" signature="580:634" ph="/// 消息内容。 ... " />
+            <marker date="1540864886000" expanded="true" signature="688:742" ph="/// 内容类型。 ... " />
+            <marker date="1540864886000" expanded="true" signature="800:909" ph="/// 是否调用消息。 ... " />
+            <marker date="1540864886000" expanded="true" signature="947:1039" ph="{...}" />
+            <marker date="1540864886000" expanded="true" signature="1049:1161" ph="/// 是否是调用结果消息。 ... " />
+            <marker date="1540864886000" expanded="true" signature="1205:1303" ph="{...}" />
+            <marker date="1540864886000" expanded="true" signature="1313:1454" ph="/// 获取内容。 ... " />
+            <marker date="1540864886000" expanded="true" signature="1487:1539" ph="{...}" />
+            <marker date="1540864886000" expanded="true" signature="1549:1702" ph="/// 创建一个调用传输消息。 ... " />
+            <marker date="1540864886000" expanded="true" signature="1796:1950" ph="{...}" />
+            <marker date="1540864886000" expanded="true" signature="1874:1939" ph="{...}" />
+            <marker date="1540864886000" expanded="true" signature="1960:2168" ph="/// 创建一个调用结果传输消息。 ... " />
+            <marker date="1540864886000" expanded="true" signature="2303:2437" ph="{...}" />
+            <marker date="1540864886000" expanded="true" signature="2387:2426" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/Implementation/JsonTransportMessageEncoder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding>
+            <marker date="1540952788000" expanded="true" signature="6:105" ph="..." />
+            <marker date="1540952788000" expanded="true" signature="170:832" ph="{...}" />
+            <marker date="1540952788000" expanded="true" signature="251:830" ph="{...}" />
+            <marker date="1540952788000" expanded="true" signature="312:448" ph="{...}" />
+            <marker date="1540952788000" expanded="true" signature="510:824" ph="{...}" />
+            <marker date="1540952788000" expanded="true" signature="636:814" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Codec/ITransportMessageEncoder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <marker date="1540952726000" expanded="true" signature="6:63" ph="..." />
+            <marker date="1540952726000" expanded="true" signature="113:288" ph="{...}" />
+            <marker date="1540952726000" expanded="true" signature="161:286" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/ITransportClient.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <marker date="1540953312000" expanded="false" signature="6:76" ph="..." />
+            <marker date="1540953312000" expanded="true" signature="120:465" ph="{...}" />
+            <marker date="1540953312000" expanded="true" signature="127:177" ph="/// 一个传输客户端 ... " />
+            <marker date="1540953312000" expanded="true" signature="215:463" ph="{...}" />
+            <marker date="1540953312000" expanded="true" signature="230:377" ph="/// 发送消息 ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/Rpc.Common.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/DefaultDotNettyServerMessageSender.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <marker date="1540954126000" expanded="false" signature="6:157" ph="..." />
+            <marker date="1540954126000" expanded="true" signature="206:1329" ph="{...}" />
+            <marker date="1540954126000" expanded="true" signature="213:274" ph="/// 基于DotNetty服务端的消息发送者。 ... " />
+            <marker date="1540954126000" expanded="true" signature="373:1327" ph="{...}" />
+            <marker date="1540954126000" expanded="true" signature="602:654" ph="{...}" />
+            <marker date="1540954126000" expanded="true" signature="664:803" ph="/// 发送消息。 ... " />
+            <marker date="1540954126000" expanded="true" signature="859:976" ph="{...}" />
+            <marker date="1540954126000" expanded="true" signature="986:1131" ph="/// 发送消息并清空缓冲区。 ... " />
+            <marker date="1540954126000" expanded="true" signature="1195:1320" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/DefaultDotNettyMessageClientSender.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <marker date="1540953590000" expanded="false" signature="6:171" ph="..." />
+            <marker date="1540953590000" expanded="true" signature="220:1617" ph="{...}" />
+            <marker date="1540953590000" expanded="true" signature="227:288" ph="/// 基于DotNetty客户端的消息发送者。 ... " />
+            <marker date="1540953590000" expanded="true" signature="400:1615" ph="{...}" />
+            <marker date="1540953590000" expanded="true" signature="613:665" ph="{...}" />
+            <marker date="1540953590000" expanded="true" signature="833:933" ph="{...}" />
+            <marker date="1540953590000" expanded="true" signature="943:1082" ph="/// 发送消息。 ... " />
+            <marker date="1540953590000" expanded="true" signature="1144:1260" ph="{...}" />
+            <marker date="1540953590000" expanded="true" signature="1270:1415" ph="/// 发送消息并清空缓冲区。 ... " />
+            <marker date="1540953590000" expanded="true" signature="1485:1609" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/DefaultDotNettyMessageSender.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <marker date="1540953568000" expanded="false" signature="6:116" ph="..." />
+            <marker date="1540953568000" expanded="true" signature="165:828" ph="{...}" />
+            <marker date="1540953568000" expanded="true" signature="172:232" ph="/// 基于DotNetty的消息发送者基类。 ... " />
+            <marker date="1540953568000" expanded="true" signature="287:826" ph="{...}" />
+            <marker date="1540953568000" expanded="true" signature="467:551" ph="{...}" />
+            <marker date="1540953568000" expanded="true" signature="622:820" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/DefaultDotNettyTransportClientFactory.cs_">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/MessageListener.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
+          <folding>
+            <marker date="1540953068000" expanded="true" signature="6:76" ph="..." />
+            <marker date="1540953068000" expanded="true" signature="125:751" ph="{...}" />
+            <marker date="1540953068000" expanded="true" signature="132:178" ph="/// 消息监听者 ... " />
+            <marker date="1540953068000" expanded="true" signature="230:749" ph="{...}" />
+            <marker date="1540953068000" expanded="true" signature="245:302" ph="/// 接收到消息的事件 ... " />
+            <marker date="1540953068000" expanded="true" signature="360:550" ph="/// 触发接收到消息事件 ... " />
+            <marker date="1540953068000" expanded="true" signature="636:743" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/TransportClient.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <marker date="1540953352000" expanded="false" signature="6:216" ph="..." />
+            <marker date="1540953352000" expanded="true" signature="265:4341" ph="{...}" />
+            <marker date="1540953352000" expanded="true" signature="272:326" ph="/// 一个默认的传输客户端实现。 ... " />
+            <marker date="1540953352000" expanded="true" signature="391:4339" ph="{...}" />
+            <marker date="1540953352000" expanded="true" signature="858:1950" ph="{...}" />
+            <marker date="1540953352000" expanded="true" signature="1105:1939" ph="{...}" />
+            <marker date="1540953352000" expanded="true" signature="1325:1775" ph="{...}" />
+            <marker date="1540953352000" expanded="true" signature="1499:1639" ph="{...}" />
+            <marker date="1540953352000" expanded="true" signature="1664:1757" ph="{...}" />
+            <marker date="1540953352000" expanded="true" signature="1960:2110" ph="/// 发送消息。 ... " />
+            <marker date="1540953352000" expanded="true" signature="2202:3075" ph="{...}" />
+            <marker date="1540953352000" expanded="true" signature="2228:2916" ph="{...}" />
+            <marker date="1540953352000" expanded="true" signature="2507:2646" ph="{...}" />
+            <marker date="1540953352000" expanded="true" signature="2690:2811" ph="{...}" />
+            <marker date="1540953352000" expanded="true" signature="2956:3065" ph="{...}" />
+            <marker date="1540953352000" expanded="true" signature="3243:3536" ph="{...}" />
+            <marker date="1540953352000" expanded="true" signature="3443:3526" ph="{...}" />
+            <marker date="1540953352000" expanded="true" signature="3547:3694" ph="/// 注册指定消息的回调任务。 ... " />
+            <marker date="1540953352000" expanded="true" signature="3787:4333" ph="{...}" />
+            <marker date="1540953352000" expanded="true" signature="3985:4130" ph="{...}" />
+            <marker date="1540953352000" expanded="true" signature="4150:4323" ph="{...}" />
+            <marker date="1540953352000" expanded="true" signature="4181:4253" ph="/* 删除回调任务 ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/IMessageListener.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <marker date="1540864896000" expanded="false" signature="6:76" ph="..." />
+            <marker date="1540864896000" expanded="true" signature="120:855" ph="{...}" />
+            <marker date="1540864896000" expanded="true" signature="127:267" ph="/// 接受到消息的委托。 ... " />
+            <marker date="1540864896000" expanded="true" signature="365:417" ph="/// 一个抽象的消息监听者。 ... " />
+            <marker date="1540864896000" expanded="true" signature="455:853" ph="{...}" />
+            <marker date="1540864896000" expanded="true" signature="470:528" ph="/// 接收到消息的事件。 ... " />
+            <marker date="1540864896000" expanded="true" signature="579:773" ph="/// 触发接收到消息事件。 ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceEntryManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <marker date="1540809158000" expanded="false" signature="6:104" ph="..." />
+            <marker date="1540809158000" expanded="true" signature="150:1432" ph="{...}" />
+            <marker date="1540809158000" expanded="true" signature="157:220" ph="/// 实现一个默认的Services实体对象管理器 ... " />
+            <marker date="1540809158000" expanded="true" signature="287:1430" ph="{...}" />
+            <marker date="1540809158000" expanded="true" signature="380:563" ph="/// 根据提供者创建一个默认的服务条目实体对象 ... " />
+            <marker date="1540809158000" expanded="true" signature="651:1214" ph="{...}" />
+            <marker date="1540809158000" expanded="true" signature="759:1157" ph="{...}" />
+            <marker date="1540809158000" expanded="true" signature="883:1102" ph="{...}" />
+            <marker date="1540809158000" expanded="true" signature="1224:1313" ph="/// 获取服务实体对象 ... " />
+            <marker date="1540809158000" expanded="true" signature="1368:1424" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Server/Impl/DefaultServiceExecutor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <marker date="1540958758000" expanded="false" signature="43:230" ph="..." />
+            <marker date="1540958758000" expanded="true" signature="276:4390" ph="{...}" />
+            <marker date="1540958758000" expanded="true" signature="337:4388" ph="{...}" />
+            <marker date="1540958758000" expanded="true" signature="488:562" ph="{...}" />
+            <marker date="1540958758000" expanded="true" signature="572:727" ph="/// 执行消息转换后的服务 ... " />
+            <marker date="1540958758000" expanded="true" signature="815:2452" ph="{...}" />
+            <marker date="1540958758000" expanded="true" signature="947:1056" ph="{...}" />
+            <marker date="1540958758000" expanded="true" signature="1096:1257" ph="{...}" />
+            <marker date="1540958758000" expanded="true" signature="1391:1530" ph="{...}" />
+            <marker date="1540958758000" expanded="true" signature="1717:1966" ph="{...}" />
+            <marker date="1540958758000" expanded="true" signature="1983:2442" ph="{...}" />
+            <marker date="1540958758000" expanded="true" signature="2203:2373" ph="{...}" />
+            <marker date="1540958758000" expanded="true" signature="2613:3414" ph="{...}" />
+            <marker date="1540958758000" expanded="true" signature="2639:3209" ph="{...}" />
+            <marker date="1540958758000" expanded="true" signature="2810:2897" ph="{...}" />
+            <marker date="1540958758000" expanded="true" signature="2918:3195" ph="{...}" />
+            <marker date="1540958758000" expanded="true" signature="3249:3404" ph="{...}" />
+            <marker date="1540958758000" expanded="true" signature="3559:3970" ph="{...}" />
+            <marker date="1540958758000" expanded="true" signature="3585:3827" ph="{...}" />
+            <marker date="1540958758000" expanded="true" signature="3867:3960" ph="{...}" />
+            <marker date="1540958758000" expanded="true" signature="4042:4382" ph="{...}" />
+            <marker date="1540958758000" expanded="true" signature="4220:4343" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E1CF177E-521D-4B93-AD2C-73D2115F88E8/2e/9bd06018/LogLevel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A5971172-D9AE-4584-83EE-ADAFCF0E5AB4/d7/983264ec/ConsoleLoggerExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="91" column="33" selection-start-line="91" selection-start-column="33" selection-end-line="91" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0B1E95C3-117B-403B-95BD-433D56CB87F1/a7/2245d5ec/TcpServerSocketChannel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0B1E95C3-117B-403B-95BD-433D56CB87F1/37/781908cf/ChannelOption.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="36" column="61" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Server/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="109" column="64" selection-start-line="109" selection-start-column="64" selection-end-line="110" selection-end-column="64" />
+          <folding>
+            <marker date="1540959648000" expanded="true" signature="6:678" ph="..." />
+            <marker date="1540959648000" expanded="true" signature="700:5385" ph="{...}" />
+            <marker date="1540959648000" expanded="true" signature="727:5383" ph="{...}" />
+            <marker date="1540959648000" expanded="true" signature="760:5377" ph="{...}" />
+            <marker date="1540959648000" expanded="false" signature="923:2419" ph="注入服务相关类" />
+            <marker date="1540959648000" expanded="true" signature="978:1110" ph="/* 用于提供标记为RpcTagBundle的特性自动扫描到服务管理器中 ... */" />
+            <marker date="1540959648000" expanded="true" signature="1631:2236" ph="{...}" />
+            <marker date="1540959648000" expanded="true" signature="2437:4040" ph="注入服务宿主和方法执行者" />
+            <marker date="1540959648000" expanded="true" signature="2497:2619" ph="/* 用于提供本地服务宿主和服务管理器中的方法执行者 ... */" />
+            <marker date="1540959648000" expanded="true" signature="3517:3868" ph="{...}" />
+            <marker date="1540959648000" expanded="true" signature="4758:4851" ph="{...}" />
+            <marker date="1540959648000" expanded="true" signature="5008:5244" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0B1E95C3-117B-403B-95BD-433D56CB87F1/c0/b2697178/AbstractBootstrap`2.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="134" column="22" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/InternalAdaper/TransportMessageChannelHandlerDecodeAdapter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <marker date="1540965784000" expanded="false" signature="6:104" ph="..." />
+            <marker date="1540965784000" expanded="true" signature="163:813" ph="{...}" />
+            <marker date="1540965784000" expanded="true" signature="170:223" ph="/// 一个标准通道的处理适配器 ... " />
+            <marker date="1540965784000" expanded="true" signature="310:811" ph="{...}" />
+            <marker date="1540965784000" expanded="true" signature="502:586" ph="{...}" />
+            <marker date="1540965784000" expanded="true" signature="684:805" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/InternalAdaper/TransportMessageChannelHandlerEncodeAdapter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <marker date="1540965820000" expanded="false" signature="6:161" ph="..." />
+            <marker date="1540965820000" expanded="true" signature="220:1307" ph="{...}" />
+            <marker date="1540965820000" expanded="true" signature="307:1305" ph="{...}" />
+            <marker date="1540965820000" expanded="true" signature="579:667" ph="{...}" />
+            <marker date="1540965820000" expanded="true" signature="757:958" ph="{...}" />
+            <marker date="1540965820000" expanded="true" signature="794:946" ph="{...}" />
+            <marker date="1540965820000" expanded="true" signature="1040:1089" ph="{...}" />
+            <marker date="1540965820000" expanded="true" signature="1188:1299" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rpc.Common/RuntimeType/Transport/Impl/DefaultDotNettyServerMessageListener.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="72" column="59" lean-forward="true" selection-start-line="72" selection-start-column="59" selection-end-line="72" selection-end-column="59" />
+          <folding>
+            <marker date="1540965836000" expanded="true" signature="6:386" ph="..." />
+            <marker date="1540965836000" expanded="true" signature="435:3712" ph="{...}" />
+            <marker date="1540965836000" expanded="true" signature="442:499" ph="/// 基于DotNetty的消息监听者 ... " />
+            <marker date="1540965836000" expanded="true" signature="585:3710" ph="{...}" />
+            <marker date="1540965836000" expanded="true" signature="1085:1356" ph="{...}" />
+            <marker date="1540965836000" expanded="true" signature="1415:1609" ph="/// 触发接收到消息事件。 ... " />
+            <marker date="1540965836000" expanded="true" signature="1695:1897" ph="{...}" />
+            <marker date="1540965836000" expanded="true" signature="1954:3425" ph="{...}" />
+            <marker date="1540965836000" expanded="true" signature="2400:3189" ph="{...}" />
+            <marker date="1540965836000" expanded="true" signature="2903:3135" ph="{...}" />
+            <marker date="1540965836000" expanded="true" signature="3435:3574" ph="///Performs application-defined tasks associated with freeing, releasing, ... " />
+            <marker date="1540965836000" expanded="true" signature="3604:3704" ph="{...}" />
           </folding>
         </state>
       </provider>
