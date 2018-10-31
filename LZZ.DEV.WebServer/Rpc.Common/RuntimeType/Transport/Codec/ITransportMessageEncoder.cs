@@ -1,4 +1,5 @@
-﻿using Rpc.Common.RuntimeType.Entitys.Messages;
+﻿using System.IO;
+using Rpc.Common.RuntimeType.Entitys.Messages;
 
 namespace Rpc.Common.RuntimeType.Transport.Codec
 {

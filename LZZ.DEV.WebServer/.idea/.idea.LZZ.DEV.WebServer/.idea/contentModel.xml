@@ -115,9 +115,6 @@
             <e p="IServiceHost.cs" t="Include" />
           </e>
           <e p="Transport" t="Include">
-            <e p="Adaper" t="Include">
-              <e p="TransportMessageChannelHandlerAdapter.cs" t="Include" />
-            </e>
             <e p="Codec" t="Include">
               <e p="Implementation" t="Include">
                 <e p="JsonTransportMessageCodecFactory.cs" t="Include" />
@@ -136,6 +133,9 @@
             <e p="Impl" t="Include">
               <e p="MessageListener.cs" t="Include" />
               <e p="TransportClient.cs" t="Include" />
+            </e>
+            <e p="InternalAdaper" t="Include">
+              <e p="TransportMessageChannelHandlerAdapter.cs" t="Include" />
             </e>
             <e p="ITransportClient.cs" t="Include" />
             <e p="ITransportClientFactory.cs" t="Include" />

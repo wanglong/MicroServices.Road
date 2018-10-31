@@ -6,8 +6,8 @@ using DotNetty.Transport.Bootstrapping;
 using DotNetty.Transport.Channels;
 using DotNetty.Transport.Channels.Sockets;
 using Rpc.Common.RuntimeType.Entitys.Messages;
-using Rpc.Common.RuntimeType.Transport.Adaper;
 using Rpc.Common.RuntimeType.Transport.Codec;
+using Rpc.Common.RuntimeType.Transport.InternalAdaper;
 
 namespace Rpc.Common.RuntimeType.Transport
 {

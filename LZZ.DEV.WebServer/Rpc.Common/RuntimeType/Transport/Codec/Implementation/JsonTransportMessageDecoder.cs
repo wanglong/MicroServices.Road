@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.IO;
+using System.Text;
 using Newtonsoft.Json;
 using Rpc.Common.RuntimeType.Entitys.Messages;
 
@@ -6,23 +7,39 @@ namespace Rpc.Common.RuntimeType.Transport.Codec.Implementation
 {
     public sealed class JsonTransportMessageDecoder : ITransportMessageDecoder
     {
-        #region Implementation of ITransportMessageDecoder
-
         public TransportMessage Decode(byte[] data)
         {
             var content = Encoding.UTF8.GetString(data);
-            var message = JsonConvert.DeserializeObject<TransportMessage>(content);
+            return InvokeMessage(JsonConvert.DeserializeObject<TransportMessage>(content));
+        }
+
+        public TransportMessage Decode(Stream data)
+        {
+            using (var reader = new StreamReader(data))
+            {
+                var content = reader.ReadToEnd();
+                return InvokeMessage(JsonConvert.DeserializeObject<TransportMessage>(content));
+            }
+        }
+
+        public TransportMessage Decode(string data)
+        {
+            return InvokeMessage(JsonConvert.DeserializeObject<TransportMessage>(data));
+        }
+
+        private TransportMessage InvokeMessage(TransportMessage message)
+        {
             if (message.IsInvokeMessage())
             {
                 message.Content = JsonConvert.DeserializeObject<RemoteInvokeMessage>(message.Content.ToString());
             }
+
             if (message.IsInvokeResultMessage())
             {
                 message.Content = JsonConvert.DeserializeObject<RemoteInvokeResultMessage>(message.Content.ToString());
             }
+
             return message;
         }
-
-        #endregion Implementation of ITransportMessageDecoder
     }
 }

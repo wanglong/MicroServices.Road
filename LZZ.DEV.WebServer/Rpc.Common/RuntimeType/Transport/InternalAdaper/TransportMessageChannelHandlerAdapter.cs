@@ -2,8 +2,11 @@
 using DotNetty.Transport.Channels;
 using Rpc.Common.RuntimeType.Transport.Codec;
 
-namespace Rpc.Common.RuntimeType.Transport.Adaper
+namespace Rpc.Common.RuntimeType.Transport.InternalAdaper
 {
+    /// <summary>
+    /// 一个标准通道的处理适配器
+    /// </summary>
     internal class TransportMessageChannelHandlerAdapter : ChannelHandlerAdapter
     {
         private readonly ITransportMessageDecoder _transportMessageDecoder;
@@ -12,17 +15,10 @@ namespace Rpc.Common.RuntimeType.Transport.Adaper
         {
             _transportMessageDecoder = transportMessageDecoder;
         }
-
-        #region Overrides of ChannelHandlerAdapter
-
+        
         public override void ChannelRead(IChannelHandlerContext context, object message)
         {
-            var buffer = (IByteBuffer)message;
-            var data = buffer.Array;
-            var transportMessage = _transportMessageDecoder.Decode(data);
-            context.FireChannelRead(transportMessage);
+            context.FireChannelRead(_transportMessageDecoder.Decode(((IByteBuffer) message).Array));
         }
-
-        #endregion Overrides of ChannelHandlerAdapter
     }
 }
