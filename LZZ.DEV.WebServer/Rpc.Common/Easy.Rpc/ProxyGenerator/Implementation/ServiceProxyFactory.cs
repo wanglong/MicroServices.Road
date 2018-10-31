@@ -7,7 +7,7 @@ using Rpc.Common.Easy.Rpc.Runtime.Client;
 namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation
 {
     /// <summary>
-    /// 默认的服务代理工厂实现。
+    /// 默认的服务代理工厂实现
     /// </summary>
     public class ServiceProxyFactory : IServiceProxyFactory
     {
@@ -31,10 +31,10 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation
         #region Implementation of IServiceProxyFactory
 
         /// <summary>
-        /// 创建服务代理。
+        /// 创建服务代理
         /// </summary>
-        /// <param name="proxyType">代理类型。</param>
-        /// <returns>服务代理实例。</returns>
+        /// <param name="proxyType">代理类型</param>
+        /// <returns>服务代理实例</returns>
         public object CreateProxy(Type proxyType)
         {
             var instance = proxyType.GetTypeInfo().GetConstructors().First().Invoke(new object[] { _remoteInvokeService, _typeConvertibleService });

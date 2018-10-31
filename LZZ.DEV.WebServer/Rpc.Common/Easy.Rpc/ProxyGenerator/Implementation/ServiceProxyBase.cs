@@ -7,7 +7,7 @@ using Rpc.Common.Easy.Rpc.Runtime.Client;
 namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation
 {
     /// <summary>
-    /// 一个抽象的服务代理基类。
+    /// 一个抽象的服务代理基类
     /// </summary>
     public abstract class ServiceProxyBase
     {
@@ -31,12 +31,12 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation
         #region Protected Method
 
         /// <summary>
-        /// 远程调用。
+        /// 远程调用
         /// </summary>
-        /// <typeparam name="T">返回类型。</typeparam>
-        /// <param name="parameters">参数字典。</param>
-        /// <param name="serviceId">服务Id。</param>
-        /// <returns>调用结果。</returns>
+        /// <typeparam name="T">返回类型</typeparam>
+        /// <param name="parameters">参数字典</param>
+        /// <param name="serviceId">服务Id</param>
+        /// <returns>调用结果</returns>
         protected async Task<T> Invoke<T>(IDictionary<string, object> parameters, string serviceId)
         {
             var message = await _remoteInvokeService.InvokeAsync(new RemoteInvokeContext
@@ -57,11 +57,11 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation
         }
 
         /// <summary>
-        /// 远程调用。
+        /// 远程调用
         /// </summary>
-        /// <param name="parameters">参数字典。</param>
-        /// <param name="serviceId">服务Id。</param>
-        /// <returns>调用任务。</returns>
+        /// <param name="parameters">参数字典</param>
+        /// <param name="serviceId">服务Id</param>
+        /// <returns>调用任务</returns>
         protected async Task Invoke(IDictionary<string, object> parameters, string serviceId)
         {
             await _remoteInvokeService.InvokeAsync(new RemoteInvokeContext

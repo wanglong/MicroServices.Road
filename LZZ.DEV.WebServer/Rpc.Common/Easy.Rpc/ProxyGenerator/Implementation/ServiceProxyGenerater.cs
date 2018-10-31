@@ -29,12 +29,11 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation
             _logger = logger;
         }
 
-
         /// <summary>
-        /// 生成服务代理。
+        /// 生成服务代理
         /// </summary>
-        /// <param name="interfacTypes">需要被代理的接口类型。</param>
-        /// <returns>服务代理实现。</returns>
+        /// <param name="interfacTypes">需要被代理的接口类型</param>
+        /// <returns>服务代理实现</returns>
         public IEnumerable<Type> GenerateProxys(IEnumerable<Type> interfacTypes)
         {
             var assemblys = DependencyContext.Default.RuntimeLibraries.SelectMany(i =>
@@ -60,10 +59,10 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation
         }
 
         /// <summary>
-        /// 生成服务代理代码树。
+        /// 生成服务代理代码树
         /// </summary>
-        /// <param name="interfaceType">需要被代理的接口类型。</param>
-        /// <returns>代码树。</returns>
+        /// <param name="interfaceType">需要被代理的接口类型</param>
+        /// <returns>代码树</returns>
         public SyntaxTree GenerateProxyTree(Type interfaceType)
         {
             var className = interfaceType.Name.StartsWith("I") ? interfaceType.Name.Substring(1) : interfaceType.Name;
@@ -75,31 +74,25 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation
             };
 
             members.AddRange(GenerateMethodDeclarations(interfaceType.GetMethods()));
-            return SyntaxFactory.CompilationUnit()
-                .WithUsings(GetUsings())
-                .WithMembers(SyntaxFactory.SingletonList<MemberDeclarationSyntax>(
-                    node: SyntaxFactory.NamespaceDeclaration(
-                            name: SyntaxFactory.QualifiedName(
-                                SyntaxFactory.QualifiedName(
-                                    SyntaxFactory.IdentifierName("Easy"),
-                                    SyntaxFactory.IdentifierName("Rpc")),
-                                SyntaxFactory.IdentifierName("ClientProxys")))
-                        .WithMembers(
-                            SyntaxFactory.SingletonList<MemberDeclarationSyntax>(SyntaxFactory
-                                .ClassDeclaration(className)
-                                .WithModifiers(SyntaxFactory.TokenList(SyntaxFactory.Token(SyntaxKind.PublicKeyword)))
-                                .WithBaseList(SyntaxFactory.BaseList(
-                                    SyntaxFactory.SeparatedList<BaseTypeSyntax>(
-                                        new SyntaxNodeOrToken[]
-                                        {
-                                            SyntaxFactory.SimpleBaseType(
-                                                SyntaxFactory.IdentifierName("ServiceProxyBase")),
-                                            SyntaxFactory.Token(SyntaxKind.CommaToken),
-                                            SyntaxFactory.SimpleBaseType(
-                                                GetQualifiedNameSyntax(interfaceType))
-                                        })))
-                                .WithMembers(SyntaxFactory.List(members))))))
-                .NormalizeWhitespace().SyntaxTree;
+            return SyntaxFactory.CompilationUnit().WithUsings(GetUsings()).WithMembers(
+                SyntaxFactory.SingletonList<MemberDeclarationSyntax>(
+                    SyntaxFactory.NamespaceDeclaration(
+                        SyntaxFactory.QualifiedName(
+                            SyntaxFactory.QualifiedName(
+                                SyntaxFactory.IdentifierName("Easy"),
+                                SyntaxFactory.IdentifierName("Rpc")),
+                            SyntaxFactory.IdentifierName("ClientProxys"))).WithMembers(
+                        SyntaxFactory.SingletonList<MemberDeclarationSyntax>(
+                            SyntaxFactory.ClassDeclaration(className).WithModifiers(
+                                SyntaxFactory.TokenList(SyntaxFactory.Token(SyntaxKind.PublicKeyword))).WithBaseList(SyntaxFactory.BaseList(
+                                SyntaxFactory.SeparatedList<BaseTypeSyntax>(new SyntaxNodeOrToken[]
+                                {
+                                    SyntaxFactory.SimpleBaseType(
+                                        SyntaxFactory.IdentifierName("ServiceProxyBase")),
+                                    SyntaxFactory.Token(SyntaxKind.CommaToken),
+                                    SyntaxFactory.SimpleBaseType(GetQualifiedNameSyntax(interfaceType))
+                                }))).WithMembers(
+                                SyntaxFactory.List(members)))))).NormalizeWhitespace().SyntaxTree;
         }
 
         private static QualifiedNameSyntax GetQualifiedNameSyntax(Type type)
@@ -147,39 +140,33 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation
 
         private static ConstructorDeclarationSyntax GetConstructorDeclaration(string className)
         {
-            return SyntaxFactory.ConstructorDeclaration(SyntaxFactory.Identifier(className))
-                .WithModifiers(
-                    SyntaxFactory.TokenList(
-                        SyntaxFactory.Token(SyntaxKind.PublicKeyword)))
-                .WithParameterList(
-                    SyntaxFactory.ParameterList(
-                        SyntaxFactory.SeparatedList<ParameterSyntax>(
-                            new SyntaxNodeOrToken[]
-                            {
-                                SyntaxFactory.Parameter(
-                                        SyntaxFactory.Identifier("remoteInvokeService"))
-                                    .WithType(
-                                        SyntaxFactory.IdentifierName("IRemoteInvokeService")),
-                                SyntaxFactory.Token(SyntaxKind.CommaToken),
-                                SyntaxFactory.Parameter(
-                                        SyntaxFactory.Identifier("typeConvertibleService"))
-                                    .WithType(
-                                        SyntaxFactory.IdentifierName("ITypeConvertibleService"))
-                            })))
-                .WithInitializer(
-                    SyntaxFactory.ConstructorInitializer(
-                        SyntaxKind.BaseConstructorInitializer,
-                        SyntaxFactory.ArgumentList(
-                            SyntaxFactory.SeparatedList<ArgumentSyntax>(
-                                new SyntaxNodeOrToken[]
-                                {
-                                    SyntaxFactory.Argument(
-                                        SyntaxFactory.IdentifierName("remoteInvokeService")),
-                                    SyntaxFactory.Token(SyntaxKind.CommaToken),
-                                    SyntaxFactory.Argument(
-                                        SyntaxFactory.IdentifierName("typeConvertibleService"))
-                                }))))
-                .WithBody(SyntaxFactory.Block());
+            return SyntaxFactory.ConstructorDeclaration(
+                SyntaxFactory.Identifier(className)).WithModifiers(
+                SyntaxFactory.TokenList(
+                    SyntaxFactory.Token(SyntaxKind.PublicKeyword))).WithParameterList(
+                SyntaxFactory.ParameterList(
+                    SyntaxFactory.SeparatedList<ParameterSyntax>(new SyntaxNodeOrToken[]
+                    {
+                        SyntaxFactory.Parameter(
+                            SyntaxFactory.Identifier("remoteInvokeService")).WithType(
+                            SyntaxFactory.IdentifierName("IRemoteInvokeService")),
+                        SyntaxFactory.Token(SyntaxKind.CommaToken),
+                        SyntaxFactory.Parameter(
+                            SyntaxFactory.Identifier("typeConvertibleService")).WithType(
+                            SyntaxFactory.IdentifierName("ITypeConvertibleService"))
+                    }))).WithInitializer(
+                SyntaxFactory.ConstructorInitializer(
+                    SyntaxKind.BaseConstructorInitializer,
+                    SyntaxFactory.ArgumentList(
+                        SyntaxFactory.SeparatedList<ArgumentSyntax>(new SyntaxNodeOrToken[]
+                        {
+                            SyntaxFactory.Argument(
+                                SyntaxFactory.IdentifierName("remoteInvokeService")),
+                            SyntaxFactory.Token(SyntaxKind.CommaToken),
+                            SyntaxFactory.Argument(
+                                SyntaxFactory.IdentifierName("typeConvertibleService"))
+                        })))).WithBody(
+                SyntaxFactory.Block());
         }
 
         private IEnumerable<MemberDeclarationSyntax> GenerateMethodDeclarations(IEnumerable<MethodInfo> methods)
@@ -190,11 +177,11 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation
 
         private static TypeSyntax GetTypeSyntax(Type type)
         {
-            //没有返回值。
+            //没有返回值
             if (type == null)
                 return null;
 
-            //非泛型。
+            //非泛型
             if (!type.GetTypeInfo().IsGenericType)
                 return GetQualifiedNameSyntax(type.FullName);
 
@@ -229,10 +216,9 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation
                     .WithType(GetQualifiedNameSyntax(parameter.ParameterType)));
                 parameterDeclarationList.Add(SyntaxFactory.Token(SyntaxKind.CommaToken));
 
-                parameterList.Add(SyntaxFactory.InitializerExpression(
-                    SyntaxKind.ComplexElementInitializerExpression,
-                    SyntaxFactory.SeparatedList<ExpressionSyntax>(
-                        new SyntaxNodeOrToken[]
+                parameterList.Add(
+                    SyntaxFactory.InitializerExpression(SyntaxKind.ComplexElementInitializerExpression,
+                        SyntaxFactory.SeparatedList<ExpressionSyntax>(new SyntaxNodeOrToken[]
                         {
                             SyntaxFactory.LiteralExpression(
                                 SyntaxKind.StringLiteralExpression,
@@ -249,14 +235,12 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation
                 parameterDeclarationList.RemoveAt(parameterDeclarationList.Count - 1);
             }
 
-            var declaration = SyntaxFactory.MethodDeclaration(
-                    returnDeclaration,
-                    SyntaxFactory.Identifier(method.Name))
-                .WithModifiers(SyntaxFactory.TokenList(SyntaxFactory.Token(SyntaxKind.PublicKeyword),
-                    SyntaxFactory.Token(SyntaxKind.AsyncKeyword)))
-                .WithParameterList(
-                    SyntaxFactory.ParameterList(
-                        SyntaxFactory.SeparatedList<ParameterSyntax>(parameterDeclarationList)));
+            var declaration = SyntaxFactory.MethodDeclaration(returnDeclaration,
+                SyntaxFactory.Identifier(method.Name)).WithModifiers(
+                SyntaxFactory.TokenList(SyntaxFactory.Token(SyntaxKind.PublicKeyword),
+                    SyntaxFactory.Token(SyntaxKind.AsyncKeyword))).WithParameterList(
+                SyntaxFactory.ParameterList(
+                    SyntaxFactory.SeparatedList<ParameterSyntax>(parameterDeclarationList)));
 
             ExpressionSyntax expressionSyntax;
             StatementSyntax statementSyntax;
@@ -264,8 +248,7 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation
             if (method.ReturnType != typeof(Task))
             {
                 expressionSyntax = SyntaxFactory.GenericName(
-                        SyntaxFactory.Identifier("Invoke"))
-                    .WithTypeArgumentList(((GenericNameSyntax) returnDeclaration).TypeArgumentList);
+                    SyntaxFactory.Identifier("Invoke")).WithTypeArgumentList(((GenericNameSyntax) returnDeclaration).TypeArgumentList);
             }
             else
             {
@@ -274,33 +257,28 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation
 
             expressionSyntax = SyntaxFactory.AwaitExpression(
                 SyntaxFactory.InvocationExpression(expressionSyntax).WithArgumentList(
-                    SyntaxFactory.ArgumentList(SyntaxFactory.SeparatedList<ArgumentSyntax>(
-                        new SyntaxNodeOrToken[]
-                        {
-                            SyntaxFactory.Argument(
-                                SyntaxFactory.ObjectCreationExpression(
-                                        SyntaxFactory.GenericName(SyntaxFactory.Identifier("Dictionary"))
-                                            .WithTypeArgumentList(SyntaxFactory.TypeArgumentList(
-                                                SyntaxFactory.SeparatedList<TypeSyntax>(
-                                                    new SyntaxNodeOrToken[]
-                                                    {
-                                                        SyntaxFactory.PredefinedType(
-                                                            SyntaxFactory.Token(SyntaxKind.StringKeyword)),
-                                                        SyntaxFactory.Token(SyntaxKind.CommaToken),
-                                                        SyntaxFactory.PredefinedType(
-                                                            SyntaxFactory.Token(SyntaxKind.ObjectKeyword))
-                                                    }))))
-                                    .WithInitializer(
-                                        SyntaxFactory.InitializerExpression(
-                                            SyntaxKind.CollectionInitializerExpression,
-                                            SyntaxFactory.SeparatedList<ExpressionSyntax>(
-                                                parameterList)))),
+                    SyntaxFactory.ArgumentList(SyntaxFactory.SeparatedList<ArgumentSyntax>(new SyntaxNodeOrToken[]
+                    {
+                        SyntaxFactory.Argument(
+                            SyntaxFactory.ObjectCreationExpression(
+                                SyntaxFactory.GenericName(SyntaxFactory.Identifier("Dictionary")).WithTypeArgumentList(
+                                    SyntaxFactory.TypeArgumentList(
+                                        SyntaxFactory.SeparatedList<TypeSyntax>(new SyntaxNodeOrToken[]
+                                        {
+                                            SyntaxFactory.PredefinedType(
+                                                SyntaxFactory.Token(SyntaxKind.StringKeyword)),
+                                            SyntaxFactory.Token(SyntaxKind.CommaToken),
+                                            SyntaxFactory.PredefinedType(
+                                                SyntaxFactory.Token(SyntaxKind.ObjectKeyword))
+                                        })))).WithInitializer(
+                                SyntaxFactory.InitializerExpression(SyntaxKind.CollectionInitializerExpression,
+                                    SyntaxFactory.SeparatedList<ExpressionSyntax>(parameterList)))),
 
-                            SyntaxFactory.Token(SyntaxKind.CommaToken),
+                        SyntaxFactory.Token(SyntaxKind.CommaToken),
 
-                            SyntaxFactory.Argument(SyntaxFactory.LiteralExpression(SyntaxKind.StringLiteralExpression,
-                                SyntaxFactory.Literal(serviceId)))
-                        }))));
+                        SyntaxFactory.Argument(SyntaxFactory.LiteralExpression(SyntaxKind.StringLiteralExpression,
+                            SyntaxFactory.Literal(serviceId)))
+                    }))));
 
 
             if (method.ReturnType != typeof(Task))
