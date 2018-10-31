@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Rpc.Common.RuntimeType.Communally.Convertibles;
-using Rpc.Common.RuntimeType.Communally.Convertibles.Impl;
-using Rpc.Common.RuntimeType.Communally.IdGenerator;
-using Rpc.Common.RuntimeType.Communally.IdGenerator.Impl;
+using Rpc.Common.Easy.Rpc.Communally.Convertibles;
+using Rpc.Common.Easy.Rpc.Communally.Convertibles.Impl;
+using Rpc.Common.Easy.Rpc.Communally.IdGenerator;
+using Rpc.Common.Easy.Rpc.Communally.IdGenerator.Impl;
 
 namespace Rpc.Client
 {

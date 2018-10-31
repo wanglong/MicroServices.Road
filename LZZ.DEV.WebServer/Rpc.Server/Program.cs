@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Rpc.Common;
-using Rpc.Common.RuntimeType.Attributes;
-using Rpc.Common.RuntimeType.Communally.Convertibles;
-using Rpc.Common.RuntimeType.Communally.Convertibles.Impl;
-using Rpc.Common.RuntimeType.Communally.IdGenerator;
-using Rpc.Common.RuntimeType.Communally.IdGenerator.Impl;
-using Rpc.Common.RuntimeType.Server;
-using Rpc.Common.RuntimeType.Server.Impl;
-using Rpc.Common.RuntimeType.Transport.Codec;
-using Rpc.Common.RuntimeType.Transport.Codec.Implementation;
-using Rpc.Common.RuntimeType.Transport.Impl;
+using Rpc.Common.Easy.Rpc.Attributes;
+using Rpc.Common.Easy.Rpc.Communally.Convertibles;
+using Rpc.Common.Easy.Rpc.Communally.Convertibles.Impl;
+using Rpc.Common.Easy.Rpc.Communally.IdGenerator;
+using Rpc.Common.Easy.Rpc.Communally.IdGenerator.Impl;
+using Rpc.Common.Easy.Rpc.Runtime.Server;
+using Rpc.Common.Easy.Rpc.Runtime.Server.Impl;
+using Rpc.Common.Easy.Rpc.Transport.Codec;
+using Rpc.Common.Easy.Rpc.Transport.Codec.Implementation;
+using Rpc.Common.Easy.Rpc.Transport.Impl;
 
 namespace Rpc.Server
 {

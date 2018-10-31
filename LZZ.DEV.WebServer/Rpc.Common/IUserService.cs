@@ -1,8 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Rpc.Common.RuntimeType;
-using Rpc.Common.RuntimeType.Attributes;
+using Rpc.Common.Easy.Rpc.Attributes;
 
 namespace Rpc.Common
 {

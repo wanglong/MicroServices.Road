@@ -12,7 +12,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="RuntimeType\communally" />
+      <Folder Include="Easy.Rpc\communally" />
+      <Folder Include="Easy.Rpc\Runtime" />
     </ItemGroup>
 
 </Project>
