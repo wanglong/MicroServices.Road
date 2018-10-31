@@ -1,6 +1,6 @@
 ﻿using System.Linq;
-using Rpc.Common.Easy.Rpc.Entitys;
-using Rpc.Common.Easy.Rpc.Entitys.Messages;
+using Rpc.Common.Easy.Rpc.Communally.Entitys;
+using Rpc.Common.Easy.Rpc.Communally.Entitys.Messages;
 
 namespace Rpc.Common.Easy.Rpc.Runtime.Server.Impl
 {

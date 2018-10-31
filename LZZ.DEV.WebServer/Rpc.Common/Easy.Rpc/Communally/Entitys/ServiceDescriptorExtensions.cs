@@ -1,4 +1,4 @@
-namespace Rpc.Common.Easy.Rpc.Entitys
+namespace Rpc.Common.Easy.Rpc.Communally.Entitys
 {
     /// <summary>
     /// 服务描述符扩展方法

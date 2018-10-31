@@ -6,7 +6,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
-using Rpc.Common.Easy.Rpc.Entitys.Address;
+using Rpc.Common.Easy.Rpc.Communally.Entitys.Address;
 using Rpc.Common.Easy.Rpc.Routing;
 
 namespace Rpc.Common.Easy.Rpc.Runtime.Client.HealthChecks.Implementation

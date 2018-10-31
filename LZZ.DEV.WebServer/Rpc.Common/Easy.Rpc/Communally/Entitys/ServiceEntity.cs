@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Rpc.Common.Easy.Rpc.Entitys
+namespace Rpc.Common.Easy.Rpc.Communally.Entitys
 {
     /// <summary>
     /// 服务实体

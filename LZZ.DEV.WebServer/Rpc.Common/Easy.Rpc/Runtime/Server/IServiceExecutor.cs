@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using Rpc.Common.Easy.Rpc.Entitys.Messages;
+using Rpc.Common.Easy.Rpc.Communally.Entitys.Messages;
 using Rpc.Common.Easy.Rpc.Transport;
 
 namespace Rpc.Common.Easy.Rpc.Runtime.Server

@@ -1,6 +1,6 @@
 using System.Net;
 
-namespace Rpc.Common.Easy.Rpc.Entitys.Address
+namespace Rpc.Common.Easy.Rpc.Communally.Entitys.Address
 {
     /// <summary>
     /// ip地址模型

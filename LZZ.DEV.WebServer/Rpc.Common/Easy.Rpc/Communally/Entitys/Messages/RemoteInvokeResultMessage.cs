@@ -1,4 +1,4 @@
-﻿namespace Rpc.Common.Easy.Rpc.Entitys.Messages
+﻿namespace Rpc.Common.Easy.Rpc.Communally.Entitys.Messages
 {
     /// <summary>
     /// 远程调用结果消息

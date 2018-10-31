@@ -101,6 +101,18 @@
               <e p="ISerializer.cs" t="Include" />
             </e>
           </e>
+          <e p="ProxyGenerator" t="Include">
+            <e p="Implementation" t="Include">
+              <e p="ServiceProxyBase.cs" t="Include" />
+              <e p="ServiceProxyFactory.cs" t="Include" />
+              <e p="ServiceProxyGenerater.cs" t="Include" />
+            </e>
+            <e p="IServiceProxyFactory.cs" t="Include" />
+            <e p="IServiceProxyGenerater.cs" t="Include" />
+            <e p="Utilitys" t="Include">
+              <e p="CompilationUtilitys.cs" t="Include" />
+            </e>
+          </e>
           <e p="Routing" t="Include">
             <e p="Implementation" t="Include">
               <e p="DefaultServiceRouteFactory.cs" t="Include" />
@@ -192,7 +204,7 @@
         <e p="IUserService.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp2.1" t="Include">
+            <e p="netstandard2.0" t="Include">
               <e p="Rpc.Common.AssemblyInfo.cs" t="Include" />
             </e>
           </e>

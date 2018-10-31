@@ -2,8 +2,8 @@
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
+using Rpc.Common.Easy.Rpc.Communally.Entitys.Messages;
 using Rpc.Common.Easy.Rpc.Communally.Exceptions;
-using Rpc.Common.Easy.Rpc.Entitys.Messages;
 using Rpc.Common.Easy.Rpc.Runtime.Client.Address.Resolvers;
 using Rpc.Common.Easy.Rpc.Runtime.Client.HealthChecks;
 using Rpc.Common.Easy.Rpc.Transport;

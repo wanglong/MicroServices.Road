@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Rpc.Common.Easy.Rpc.Entitys.Address;
+using Rpc.Common.Easy.Rpc.Communally.Entitys.Address;
 
 namespace Rpc.Common.Easy.Rpc.Runtime.Client.Address.Resolvers.Implementation.Selectors.Implementation
 {

@@ -1,4 +1,4 @@
-﻿using Rpc.Common.Easy.Rpc.Entitys.Messages;
+﻿using Rpc.Common.Easy.Rpc.Communally.Entitys.Messages;
 
 namespace Rpc.Common.Easy.Rpc.Runtime.Client
 {

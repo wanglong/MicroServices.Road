@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using DotNetty.Buffers;
 using DotNetty.Transport.Channels;
 using Microsoft.Extensions.Logging;
-using Rpc.Common.Easy.Rpc.Entitys.Messages;
+using Rpc.Common.Easy.Rpc.Communally.Entitys.Messages;
 
 namespace Rpc.Common.Easy.Rpc.Transport.InternalAdaper
 {
@@ -48,6 +48,6 @@ namespace Rpc.Common.Easy.Rpc.Transport.InternalAdaper
         /// exception happened
         /// </summary>
         public override void ExceptionCaught(IChannelHandlerContext context, Exception exception) =>
-            _logger.LogError($"与远程服务器：{context.Channel.RemoteAddress} 通信时发送了错误。", exception);
+            _logger.LogError($"与远程服务器：{context.Channel.RemoteAddress} 通信时发送了错误", exception);
     }
 }

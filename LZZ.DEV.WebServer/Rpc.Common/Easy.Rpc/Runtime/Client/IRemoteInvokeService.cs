@@ -1,11 +1,11 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using Rpc.Common.Easy.Rpc.Entitys.Messages;
+using Rpc.Common.Easy.Rpc.Communally.Entitys.Messages;
 
 namespace Rpc.Common.Easy.Rpc.Runtime.Client
 {
     /// <summary>
-    //抽象的远程调用服务
+    /// 抽象的远程调用服务
     /// </summary>
     public interface IRemoteInvokeService
     {

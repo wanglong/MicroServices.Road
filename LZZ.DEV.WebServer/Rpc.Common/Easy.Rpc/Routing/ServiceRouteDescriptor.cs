@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
+using Rpc.Common.Easy.Rpc.Communally.Entitys;
+using Rpc.Common.Easy.Rpc.Communally.Entitys.Address;
 using Rpc.Common.Easy.Rpc.Communally.Serialization;
-using Rpc.Common.Easy.Rpc.Entitys;
-using Rpc.Common.Easy.Rpc.Entitys.Address;
 
 namespace Rpc.Common.Easy.Rpc.Routing
 {

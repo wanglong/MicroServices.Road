@@ -6,7 +6,7 @@ using DotNetty.Transport.Bootstrapping;
 using DotNetty.Transport.Channels;
 using DotNetty.Transport.Channels.Sockets;
 using Microsoft.Extensions.Logging;
-using Rpc.Common.Easy.Rpc.Entitys.Messages;
+using Rpc.Common.Easy.Rpc.Communally.Entitys.Messages;
 using Rpc.Common.Easy.Rpc.Transport.Codec;
 using Rpc.Common.Easy.Rpc.Transport.InternalAdaper;
 

@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Rpc.Common.Easy.Rpc.Entitys;
+using Rpc.Common.Easy.Rpc.Communally.Entitys;
 
 namespace Rpc.Common.Easy.Rpc.Runtime.Server
 {

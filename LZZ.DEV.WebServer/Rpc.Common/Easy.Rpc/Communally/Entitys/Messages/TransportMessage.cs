@@ -1,6 +1,6 @@
 using System;
 
-namespace Rpc.Common.Easy.Rpc.Entitys.Messages
+namespace Rpc.Common.Easy.Rpc.Communally.Entitys.Messages
 {
     /// <summary>
     /// 传输消息模型

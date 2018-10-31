@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Rpc.Common.Easy.Rpc.Communally.Entitys.Address;
 using Rpc.Common.Easy.Rpc.Communally.Serialization;
-using Rpc.Common.Easy.Rpc.Entitys.Address;
 
 namespace Rpc.Common.Easy.Rpc.Routing.Implementation
 {
@@ -26,8 +26,7 @@ namespace Rpc.Common.Easy.Rpc.Routing.Implementation
         /// <returns>服务路由集合</returns>
         public Task<IEnumerable<ServiceRoute>> CreateServiceRoutesAsync(IEnumerable<ServiceRouteDescriptor> descriptors)
         {
-            if (descriptors == null)
-                throw new ArgumentNullException(nameof(descriptors));
+            if (descriptors == null) throw new ArgumentNullException(nameof(descriptors));
 
             descriptors = descriptors.ToArray();
             var routes = new List<ServiceRoute>(descriptors.Count());

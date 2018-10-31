@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Rpc.Common.Easy.Rpc.Entitys;
+using Rpc.Common.Easy.Rpc.Communally.Entitys;
 using Rpc.Common.Easy.Rpc.Runtime.Server;
 
 namespace Rpc.Common.Easy.Rpc.Attributes

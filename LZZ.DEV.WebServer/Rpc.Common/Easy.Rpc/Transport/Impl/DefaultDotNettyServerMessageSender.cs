@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 using DotNetty.Transport.Channels;
-using Rpc.Common.Easy.Rpc.Entitys.Messages;
+using Rpc.Common.Easy.Rpc.Communally.Entitys.Messages;
 using Rpc.Common.Easy.Rpc.Transport.Codec;
 
 namespace Rpc.Common.Easy.Rpc.Transport.Impl
