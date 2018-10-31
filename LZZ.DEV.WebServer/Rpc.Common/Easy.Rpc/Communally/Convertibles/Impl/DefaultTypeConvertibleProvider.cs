@@ -6,7 +6,7 @@ using Rpc.Common.Easy.Rpc.Communally.Serialization;
 namespace Rpc.Common.Easy.Rpc.Communally.Convertibles.Impl
 {
     /// <summary>
-    /// 一个默认的类型转换提供程序。
+    /// 一个默认的类型转换提供程序
     /// </summary>
     public class DefaultTypeConvertibleProvider : ITypeConvertibleProvider
     {
@@ -20,9 +20,9 @@ namespace Rpc.Common.Easy.Rpc.Communally.Convertibles.Impl
         #region Implementation of ITypeConvertibleProvider
 
         /// <summary>
-        /// 获取类型转换器。
+        /// 获取类型转换器
         /// </summary>
-        /// <returns>类型转换器集合。</returns>
+        /// <returns>类型转换器集合</returns>
         public IEnumerable<TypeConvertDelegate> GetConverters()
         {
             yield return EnumTypeConvert;

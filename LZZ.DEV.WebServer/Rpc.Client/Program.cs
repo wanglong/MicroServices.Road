@@ -5,23 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Rpc.Common;
-using Rpc.Common.Easy.Rpc.Communally.Convertibles;
-using Rpc.Common.Easy.Rpc.Communally.Convertibles.Impl;
-using Rpc.Common.Easy.Rpc.Communally.IdGenerator;
-using Rpc.Common.Easy.Rpc.Communally.IdGenerator.Impl;
+using Rpc.Common.Easy.Rpc;
 using Rpc.Common.Easy.Rpc.ProxyGenerator;
-using Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation;
-using Rpc.Common.Easy.Rpc.Routing;
-using Rpc.Common.Easy.Rpc.Runtime.Client;
-using Rpc.Common.Easy.Rpc.Runtime.Client.Address.Resolvers;
-using Rpc.Common.Easy.Rpc.Runtime.Client.Address.Resolvers.Implementation;
-using Rpc.Common.Easy.Rpc.Runtime.Client.HealthChecks;
-using Rpc.Common.Easy.Rpc.Runtime.Client.HealthChecks.Implementation;
-using Rpc.Common.Easy.Rpc.Runtime.Client.Implementation;
-using Rpc.Common.Easy.Rpc.Runtime.Server;
-using Rpc.Common.Easy.Rpc.Runtime.Server.Impl;
-using Rpc.Common.Easy.Rpc.Transport;
-using Rpc.Common.Easy.Rpc.Transport.Impl;
 
 namespace Rpc.Client
 {
@@ -31,38 +16,46 @@ namespace Rpc.Client
         {
             var serviceCollection = new ServiceCollection();
             {
-                // 注入日志
-                serviceCollection.AddLogging();
-                // 注入ID生成器
-                serviceCollection.AddSingleton<IServiceIdGenerator, DefaultServiceIdGenerator>();
-                // 注入类型转换器
-                serviceCollection.AddSingleton<ITypeConvertibleService, DefaultTypeConvertibleService>();
-                // 注入健康状态检查
-                serviceCollection.AddSingleton<IHealthCheckService, DefaultHealthCheckService>();
-                // 注入地址解析器
-                serviceCollection.AddSingleton<IAddressResolver, DefaultAddressResolver>();
-                // 注入远程调用服务
-                serviceCollection.AddSingleton<IRemoteInvokeService, RemoteInvokeService>();
-                // 注入客户端传输工厂服务
-                serviceCollection.AddSingleton<ITransportClientFactory, DefaultDotNettyTransportClientFactory>();
-                // 注入服务代理生成器
-                serviceCollection.AddSingleton<IServiceProxyGenerater, ServiceProxyGenerater>();
-                // 注入服务代理工厂
-                serviceCollection.AddSingleton<IServiceProxyFactory, ServiceProxyFactory>();
-                // 注入DotNetty服务监听者
-                serviceCollection.AddSingleton<DefaultDotNettyServerMessageListener>();
-                // 注入默认宿主
-                serviceCollection.AddSingleton<IServiceHost, DefaultServiceHost>(
-                    provider => new DefaultServiceHost(
-                        async endPoint =>
-                        {
-                            var messageListener = provider.GetRequiredService<DefaultDotNettyServerMessageListener>();
-                            await messageListener.StartAsync(endPoint);
-                            return messageListener;
-                        },
-                        provider.GetRequiredService<IServiceExecutor>()
-                    )
-                );
+//                // 注入日志
+//                serviceCollection.AddLogging();
+//                // 注入ID生成器
+//                serviceCollection.AddSingleton<IServiceIdGenerator, DefaultServiceIdGenerator>();
+//                // 注入类型转换器
+//                serviceCollection.AddSingleton<ITypeConvertibleService, DefaultTypeConvertibleService>();
+//                // 注入健康状态检查
+//                serviceCollection.AddSingleton<IHealthCheckService, DefaultHealthCheckService>();
+//                // 注入地址解析器
+//                serviceCollection.AddSingleton<IAddressResolver, DefaultAddressResolver>();
+//                // 注入远程调用服务
+//                serviceCollection.AddSingleton<IRemoteInvokeService, RemoteInvokeService>();
+//                // 注入客户端传输工厂服务
+//                serviceCollection.AddSingleton<ITransportClientFactory, DefaultDotNettyTransportClientFactory>();
+//                // 注入服务代理生成器
+//                serviceCollection.AddSingleton<IServiceProxyGenerater, ServiceProxyGenerater>();
+//                // 注入服务代理工厂
+//                serviceCollection.AddSingleton<IServiceProxyFactory, ServiceProxyFactory>();
+//                // 注入DotNetty服务监听者
+//                serviceCollection.AddSingleton<DefaultDotNettyServerMessageListener>();
+//                // 注入默认宿主
+//                serviceCollection.AddSingleton<IServiceHost, DefaultServiceHost>(
+//                    provider => new DefaultServiceHost(
+//                        async endPoint =>
+//                        {
+//                            var messageListener = provider.GetRequiredService<DefaultDotNettyServerMessageListener>();
+//                            await messageListener.StartAsync(endPoint);
+//                            return messageListener;
+//                        },
+//                        provider.GetRequiredService<IServiceExecutor>()
+//                    )
+//                );
+                
+                
+                serviceCollection
+                    .AddLogging() // 添加日志
+                    .AddClient() // 添加客户端
+                    .UseSharedFileRouteManager(@"d:\routes.txt") // 添加共享路由
+                    .UseDotNettyTransport(); // 添加DotNetty通信传输
+                
             }
 
             var serviceProvider = serviceCollection.BuildServiceProvider();
@@ -75,7 +68,6 @@ namespace Rpc.Client
             var userService = serviceProvider.GetRequiredService<IServiceProxyFactory>().CreateProxy<IUserService>(
                 services.Single(typeof(IUserService).GetTypeInfo().IsAssignableFrom)
             );
-
 
             while (true)
             {
