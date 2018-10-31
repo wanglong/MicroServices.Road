@@ -27,7 +27,7 @@ namespace Rpc.Common.RuntimeType.Communally.Convertibles.Impl
             if (instance == null) throw new ArgumentNullException(nameof(instance));
             if (conversionType == null) throw new ArgumentNullException(nameof(conversionType));
             // Determines whether the specified object is an instance of the current Type
-            // 确定指定对象是否为当前类型的实例。
+            // 确定指定对象是否为当前类型的实例
             if (conversionType.GetTypeInfo().IsInstanceOfType(instance)) return instance;
 
             object result = null;
@@ -39,7 +39,7 @@ namespace Rpc.Common.RuntimeType.Communally.Convertibles.Impl
 
             if (result != null) return result;
 
-            var exception = new RpcException($"无法将实例：{instance}转换为{conversionType}。");
+            var exception = new RpcException($"无法将实例：{instance}转换为{conversionType}");
             throw exception;
         }
     }
