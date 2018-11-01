@@ -11,24 +11,14 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation
     /// </summary>
     public class ServiceProxyFactory : IServiceProxyFactory
     {
-        #region Field
-
         private readonly IRemoteInvokeService _remoteInvokeService;
         private readonly ITypeConvertibleService _typeConvertibleService;
-
-        #endregion Field
-
-        #region Constructor
 
         public ServiceProxyFactory(IRemoteInvokeService remoteInvokeService, ITypeConvertibleService typeConvertibleService)
         {
             _remoteInvokeService = remoteInvokeService;
             _typeConvertibleService = typeConvertibleService;
         }
-
-        #endregion Constructor
-
-        #region Implementation of IServiceProxyFactory
 
         /// <summary>
         /// 创建服务代理
@@ -37,10 +27,9 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation
         /// <returns>服务代理实例</returns>
         public object CreateProxy(Type proxyType)
         {
-            var instance = proxyType.GetTypeInfo().GetConstructors().First().Invoke(new object[] { _remoteInvokeService, _typeConvertibleService });
-            return instance;
+            return proxyType.GetTypeInfo().GetConstructors().First().Invoke(
+                new object[] {_remoteInvokeService, _typeConvertibleService}
+            );
         }
-
-        #endregion Implementation of IServiceProxyFactory
     }
 }

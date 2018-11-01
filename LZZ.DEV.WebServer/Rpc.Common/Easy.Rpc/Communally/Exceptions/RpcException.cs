@@ -3,7 +3,7 @@
 namespace Rpc.Common.Easy.Rpc.Communally.Exceptions
 {
     /// <summary>
-    //基础的Rpc异常类
+    /// 基础的Rpc异常类
     /// </summary>
     public class RpcException : Exception
     {

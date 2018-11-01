@@ -36,9 +36,7 @@ namespace Rpc.Common.Easy.Rpc.Communally.Entitys
         /// <returns>元数据值</returns>
         public T GetMetadata<T>(string name, T def = default(T))
         {
-            if (!Metadatas.ContainsKey(name))
-                return def;
-
+            if (!Metadatas.ContainsKey(name)) return def;
             return (T) Metadatas[name];
         }
 
@@ -50,24 +48,15 @@ namespace Rpc.Common.Easy.Rpc.Communally.Entitys
         public override bool Equals(object obj)
         {
             var model = obj as ServiceDescriptor;
-            if (model == null)
-                return false;
-
-            if (obj.GetType() != GetType())
-                return false;
-
-            if (model.Id != Id)
-                return false;
+            if (model == null) return false;
+            if (obj.GetType() != GetType()) return false;
+            if (model.Id != Id) return false;
 
             return model.Metadatas.Count == Metadatas.Count && model.Metadatas.All(metadata =>
             {
-                if (!Metadatas.TryGetValue(metadata.Key, out var value))
-                    return false;
-
-                if (metadata.Value == null && value == null)
-                    return true;
-                if (metadata.Value == null || value == null)
-                    return false;
+                if (!Metadatas.TryGetValue(metadata.Key, out var value)) return false;
+                if (metadata.Value == null && value == null) return true;
+                if (metadata.Value == null || value == null) return false;
 
                 return metadata.Value.Equals(value);
             });

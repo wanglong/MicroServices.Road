@@ -14,7 +14,7 @@ using Rpc.Common.Easy.Rpc.Communally.Serialization.Implementation;
 using Rpc.Common.Easy.Rpc.ProxyGenerator;
 using Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation;
 using Rpc.Common.Easy.Rpc.Routing;
-using Rpc.Common.Easy.Rpc.Routing.Implementation;
+using Rpc.Common.Easy.Rpc.Routing.Impl;
 using Rpc.Common.Easy.Rpc.Runtime.Client;
 using Rpc.Common.Easy.Rpc.Runtime.Client.Address.Resolvers;
 using Rpc.Common.Easy.Rpc.Runtime.Client.Address.Resolvers.Implementation;
@@ -130,7 +130,8 @@ namespace Rpc.Common.Easy.Rpc
                     filePath,
                     provider.GetRequiredService<ISerializer<string>>(),
                     provider.GetRequiredService<IServiceRouteFactory>(),
-                    provider.GetRequiredService<ILogger<SharedFileServiceRouteManager>>()));
+                    provider.GetRequiredService<ILogger<SharedFileServiceRouteManager>>()
+                ));
         }
 
         #region AddressSelector
@@ -314,7 +315,7 @@ namespace Rpc.Common.Easy.Rpc
                 .AddJsonSerialization()
                 .UseJsonCodec();
         }
-        
+
         public static IRpcBuilder AddClientProxy(this IRpcBuilder builder)
         {
             var services = builder.Services;
@@ -332,7 +333,7 @@ namespace Rpc.Common.Easy.Rpc
                 .AddClientRuntime()
                 .AddClientProxy();
         }
-        
+
         /// <summary>
         /// 使用DotNetty进行传输。
         /// </summary>
@@ -347,7 +348,6 @@ namespace Rpc.Common.Easy.Rpc
             services.AddSingleton<DefaultDotNettyServerMessageListener>();
 
             services.AddSingleton<IServiceHost, DefaultServiceHost>(
-                
                 provider => new DefaultServiceHost(
                     async endPoint =>
                     {
@@ -361,7 +361,5 @@ namespace Rpc.Common.Easy.Rpc
 
             return builder;
         }
-        
-        
     }
 }

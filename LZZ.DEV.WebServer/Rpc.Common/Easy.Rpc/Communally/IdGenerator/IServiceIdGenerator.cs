@@ -3,7 +3,7 @@ using System.Reflection;
 namespace Rpc.Common.Easy.Rpc.Communally.IdGenerator
 {
     /// <summary>
-    //抽象的服务Id生成器
+    /// 抽象的服务Id生成器
     /// </summary>
     public interface IServiceIdGenerator
     {

@@ -5,7 +5,7 @@ using Rpc.Common.Easy.Rpc.Transport.Codec;
 namespace Rpc.Common.Easy.Rpc.Transport.InternalAdaper
 {
     /// <summary>
-    //标准通道的编码适配器
+    /// 标准通道的编码适配器
     /// </summary>
     internal class TransportMessageChannelHandlerDecodeAdapter : ChannelHandlerAdapter
     {
@@ -18,7 +18,11 @@ namespace Rpc.Common.Easy.Rpc.Transport.InternalAdaper
         
         public override void ChannelRead(IChannelHandlerContext context, object message)
         {
-            context.FireChannelRead(_transportMessageDecoder.Decode(((IByteBuffer) message).Array));
+            var buffer = (IByteBuffer)message;
+            var data = buffer.ToArray();
+            if(data.Length == 0) return;
+            var transportMessage = _transportMessageDecoder.Decode(data);
+            context.FireChannelRead(transportMessage);
         }
     }
 }

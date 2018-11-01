@@ -4,24 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Rpc.Common.Easy.Rpc.Communally.Serialization;
 
-namespace Rpc.Common.Easy.Rpc.Routing.Implementation
+namespace Rpc.Common.Easy.Rpc.Routing.Impl
 {
-    /// <summary>
-    /// 服务路由事件参数
-    /// </summary>
-    public class ServiceRouteEventArgs
-    {
-        public ServiceRouteEventArgs(ServiceRoute route)
-        {
-            Route = route;
-        }
-
-        /// <summary>
-        /// 服务路由信息
-        /// </summary>
-        public ServiceRoute Route { get; private set; }
-    }
-
     /// <summary>
     /// 服务路由变更事件参数
     /// </summary>
@@ -52,8 +36,6 @@ namespace Rpc.Common.Easy.Rpc.Routing.Implementation
         {
             _serializer = serializer;
         }
-
-        #region Implementation of IServiceRouteManager
 
         /// <summary>
         /// 服务路由被创建
@@ -116,8 +98,6 @@ namespace Rpc.Common.Easy.Rpc.Routing.Implementation
         /// </summary>
         /// <returns>一个任务</returns>
         public abstract Task ClearAsync();
-
-        #endregion Implementation of IServiceRouteManager
 
         /// <summary>
         /// 设置服务路由

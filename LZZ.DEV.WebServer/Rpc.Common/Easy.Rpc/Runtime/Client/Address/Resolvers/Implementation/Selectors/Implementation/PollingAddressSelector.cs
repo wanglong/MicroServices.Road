@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Rpc.Common.Easy.Rpc.Communally.Entitys;
 using Rpc.Common.Easy.Rpc.Communally.Entitys.Address;
 using Rpc.Common.Easy.Rpc.Routing;
-using Rpc.Common.Easy.Rpc.Routing.Implementation;
+using Rpc.Common.Easy.Rpc.Routing.Impl;
 using Rpc.Common.Easy.Rpc.Runtime.Client.HealthChecks;
 
 namespace Rpc.Common.Easy.Rpc.Runtime.Client.Address.Resolvers.Implementation.Selectors.Implementation

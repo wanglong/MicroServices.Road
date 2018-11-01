@@ -7,8 +7,6 @@ namespace Rpc.Common.Easy.Rpc.Communally.Entitys.Address
     /// </summary>
     public sealed class IpAddressModel : AddressModel
     {
-        #region Constructor
-
         /// <summary>
         /// 初始化一个新的ip地址模型实例
         /// </summary>
@@ -27,10 +25,6 @@ namespace Rpc.Common.Easy.Rpc.Communally.Entitys.Address
             Port = port;
         }
 
-        #endregion Constructor
-
-        #region Property
-
         /// <summary>
         /// ip地址
         /// </summary>
@@ -41,9 +35,6 @@ namespace Rpc.Common.Easy.Rpc.Communally.Entitys.Address
         /// </summary>
         public int Port { get; set; }
 
-        #endregion Property
-
-        #region Overrides of AddressModel
 
         /// <summary>
         /// 创建终结点
@@ -60,7 +51,5 @@ namespace Rpc.Common.Easy.Rpc.Communally.Entitys.Address
         {
             return $"{Ip}:{Port}";
         }
-
-        #endregion Overrides of AddressModel
     }
 }

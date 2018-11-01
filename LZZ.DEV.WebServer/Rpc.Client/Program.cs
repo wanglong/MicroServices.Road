@@ -48,23 +48,22 @@ namespace Rpc.Client
 //                        provider.GetRequiredService<IServiceExecutor>()
 //                    )
 //                );
-                
-                
+
+
                 serviceCollection
                     .AddLogging() // 添加日志
                     .AddClient() // 添加客户端
                     .UseSharedFileRouteManager(@"d:\routes.txt") // 添加共享路由
                     .UseDotNettyTransport(); // 添加DotNetty通信传输
-                
             }
 
             var serviceProvider = serviceCollection.BuildServiceProvider();
-            
+
             serviceProvider.GetRequiredService<ILoggerFactory>().AddConsole((console, logLevel) => (int) logLevel >= 0);
-            
+
             var services = serviceProvider.GetRequiredService<IServiceProxyGenerater>()
                 .GenerateProxys(new[] {typeof(IUserService)}).ToArray();
-            
+
             var userService = serviceProvider.GetRequiredService<IServiceProxyFactory>().CreateProxy<IUserService>(
                 services.Single(typeof(IUserService).GetTypeInfo().IsAssignableFrom)
             );

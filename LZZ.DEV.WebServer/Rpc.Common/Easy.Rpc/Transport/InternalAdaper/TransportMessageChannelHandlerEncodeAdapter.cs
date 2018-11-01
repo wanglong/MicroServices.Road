@@ -8,7 +8,7 @@ using Rpc.Common.Easy.Rpc.Communally.Entitys.Messages;
 namespace Rpc.Common.Easy.Rpc.Transport.InternalAdaper
 {
     /// <summary>
-    //默认通道的解码器
+    /// 默认通道的解码器
     /// </summary>
     public class TransportMessageChannelHandlerEncodeAdapter : ChannelHandlerAdapter
     {
@@ -29,13 +29,13 @@ namespace Rpc.Common.Easy.Rpc.Transport.InternalAdaper
             Task.Run(() =>
             {
                 _readAction(context, (TransportMessage) message);
-                if (message is IByteBuffer buffer)
-                    _logger.LogInformation($"messages capacity: {buffer.Capacity} byte");
-                // ReSharper disable once IsExpressionAlwaysTrue
-                if (message is TransportMessage transportMessage)
-                    _logger.LogInformation($"messages type： {transportMessage.ContentType}");
-                if (((TransportMessage) message)?.Content is string content)
-                    _logger.LogInformation($"messages content： {content.Length}");
+//                if (message is IByteBuffer buffer)
+//                    _logger.LogInformation($"messages capacity: {buffer.Capacity} byte");
+//                // ReSharper disable once IsExpressionAlwaysTrue
+//                if (message is TransportMessage transportMessage)
+//                    _logger.LogInformation($"messages type： {transportMessage.ContentType}");
+//                if (((TransportMessage) message)?.Content is string content)
+//                    _logger.LogInformation($"messages content： {content.Length}");
             });
 
         /// <summary>
@@ -48,6 +48,6 @@ namespace Rpc.Common.Easy.Rpc.Transport.InternalAdaper
         /// exception happened
         /// </summary>
         public override void ExceptionCaught(IChannelHandlerContext context, Exception exception) =>
-            _logger.LogError($"与远程服务器：{context.Channel.RemoteAddress} 通信时发送了错误", exception);
+            _logger.LogError($"与远程服务器：{context.Channel.RemoteAddress} 通信时发送了错误 \r{exception}");
     }
 }

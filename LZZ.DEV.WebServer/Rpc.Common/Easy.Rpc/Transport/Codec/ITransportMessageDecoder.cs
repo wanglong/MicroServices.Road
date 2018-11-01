@@ -6,9 +6,5 @@ namespace Rpc.Common.Easy.Rpc.Transport.Codec
     public interface ITransportMessageDecoder
     {
         TransportMessage Decode(byte[] data);
-
-        TransportMessage Decode(Stream data);
-
-        TransportMessage Decode(string data);
     }
 }

@@ -6,26 +6,21 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Rpc.Common.Easy.Rpc.Communally.Serialization;
+using Rpc.Common.Easy.Rpc.Communally.Serialization.Implementation;
 
-namespace Rpc.Common.Easy.Rpc.Routing.Implementation
+namespace Rpc.Common.Easy.Rpc.Routing.Impl
 {
     /// <summary>
     /// 基于共享文件的服务路由管理者
     /// </summary>
     public class SharedFileServiceRouteManager : ServiceRouteManagerBase, IDisposable
     {
-        #region Field
-
         private readonly string _filePath;
         private readonly ISerializer<string> _serializer;
         private readonly IServiceRouteFactory _serviceRouteFactory;
         private readonly ILogger<SharedFileServiceRouteManager> _logger;
         private ServiceRoute[] _routes;
         private readonly FileSystemWatcher _fileSystemWatcher;
-
-        #endregion Field
-
-        #region Constructor
 
         public SharedFileServiceRouteManager(string filePath, ISerializer<string> serializer,
             IServiceRouteFactory serviceRouteFactory, ILogger<SharedFileServiceRouteManager> logger) : base(serializer)
@@ -47,10 +42,6 @@ namespace Rpc.Common.Easy.Rpc.Routing.Implementation
             _fileSystemWatcher.EnableRaisingEvents = true;
         }
 
-        #endregion Constructor
-
-        #region Implementation of IDisposable
-
         /// <summary>
         /// Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
         /// </summary>
@@ -58,10 +49,6 @@ namespace Rpc.Common.Easy.Rpc.Routing.Implementation
         {
             _fileSystemWatcher?.Dispose();
         }
-
-        #endregion Implementation of IDisposable
-
-        #region Overrides of ServiceRouteManagerBase
 
         /// <summary>
         ///     获取所有可用的服务路由信息
@@ -102,10 +89,6 @@ namespace Rpc.Common.Easy.Rpc.Routing.Implementation
             }
         }
 
-        #endregion Overrides of ServiceRouteManagerBase
-
-        #region Private Method
-
         private async Task<IEnumerable<ServiceRoute>> GetRoutes(string file)
         {
             ServiceRoute[] routes;
@@ -124,22 +107,24 @@ namespace Rpc.Common.Easy.Rpc.Routing.Implementation
                             var reader = new StreamReader(fileStream, Encoding.UTF8);
                             content = await reader.ReadToEndAsync();
                         }
+
                         break;
                     }
                     catch (IOException)
                     {
                     }
                 }
+
                 try
                 {
                     var serializer = _serializer;
                     routes =
-                    (await
-                        _serviceRouteFactory.CreateServiceRoutesAsync(
-                            serializer.Deserialize<string, ServiceRouteDescriptor[]>(content))).ToArray();
+                        (await
+                            _serviceRouteFactory.CreateServiceRoutesAsync(
+                                serializer.Deserialize<string, ServiceRouteDescriptor[]>(content))).ToArray();
                     if (_logger.IsEnabled(LogLevel.Information))
                         _logger.LogInformation(
-                            $"成功获取到以下路由信息：{string.Join(",", routes.Select(i => i.ServiceDescriptor.Id))}");
+                            $"成功获取到以下路由信息：{string.Join(",\n\t", routes.Select(i => i.ServiceDescriptor.Id))}");
                 }
                 catch (Exception exception)
                 {
@@ -154,6 +139,7 @@ namespace Rpc.Common.Easy.Rpc.Routing.Implementation
                     _logger.LogWarning($"无法获取路由信息，因为文件：{file}不存在");
                 routes = new ServiceRoute[0];
             }
+
             return routes;
         }
 
@@ -227,6 +213,7 @@ namespace Rpc.Common.Easy.Rpc.Routing.Implementation
                 {
                     return;
                 }
+
                 if (!string.IsNullOrWhiteSpace(content))
                 {
                     await EntryRoutes(_filePath);
@@ -239,7 +226,5 @@ namespace Rpc.Common.Easy.Rpc.Routing.Implementation
 
             await EntryRoutes(_filePath);
         }
-
-        #endregion Private Method
     }
 }

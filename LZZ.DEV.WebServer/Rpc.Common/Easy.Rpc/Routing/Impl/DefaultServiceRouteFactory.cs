@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Rpc.Common.Easy.Rpc.Communally.Entitys.Address;
 using Rpc.Common.Easy.Rpc.Communally.Serialization;
 
-namespace Rpc.Common.Easy.Rpc.Routing.Implementation
+namespace Rpc.Common.Easy.Rpc.Routing.Impl
 {
     /// <summary>
     /// 默认的服务路由工厂实现

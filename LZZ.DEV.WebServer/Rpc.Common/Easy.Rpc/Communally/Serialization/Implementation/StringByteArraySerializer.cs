@@ -8,22 +8,12 @@ namespace Rpc.Common.Easy.Rpc.Communally.Serialization.Implementation
     /// </summary>
     public class StringByteArraySerializer : ISerializer<byte[]>
     {
-        #region Field
-
         private readonly ISerializer<string> _serializer;
-
-        #endregion Field
-
-        #region Constructor
 
         public StringByteArraySerializer(ISerializer<string> serializer)
         {
             _serializer = serializer;
         }
-
-        #endregion Constructor
-
-        #region Implementation of ISerializer<byte[]>
 
         /// <summary>
         /// 序列化
@@ -45,7 +35,5 @@ namespace Rpc.Common.Easy.Rpc.Communally.Serialization.Implementation
         {
             return _serializer.Deserialize(Encoding.UTF8.GetString(content), type);
         }
-
-        #endregion Implementation of ISerializer<byte[]>
     }
 }

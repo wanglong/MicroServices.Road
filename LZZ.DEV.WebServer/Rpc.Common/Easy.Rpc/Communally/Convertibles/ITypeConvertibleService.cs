@@ -3,7 +3,7 @@ using System;
 namespace Rpc.Common.Easy.Rpc.Communally.Convertibles
 {
     /// <summary>
-    //抽象的类型转换服务
+    /// 抽象的类型转换服务
     /// </summary>
     public interface ITypeConvertibleService
     {

@@ -17,12 +17,10 @@ namespace Rpc.Common.Easy.Rpc.Communally.Convertibles.Impl
             _serializer = serializer;
         }
 
-        #region Implementation of ITypeConvertibleProvider
-
         /// <summary>
         /// 获取类型转换器
         /// </summary>
-        /// <returns>类型转换器集合</returns>
+        /// <returns>返回以值为类型的转换器集合</returns>
         public IEnumerable<TypeConvertDelegate> GetConverters()
         {
             yield return EnumTypeConvert;
@@ -30,17 +28,24 @@ namespace Rpc.Common.Easy.Rpc.Communally.Convertibles.Impl
             yield return ComplexTypeConvert;
         }
 
-        #endregion Implementation of ITypeConvertibleProvider
-
-        #region Private Method
-
+        /// <summary>
+        /// 枚举类型转换
+        /// </summary>
+        /// <param name="instance"></param>
+        /// <param name="conversionType"></param>
+        /// <returns></returns>
         private static object EnumTypeConvert(object instance, Type conversionType)
         {
-            if (instance == null || !conversionType.GetTypeInfo().IsEnum)
-                return null;
+            if (instance == null || !conversionType.GetTypeInfo().IsEnum) return null;
             return Enum.Parse(conversionType, instance.ToString());
         }
 
+        /// <summary>
+        /// 简单类型转换
+        /// </summary>
+        /// <param name="instance"></param>
+        /// <param name="conversionType"></param>
+        /// <returns></returns>
         private static object SimpleTypeConvert(object instance, Type conversionType)
         {
             if (instance is IConvertible && typeof(IConvertible).GetTypeInfo().IsAssignableFrom(conversionType))
@@ -48,11 +53,15 @@ namespace Rpc.Common.Easy.Rpc.Communally.Convertibles.Impl
             return null;
         }
 
+        /// <summary>
+        /// 复杂类型
+        /// </summary>
+        /// <param name="instance"></param>
+        /// <param name="conversionType"></param>
+        /// <returns></returns>
         private object ComplexTypeConvert(object instance, Type conversionType)
         {
             return _serializer.Deserialize(instance, conversionType);
         }
-
-        #endregion Private Method
     }
 }

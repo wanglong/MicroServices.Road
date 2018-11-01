@@ -17,7 +17,8 @@ namespace Rpc.Common.Easy.Rpc.Attributes
         private readonly IServiceEntryFactory _serviceEntryFactory;
         private readonly ILogger<AttributeServiceEntryProvider> _logger;
 
-        public AttributeServiceEntryProvider(IEnumerable<Type> types, IServiceEntryFactory serviceEntryFactory, ILogger<AttributeServiceEntryProvider> logger)
+        public AttributeServiceEntryProvider(IEnumerable<Type> types, IServiceEntryFactory serviceEntryFactory,
+            ILogger<AttributeServiceEntryProvider> logger)
         {
             _types = types;
             _serviceEntryFactory = serviceEntryFactory;
@@ -31,6 +32,7 @@ namespace Rpc.Common.Easy.Rpc.Attributes
             var services = _types.Where(type =>
                 {
                     var typeInfo = type.GetTypeInfo();
+
                     // 限定为打上RpcTagBundleAttribute特性的接口
                     return typeInfo.IsInterface && typeInfo.GetCustomAttribute<RpcTagBundleAttribute>() != null;
                 }
@@ -54,12 +56,13 @@ namespace Rpc.Common.Easy.Rpc.Attributes
             var entries = new List<ServiceEntity>();
             foreach (var service in services)
             {
-                foreach (var serviceImplementation in serviceImplementations.Where(i =>
-                    service.GetTypeInfo().IsAssignableFrom(i)))
+                foreach (var serviceImplementation in serviceImplementations.Where(i => service.GetTypeInfo().IsAssignableFrom(i)))
                 {
                     entries.AddRange(_serviceEntryFactory.CreateServiceEntry(service, serviceImplementation));
                 }
             }
+
+            _logger.LogInformation($"ServiceEntiy count is {entries.Count}");
 
             return entries;
         }

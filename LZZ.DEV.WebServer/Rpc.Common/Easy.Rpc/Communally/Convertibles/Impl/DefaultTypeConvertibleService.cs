@@ -7,7 +7,7 @@ using Rpc.Common.Easy.Rpc.Communally.Exceptions;
 namespace Rpc.Common.Easy.Rpc.Communally.Convertibles.Impl
 {
     /// <summary>
-    /// 默认类型转换服务
+    /// 默认类型转换服务（需要注入）
     /// </summary>
     public class DefaultTypeConvertibleService : ITypeConvertibleService
     {

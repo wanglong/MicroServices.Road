@@ -11,24 +11,14 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation
     /// </summary>
     public abstract class ServiceProxyBase
     {
-        #region Field
-
         private readonly IRemoteInvokeService _remoteInvokeService;
         private readonly ITypeConvertibleService _typeConvertibleService;
-
-        #endregion Field
-
-        #region Constructor
 
         protected ServiceProxyBase(IRemoteInvokeService remoteInvokeService, ITypeConvertibleService typeConvertibleService)
         {
             _remoteInvokeService = remoteInvokeService;
             _typeConvertibleService = typeConvertibleService;
         }
-
-        #endregion Constructor
-
-        #region Protected Method
 
         /// <summary>
         /// 远程调用
@@ -48,12 +38,11 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation
                 }
             });
 
-            if (message == null)
-                return default(T);
+            if (message == null) return default(T);
 
             var result = _typeConvertibleService.Convert(message.Result, typeof(T));
 
-            return (T)result;
+            return (T) result;
         }
 
         /// <summary>
@@ -73,7 +62,5 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation
                 }
             });
         }
-
-        #endregion Protected Method
     }
 }

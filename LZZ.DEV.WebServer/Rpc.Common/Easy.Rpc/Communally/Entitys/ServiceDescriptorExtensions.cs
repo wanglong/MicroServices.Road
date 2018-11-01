@@ -24,7 +24,6 @@ namespace Rpc.Common.Easy.Rpc.Communally.Entitys
         public static ServiceDescriptor GroupName(this ServiceDescriptor descriptor, string groupName)
         {
             descriptor.Metadatas["GroupName"] = groupName;
-
             return descriptor;
         }
 

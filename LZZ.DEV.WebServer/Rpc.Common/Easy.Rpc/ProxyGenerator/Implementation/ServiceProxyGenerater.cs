@@ -1,4 +1,5 @@
-﻿using System;
+﻿// TODO: Default Service Proxy Generator class
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -21,7 +22,6 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Implementation
     {
         private readonly IServiceIdGenerator _serviceIdGenerator;
         private readonly ILogger<ServiceProxyGenerater> _logger;
-
 
         public ServiceProxyGenerater(IServiceIdGenerator serviceIdGenerator, ILogger<ServiceProxyGenerater> logger)
         {

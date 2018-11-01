@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿// TODO: Compilation Utility's
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -10,16 +11,10 @@ using Microsoft.Extensions.Logging;
 using Rpc.Common.Easy.Rpc.Communally.Entitys;
 using Rpc.Common.Easy.Rpc.Runtime.Client;
 
-#if !NET
-
-#endif
-
 namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Utilitys
 {
     public static class CompilationUtilitys
     {
-        #region Public Method
-
         public static MemoryStream CompileClientProxy(IEnumerable<SyntaxTree> trees,
             IEnumerable<MetadataReference> references,
             ILogger logger = null)
@@ -31,7 +26,7 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Utilitys
                 MetadataReference.CreateFromFile(typeof(IRemoteInvokeService).GetTypeInfo().Assembly.Location),
                 MetadataReference.CreateFromFile(typeof(IServiceProxyGenerater).GetTypeInfo().Assembly.Location)
             }.Concat(references);
-            return Compile(AssemblyInfo.Create("Rabbit.Rpc.ClientProxys"), trees, references, logger);
+            return Compile(AssemblyInfo.Create("Easy.Rpc.ClientProxys"), trees, references, logger);
         }
 
         public static MemoryStream Compile(AssemblyInfo assemblyInfo, IEnumerable<SyntaxTree> trees,
@@ -63,9 +58,6 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Utilitys
             return stream;
         }
 
-        #endregion Public Method
-
-        #region Private Method
 
         private static SyntaxTree GetAssemblyInfo(AssemblyInfo info)
         {
@@ -211,9 +203,6 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Utilitys
                 .SyntaxTree;
         }
 
-        #endregion Private Method
-
-        #region Help Class
 
         public class AssemblyInfo
         {
@@ -240,7 +229,5 @@ namespace Rpc.Common.Easy.Rpc.ProxyGenerator.Utilitys
                 };
             }
         }
-
-        #endregion Help Class
     }
 }

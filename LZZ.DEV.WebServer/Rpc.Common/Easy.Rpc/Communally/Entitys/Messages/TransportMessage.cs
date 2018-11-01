@@ -7,9 +7,6 @@ namespace Rpc.Common.Easy.Rpc.Communally.Entitys.Messages
     /// </summary>
     public class TransportMessage
     {
-//        public TransportMessage()
-//        {
-//        }
 
         public TransportMessage(object content)
         {
@@ -73,5 +70,6 @@ namespace Rpc.Common.Easy.Rpc.Communally.Entitys.Messages
             {
                 Id = id
             };
+        
     }
 }

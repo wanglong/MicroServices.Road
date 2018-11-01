@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 namespace Rpc.Common.Easy.Rpc.Routing
 {
     /// <summary>
-    //抽象的服务路由工厂
+    /// 抽象的服务路由工厂
     /// </summary>
     public interface IServiceRouteFactory
     {

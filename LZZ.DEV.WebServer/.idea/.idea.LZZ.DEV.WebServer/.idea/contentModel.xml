@@ -39,7 +39,6 @@
         <e p="Easy.Rpc" t="Include">
           <e p="Attributes" t="Include">
             <e p="AttributeServiceEntryProvider.cs" t="Include" />
-            <e p="RpcServiceDescriptorAttribute.cs_" t="Include" />
             <e p="RpcTagBundleAttribute.cs" t="Include" />
           </e>
           <e p="communally" t="Include">
@@ -80,6 +79,7 @@
             <e p="Serialization" t="Include">
               <e p="Implementation" t="Include">
                 <e p="JsonSerializer.cs" t="Include" />
+                <e p="SerializerExtensions.cs" t="Include" />
                 <e p="StringByteArraySerializer.cs" t="Include" />
                 <e p="StringObjectSerializer.cs" t="Include" />
               </e>
@@ -94,18 +94,22 @@
             </e>
             <e p="IServiceProxyFactory.cs" t="Include" />
             <e p="IServiceProxyGenerater.cs" t="Include" />
+            <e p="ServiceProxyFactoryExtensions.cs" t="Include" />
             <e p="Utilitys" t="Include">
               <e p="CompilationUtilitys.cs" t="Include" />
             </e>
           </e>
           <e p="Routing" t="Include">
-            <e p="Implementation" t="Include">
+            <e p="Impl" t="Include">
               <e p="DefaultServiceRouteFactory.cs" t="Include" />
-              <e p="ServiceRouteManagerBase.cs" t="Include" />
+              <e p="ServiceRouteChangedEventArgs.cs" t="Include" />
+              <e p="ServiceRouteEventArgs.cs" t="Include" />
+              <e p="ServiceRouteManagerExtensions.cs" t="Include" />
               <e p="SharedFileServiceRouteManager.cs" t="Include" />
             </e>
             <e p="IServiceRouteFactory.cs" t="Include" />
             <e p="IServiceRouteManager.cs" t="Include" />
+            <e p="ServiceAddressDescriptor.cs" t="Include" />
             <e p="ServiceRoute.cs" t="Include" />
             <e p="ServiceRouteDescriptor.cs" t="Include" />
           </e>
@@ -180,6 +184,7 @@
               <e p="TransportClient.cs" t="Include" />
             </e>
             <e p="InternalAdaper" t="Include">
+              <e p="ByteBufferExtend.cs" t="Include" />
               <e p="TransportMessageChannelHandlerDecodeAdapter.cs" t="Include" />
               <e p="TransportMessageChannelHandlerEncodeAdapter.cs" t="Include" />
             </e>

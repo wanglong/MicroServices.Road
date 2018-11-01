@@ -3,7 +3,7 @@
 namespace Rpc.Common.Easy.Rpc.Communally.Entitys.Address
 {
     /// <summary>
-    //抽象的地址模型
+    /// 抽象的地址模型
     /// </summary>
     public abstract class AddressModel
     {
@@ -19,19 +19,15 @@ namespace Rpc.Common.Easy.Rpc.Communally.Entitys.Address
         /// <returns>一个字符串</returns>
         public abstract override string ToString();
 
-        #region Equality members
-
         /// <summary>Determines whether the specified object is equal to the current object.</summary>
         /// <returns>true if the specified object  is equal to the current object; otherwise, false.</returns>
         /// <param name="obj">The object to compare with the current object. </param>
         public override bool Equals(object obj)
         {
             var model = obj as AddressModel;
-            if (model == null)
-                return false;
+            if (model == null) return false;
 
-            if (obj.GetType() != GetType())
-                return false;
+            if (obj.GetType() != GetType()) return false;
 
             return model.ToString() == ToString();
         }
@@ -52,7 +48,5 @@ namespace Rpc.Common.Easy.Rpc.Communally.Entitys.Address
         {
             return !Equals(model1, model2);
         }
-
-        #endregion Equality members
     }
 }

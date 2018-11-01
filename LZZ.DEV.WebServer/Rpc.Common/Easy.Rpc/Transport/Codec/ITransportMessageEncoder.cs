@@ -6,7 +6,5 @@ namespace Rpc.Common.Easy.Rpc.Transport.Codec
     public interface ITransportMessageEncoder
     {
         byte[] Encode(TransportMessage message);
-        
-        Stream EncodeStream(TransportMessage message);
     }
 }
