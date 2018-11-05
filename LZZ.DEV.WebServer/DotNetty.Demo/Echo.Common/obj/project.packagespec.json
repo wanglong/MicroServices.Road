@@ -1,0 +1,38 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\DotNetty.Demo\\Echo.Common\\Echo.Common.csproj",
+    "projectName": "Echo.Common",
+    "projectPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\DotNetty.Demo\\Echo.Common\\Echo.Common.csproj",
+    "outputPath": "G:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\DotNetty.Demo\\Echo.Common\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netstandard1.6"
+    ],
+    "frameworks": {
+      "netstandard1.6": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netstandard1.6": {
+      "dependencies": {
+        "NETStandard.Library": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[1.6.1, )",
+          "autoReferenced": true
+        }
+      }
+    }
+  }
+}

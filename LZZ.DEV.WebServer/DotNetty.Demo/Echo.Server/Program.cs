@@ -1,13 +1,12 @@
-﻿// Copyright (c) Microsoft. All rights reserved.
-// Licensed under the MIT license. See LICENSE file in the project root for full license information.
-
-/*
+﻿/*
  * Netty 是一个半成品，作用是在需要基于自定义协议的基础上完成自己的通信封装
  * Netty 大大简化了网络程序的开发过程比如 TCP 和 UDP 的 socket 服务的开发
  * “快速和简单”并不意味着应用程序会有难维护和性能低的问题，
  * Netty 是一个精心设计的框架，它从许多协议的实现中吸收了很多的经验比如 FTP、SMTP、HTTP、许多二进制和基于文本的传统协议
  * 因此，Netty 已经成功地找到一个方式,在不失灵活性的前提下来实现开发的简易性，高性能，稳定性
  */
+
+using DotNetty.Transport.Channels.Sockets;
 
 namespace Echo.Server
 {
@@ -92,6 +91,7 @@ namespace Echo.Server
 
                                 // 业务handler
                                 pipeline.AddLast("echo", new EchoServerHandler());
+
                             }));
 
                 // bootstrap绑定到指定端口的行为就是服务端启动服务，同样的Serverbootstrap可以bind到多个端口

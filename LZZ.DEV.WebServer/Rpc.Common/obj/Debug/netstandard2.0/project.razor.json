@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "g:\\My_Project\\MicroServices\\LZZ.DEV.WebServer\\Rpc.Common\\Rpc.Common.csproj",
+  "TargetFramework": "netstandard2.0",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}

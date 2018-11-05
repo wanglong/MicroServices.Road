@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard1.6</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="DotNetty.Transport, Version=0.0.0.0, Culture=neutral, PublicKeyToken=bc13ca065fa06c29">
+        <HintPath>C:\Users\Administrator\.nuget\packages\dotnetty.transport\0.4.2\lib\netstandard1.3\DotNetty.Transport.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>

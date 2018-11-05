@@ -15,12 +15,12 @@ namespace Rpc.Common.Easy.Rpc.Transport.InternalAdaper
         {
             _transportMessageDecoder = transportMessageDecoder;
         }
-        
+
         public override void ChannelRead(IChannelHandlerContext context, object message)
         {
-            var buffer = (IByteBuffer)message;
+            var buffer = (IByteBuffer) message;
             var data = buffer.ToArray();
-            if(data.Length == 0) return;
+            if (data.Length == 0) return;
             var transportMessage = _transportMessageDecoder.Decode(data);
             context.FireChannelRead(transportMessage);
         }

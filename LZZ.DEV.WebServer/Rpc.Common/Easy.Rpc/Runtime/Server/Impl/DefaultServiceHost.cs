@@ -6,7 +6,7 @@ using Rpc.Common.Easy.Rpc.Transport;
 namespace Rpc.Common.Easy.Rpc.Runtime.Server.Impl
 {
     /// <summary>
-    //默认的服务主机
+    /// 默认的服务主机
     /// </summary>
     /// <remarks>继承于ServiceHostAbstract抽象类，重写StartAsync方法，此模式也可以自定用于外部DLL扩展</remarks>
     public class DefaultServiceHost : ServiceHostAbstract

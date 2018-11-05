@@ -2,9 +2,7 @@
 {
     using System;
     using System.Net;
-    using System.Text;
     using System.Threading.Tasks;
-    using DotNetty.Buffers;
     using DotNetty.Codecs;
     using DotNetty.Handlers.Logging;
     using DotNetty.Transport.Bootstrapping;
@@ -15,8 +13,6 @@
     {
         static async Task RunClientAsync()
         {
-            // ExampleHelper.SetConsoleLogger();
-
             var group = new MultithreadEventLoopGroup();
 
             try
@@ -41,20 +37,22 @@
                 IChannel clientChannel = await bootstrap.ConnectAsync(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8007));
 
                 // 建立死循环，类同于While(true)
-                for (;;)
-                {
-                    Console.WriteLine("input you data:");
-                    // 根据设置建立缓存区大小
-                    IByteBuffer initialMessage = Unpooled.Buffer(256);
-                    string r = Console.ReadLine();
-                    // 将数据流写入缓冲区
-                    initialMessage.WriteBytes(Encoding.UTF8.GetBytes(r ?? throw new InvalidOperationException()));
-                    // 将缓冲区数据流写入到管道中
-                    await clientChannel.WriteAndFlushAsync(initialMessage);
-                    if (r.Contains("bye"))
-                        break;
-                }
+//                for (;;)
+//                {
+//                    Console.WriteLine("input you name:");
+//                    // 根据设置建立缓存区大小
+//                    IByteBuffer initialMessage = Unpooled.Buffer(256);
+//                    string r = Console.ReadLine();
+//                    // 将数据流写入缓冲区
+//                    initialMessage.WriteBytes(Encoding.UTF8.GetBytes(r ?? throw new InvalidOperationException()));
+//                    // 将缓冲区数据流写入到管道中
+//                    await clientChannel.WriteAndFlushAsync(initialMessage);
+//
+//                    if (r.Contains("bye")) break;
+//                }
 
+                Console.ReadKey();
+                
                 Console.WriteLine("byebye");
 
 

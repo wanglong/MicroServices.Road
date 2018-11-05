@@ -4,7 +4,7 @@ using Rpc.Common.Easy.Rpc.Communally.Entitys.Messages;
 namespace Rpc.Common.Easy.Rpc.Transport
 {
     /// <summary>
-    //抽象的发送者
+    /// 抽象的发送者
     /// </summary>
     public interface IMessageSender
     {

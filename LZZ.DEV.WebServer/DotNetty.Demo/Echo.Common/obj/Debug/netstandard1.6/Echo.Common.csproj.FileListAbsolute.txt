@@ -1,0 +1,9 @@
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\DotNetty.Demo\Echo.Common\bin\Debug\netstandard1.6\Echo.Common.deps.json
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\DotNetty.Demo\Echo.Common\bin\Debug\netstandard1.6\Echo.Common.dll
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\DotNetty.Demo\Echo.Common\bin\Debug\netstandard1.6\Echo.Common.pdb
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\DotNetty.Demo\Echo.Common\obj\Debug\netstandard1.6\Echo.Common.csprojAssemblyReference.cache
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\DotNetty.Demo\Echo.Common\obj\Debug\netstandard1.6\Echo.Common.csproj.CoreCompileInputs.cache
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\DotNetty.Demo\Echo.Common\obj\Debug\netstandard1.6\Echo.Common.AssemblyInfoInputs.cache
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\DotNetty.Demo\Echo.Common\obj\Debug\netstandard1.6\Echo.Common.AssemblyInfo.cs
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\DotNetty.Demo\Echo.Common\obj\Debug\netstandard1.6\Echo.Common.dll
+G:\My_Project\MicroServices\LZZ.DEV.WebServer\DotNetty.Demo\Echo.Common\obj\Debug\netstandard1.6\Echo.Common.pdb

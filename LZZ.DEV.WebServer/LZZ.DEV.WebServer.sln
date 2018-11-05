@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rpc.Server", "Rpc.Server\Rp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rpc.Client", "Rpc.Client\Rpc.Client.csproj", "{C2D2EABB-2FE4-449A-8CBB-C151DA374A0A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Echo.Common", "DotNetty.Demo\Echo.Common\Echo.Common.csproj", "{0EC9B3D8-0A2E-4C5C-968F-D7875F1C053D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{C2D2EABB-2FE4-449A-8CBB-C151DA374A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2D2EABB-2FE4-449A-8CBB-C151DA374A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2D2EABB-2FE4-449A-8CBB-C151DA374A0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EC9B3D8-0A2E-4C5C-968F-D7875F1C053D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EC9B3D8-0A2E-4C5C-968F-D7875F1C053D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EC9B3D8-0A2E-4C5C-968F-D7875F1C053D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC9B3D8-0A2E-4C5C-968F-D7875F1C053D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +75,7 @@ Global
 		{48B6A1E5-1678-47BC-B510-8093B9CDF02A} = {6D7AF89F-2DF3-4AEF-860A-4F8F3935E09F}
 		{A859535E-CCD0-490B-A572-0D8D404AF26E} = {6D7AF89F-2DF3-4AEF-860A-4F8F3935E09F}
 		{C2D2EABB-2FE4-449A-8CBB-C151DA374A0A} = {6D7AF89F-2DF3-4AEF-860A-4F8F3935E09F}
+		{0EC9B3D8-0A2E-4C5C-968F-D7875F1C053D} = {7AEDF845-93D5-4241-9528-C89F61A67247}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5BEBD296-E843-40A7-8446-9BDCE7A629E1}
