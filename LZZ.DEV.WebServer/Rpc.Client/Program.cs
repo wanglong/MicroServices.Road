@@ -16,40 +16,6 @@ namespace Rpc.Client
         {
             var serviceCollection = new ServiceCollection();
             {
-//                // 注入日志
-//                serviceCollection.AddLogging();
-//                // 注入ID生成器
-//                serviceCollection.AddSingleton<IServiceIdGenerator, DefaultServiceIdGenerator>();
-//                // 注入类型转换器
-//                serviceCollection.AddSingleton<ITypeConvertibleService, DefaultTypeConvertibleService>();
-//                // 注入健康状态检查
-//                serviceCollection.AddSingleton<IHealthCheckService, DefaultHealthCheckService>();
-//                // 注入地址解析器
-//                serviceCollection.AddSingleton<IAddressResolver, DefaultAddressResolver>();
-//                // 注入远程调用服务
-//                serviceCollection.AddSingleton<IRemoteInvokeService, RemoteInvokeService>();
-//                // 注入客户端传输工厂服务
-//                serviceCollection.AddSingleton<ITransportClientFactory, DefaultDotNettyTransportClientFactory>();
-//                // 注入服务代理生成器
-//                serviceCollection.AddSingleton<IServiceProxyGenerater, ServiceProxyGenerater>();
-//                // 注入服务代理工厂
-//                serviceCollection.AddSingleton<IServiceProxyFactory, ServiceProxyFactory>();
-//                // 注入DotNetty服务监听者
-//                serviceCollection.AddSingleton<DefaultDotNettyServerMessageListener>();
-//                // 注入默认宿主
-//                serviceCollection.AddSingleton<IServiceHost, DefaultServiceHost>(
-//                    provider => new DefaultServiceHost(
-//                        async endPoint =>
-//                        {
-//                            var messageListener = provider.GetRequiredService<DefaultDotNettyServerMessageListener>();
-//                            await messageListener.StartAsync(endPoint);
-//                            return messageListener;
-//                        },
-//                        provider.GetRequiredService<IServiceExecutor>()
-//                    )
-//                );
-
-
                 serviceCollection
                     .AddLogging() // 添加日志
                     .AddClient() // 添加客户端
@@ -87,3 +53,36 @@ namespace Rpc.Client
         }
     }
 }
+
+//                // 注入日志
+//                serviceCollection.AddLogging();
+//                // 注入ID生成器
+//                serviceCollection.AddSingleton<IServiceIdGenerator, DefaultServiceIdGenerator>();
+//                // 注入类型转换器
+//                serviceCollection.AddSingleton<ITypeConvertibleService, DefaultTypeConvertibleService>();
+//                // 注入健康状态检查
+//                serviceCollection.AddSingleton<IHealthCheckService, DefaultHealthCheckService>();
+//                // 注入地址解析器
+//                serviceCollection.AddSingleton<IAddressResolver, DefaultAddressResolver>();
+//                // 注入远程调用服务
+//                serviceCollection.AddSingleton<IRemoteInvokeService, RemoteInvokeService>();
+//                // 注入客户端传输工厂服务
+//                serviceCollection.AddSingleton<ITransportClientFactory, DefaultDotNettyTransportClientFactory>();
+//                // 注入服务代理生成器
+//                serviceCollection.AddSingleton<IServiceProxyGenerater, ServiceProxyGenerater>();
+//                // 注入服务代理工厂
+//                serviceCollection.AddSingleton<IServiceProxyFactory, ServiceProxyFactory>();
+//                // 注入DotNetty服务监听者
+//                serviceCollection.AddSingleton<DefaultDotNettyServerMessageListener>();
+//                // 注入默认宿主
+//                serviceCollection.AddSingleton<IServiceHost, DefaultServiceHost>(
+//                    provider => new DefaultServiceHost(
+//                        async endPoint =>
+//                        {
+//                            var messageListener = provider.GetRequiredService<DefaultDotNettyServerMessageListener>();
+//                            await messageListener.StartAsync(endPoint);
+//                            return messageListener;
+//                        },
+//                        provider.GetRequiredService<IServiceExecutor>()
+//                    )
+//                );

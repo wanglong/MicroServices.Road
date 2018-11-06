@@ -48,14 +48,6 @@ namespace Echo.Server
             }
         }
 
-        private Dictionary<string, string> ToObject(byte[] data)
-        {
-            using (var stream = new MemoryStream(data))
-            {
-                var fw = Serializer.Deserialize<Dictionary<string, string>>(stream);
-                return fw;
-            }
-        }
 
         /// <summary>
         /// 管道读取完成 

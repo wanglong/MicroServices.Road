@@ -32,33 +32,6 @@ using Rpc.Common.Easy.Rpc.Transport.Impl;
 
 namespace Rpc.Common.Easy.Rpc
 {
-    /// <summary>
-    /// 一个抽象的Rpc服务构建者
-    /// </summary>
-    public interface IRpcBuilder
-    {
-        /// <summary>
-        /// 服务集合
-        /// </summary>
-        IServiceCollection Services { get; }
-    }
-
-    /// <summary>
-    /// 默认的Rpc服务构建者
-    /// </summary>
-    internal sealed class RpcBuilder : IRpcBuilder
-    {
-        public RpcBuilder(IServiceCollection services)
-        {
-            Services = services ?? throw new ArgumentNullException(nameof(services));
-        }
-
-        /// <summary>
-        /// 服务集合
-        /// </summary>
-        public IServiceCollection Services { get; }
-    }
-
     public static class RpcServiceCollectionExtensions
     {
         /// <summary>
@@ -272,7 +245,7 @@ namespace Rpc.Common.Easy.Rpc
         /// </summary>
         /// <param name="builder">Rpc服务构建者</param>
         /// <returns>Rpc服务构建者</returns>
-        public static IRpcBuilder AddServiceRuntime(this IRpcBuilder builder)
+        public static IRpcBuilder AddService(this IRpcBuilder builder)
         {
             var services = builder.Services;
 

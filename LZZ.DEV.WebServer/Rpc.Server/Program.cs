@@ -6,18 +6,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Rpc.Common;
 using Rpc.Common.Easy.Rpc;
-using Rpc.Common.Easy.Rpc.Attributes;
-using Rpc.Common.Easy.Rpc.Communally.Convertibles;
-using Rpc.Common.Easy.Rpc.Communally.Convertibles.Impl;
 using Rpc.Common.Easy.Rpc.Communally.Entitys.Address;
-using Rpc.Common.Easy.Rpc.Communally.IdGenerator;
-using Rpc.Common.Easy.Rpc.Communally.IdGenerator.Impl;
 using Rpc.Common.Easy.Rpc.Routing;
 using Rpc.Common.Easy.Rpc.Runtime.Server;
-using Rpc.Common.Easy.Rpc.Runtime.Server.Impl;
-using Rpc.Common.Easy.Rpc.Transport.Codec;
-using Rpc.Common.Easy.Rpc.Transport.Codec.Implementation;
-using Rpc.Common.Easy.Rpc.Transport.Impl;
 
 namespace Rpc.Server
 {
@@ -25,11 +16,54 @@ namespace Rpc.Server
     {
         static void Main()
         {
-            var bTime = DateTime.Now;
-
+            
             // 实现自动装配
             var serviceCollection = new ServiceCollection();
             {
+                serviceCollection
+                    .AddLogging()
+                    .AddRpcCore()
+                    .AddService()
+                    .UseSharedFileRouteManager("d:\\routes.txt")
+                    .UseDotNettyTransport();
+
+                // ** 注入本地测试类
+                serviceCollection.AddSingleton<IUserService, UserServiceImpl>();
+            }
+
+            // 构建当前容器
+            var buildServiceProvider = serviceCollection.BuildServiceProvider();
+
+            // 获取服务管理实体类
+            var serviceEntryManager = buildServiceProvider.GetRequiredService<IServiceEntryManager>();
+            var addressDescriptors = serviceEntryManager.GetEntries().Select(i => new ServiceRoute
+            {
+                Address = new[]
+                {
+                    new IpAddressModel {Ip = "127.0.0.1", Port = 9881}
+                },
+                ServiceDescriptor = i.Descriptor
+            });
+            var serviceRouteManager = buildServiceProvider.GetRequiredService<IServiceRouteManager>();
+            serviceRouteManager.SetRoutesAsync(addressDescriptors).Wait();
+
+            // 构建内部日志处理
+            buildServiceProvider.GetRequiredService<ILoggerFactory>().AddConsole((console, logLevel) => (int) logLevel >= 0);
+
+            // 获取服务宿主
+            var serviceHost = buildServiceProvider.GetRequiredService<IServiceHost>();
+
+            Task.Factory.StartNew(async () =>
+            {
+                //启动主机
+                await serviceHost.StartAsync(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9881));
+            });
+
+            Console.ReadLine();
+        }
+    }
+}
+
 //                #region 注入服务相关类
 //
 //                {
@@ -96,47 +130,3 @@ namespace Rpc.Server
 //                }
 //
 //                #endregion
-
-                serviceCollection
-                    .AddLogging()
-                    .AddRpcCore()
-                    .AddServiceRuntime()
-                    .UseSharedFileRouteManager("d:\\routes.txt")
-                    .UseDotNettyTransport();
-
-                // ** 注入本地测试类
-                serviceCollection.AddSingleton<IUserService, UserServiceImpl>();
-            }
-
-            // 构建当前容器
-            var buildServiceProvider = serviceCollection.BuildServiceProvider();
-
-            // 获取服务管理实体类
-            var serviceEntryManager = buildServiceProvider.GetRequiredService<IServiceEntryManager>();
-            var addressDescriptors = serviceEntryManager.GetEntries().Select(i => new ServiceRoute
-            {
-                Address = new[]
-                {
-                    new IpAddressModel {Ip = "127.0.0.1", Port = 9881}
-                },
-                ServiceDescriptor = i.Descriptor
-            });
-            var serviceRouteManager = buildServiceProvider.GetRequiredService<IServiceRouteManager>();
-            serviceRouteManager.SetRoutesAsync(addressDescriptors).Wait();
-
-            // 构建内部日志处理
-            buildServiceProvider.GetRequiredService<ILoggerFactory>().AddConsole((console, logLevel) => (int) logLevel >= 0);
-
-            // 获取服务宿主
-            var serviceHost = buildServiceProvider.GetRequiredService<IServiceHost>();
-
-            Task.Factory.StartNew(async () =>
-            {
-                //启动主机
-                await serviceHost.StartAsync(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9881));
-            });
-
-            Console.ReadLine();
-        }
-    }
-}

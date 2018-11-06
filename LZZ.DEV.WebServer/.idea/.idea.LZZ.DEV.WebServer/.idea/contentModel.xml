@@ -8,29 +8,13 @@
     <e p="G:\My_Project\MicroServices\LZZ.DEV.WebServer" t="IncludeFlat">
       <e p="DotNetty.Demo" t="Include">
         <e p="Echo.Client" t="IncludeRecursive">
-          <e p="appsettings.json" t="Include" />
-          <e p="bin" t="ExcludeRecursive" />
           <e p="Echo.Client.csproj" t="IncludeRecursive" />
-          <e p="EchoClientHandler.cs" t="Include" />
-          <e p="obj" t="ExcludeRecursive" />
-          <e p="Program.cs" t="Include" />
-          <e p="Properties" t="Include">
-            <e p="AssemblyInfo.cs" t="Include" />
-          </e>
         </e>
         <e p="Echo.Common" t="IncludeRecursive">
           <e p="Echo.Common.csproj" t="IncludeRecursive" />
         </e>
         <e p="Echo.Server" t="IncludeRecursive">
-          <e p="appsettings.json" t="Include" />
-          <e p="bin" t="ExcludeRecursive" />
           <e p="Echo.Server.csproj" t="IncludeRecursive" />
-          <e p="EchoServerHandler.cs" t="Include" />
-          <e p="obj" t="ExcludeRecursive" />
-          <e p="Program.cs" t="Include" />
-          <e p="Properties" t="Include">
-            <e p="AssemblyInfo.cs" t="Include" />
-          </e>
         </e>
       </e>
       <e p="LZZ.DEV.Watch" t="IncludeRecursive">
@@ -42,13 +26,200 @@
       <e p="LZZ.DEV.WebServer.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="Rpc.Client" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="Rpc.Client.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
         <e p="Rpc.Client.csproj" t="IncludeRecursive" />
       </e>
       <e p="Rpc.Common" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Easy.Rpc" t="Include">
+          <e p="Attributes" t="Include">
+            <e p="AttributeServiceEntryProvider.cs" t="Include" />
+            <e p="RpcTagBundleAttribute.cs" t="Include" />
+          </e>
+          <e p="Communally" t="Include">
+            <e p="Convertibles" t="Include">
+              <e p="Impl" t="Include">
+                <e p="DefaultTypeConvertibleProvider.cs" t="Include" />
+                <e p="DefaultTypeConvertibleService.cs" t="Include" />
+                <e p="TypeConvertDelegate.cs" t="Include" />
+              </e>
+              <e p="ITypeConvertibleProvider.cs" t="Include" />
+              <e p="ITypeConvertibleService.cs" t="Include" />
+            </e>
+            <e p="Entitys" t="Include">
+              <e p="Address" t="Include">
+                <e p="AddressModel.cs" t="Include" />
+                <e p="IpAddressModel.cs" t="Include" />
+              </e>
+              <e p="Messages" t="Include">
+                <e p="RemoteInvokeMessage.cs" t="Include" />
+                <e p="RemoteInvokeResultMessage.cs" t="Include" />
+                <e p="TransportMessage.cs" t="Include" />
+              </e>
+              <e p="ServiceDescriptor.cs" t="Include" />
+              <e p="ServiceDescriptorExtensions.cs" t="Include" />
+              <e p="ServiceEntity.cs" t="Include" />
+            </e>
+            <e p="Exceptions" t="Include">
+              <e p="RpcCommunicationException.cs" t="Include" />
+              <e p="RpcException.cs" t="Include" />
+              <e p="RpcRemoteException.cs" t="Include" />
+            </e>
+            <e p="IdGenerator" t="Include">
+              <e p="Impl" t="Include">
+                <e p="DefaultServiceIdGenerator.cs" t="Include" />
+              </e>
+              <e p="IServiceIdGenerator.cs" t="Include" />
+            </e>
+            <e p="Serialization" t="Include">
+              <e p="Implementation" t="Include">
+                <e p="JsonSerializer.cs" t="Include" />
+                <e p="SerializerExtensions.cs" t="Include" />
+                <e p="StringByteArraySerializer.cs" t="Include" />
+                <e p="StringObjectSerializer.cs" t="Include" />
+              </e>
+              <e p="ISerializer.cs" t="Include" />
+            </e>
+          </e>
+          <e p="IRpcBuilder.cs" t="Include" />
+          <e p="ProxyGenerator" t="Include">
+            <e p="Implementation" t="Include">
+              <e p="ServiceProxyBase.cs" t="Include" />
+              <e p="ServiceProxyFactory.cs" t="Include" />
+              <e p="ServiceProxyGenerater.cs" t="Include" />
+            </e>
+            <e p="IServiceProxyFactory.cs" t="Include" />
+            <e p="IServiceProxyGenerater.cs" t="Include" />
+            <e p="ServiceProxyFactoryExtensions.cs" t="Include" />
+            <e p="Utilitys" t="Include">
+              <e p="CompilationUtilitys.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Routing" t="Include">
+            <e p="Impl" t="Include">
+              <e p="DefaultServiceRouteFactory.cs" t="Include" />
+              <e p="ServiceRouteChangedEventArgs.cs" t="Include" />
+              <e p="ServiceRouteEventArgs.cs" t="Include" />
+              <e p="ServiceRouteManagerExtensions.cs" t="Include" />
+              <e p="SharedFileServiceRouteManager.cs" t="Include" />
+            </e>
+            <e p="IServiceRouteFactory.cs" t="Include" />
+            <e p="IServiceRouteManager.cs" t="Include" />
+            <e p="ServiceAddressDescriptor.cs" t="Include" />
+            <e p="ServiceRoute.cs" t="Include" />
+            <e p="ServiceRouteDescriptor.cs" t="Include" />
+          </e>
+          <e p="RpcBuilder.cs" t="Include" />
+          <e p="RpcServiceCollectionExtensions.cs" t="Include" />
+          <e p="Runtime" t="Include">
+            <e p="Client" t="Include">
+              <e p="Address" t="Include">
+                <e p="Resolvers" t="Include">
+                  <e p="IAddressResolver.cs" t="Include" />
+                  <e p="Implementation" t="Include">
+                    <e p="DefaultAddressResolver.cs" t="Include" />
+                    <e p="Selectors" t="Include">
+                      <e p="IAddressSelector.cs" t="Include" />
+                      <e p="Implementation" t="Include">
+                        <e p="AddressSelectorBase.cs" t="Include" />
+                        <e p="PollingAddressSelector.cs" t="Include" />
+                        <e p="RandomAddressSelector.cs" t="Include" />
+                      </e>
+                    </e>
+                  </e>
+                </e>
+              </e>
+              <e p="HealthChecks" t="Include">
+                <e p="IHealthCheckService.cs" t="Include" />
+                <e p="Implementation" t="Include">
+                  <e p="DefaultHealthCheckService.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Implementation" t="Include">
+                <e p="RemoteInvokeService.cs" t="Include" />
+              </e>
+              <e p="IRemoteInvokeService.cs" t="Include" />
+              <e p="RemoteInvokeContext.cs" t="Include" />
+            </e>
+            <e p="Server" t="Include">
+              <e p="Impl" t="Include">
+                <e p="DefaultServiceEntryLocate.cs" t="Include" />
+                <e p="DefaultServiceEntryManager.cs" t="Include" />
+                <e p="DefaultServiceExecutor.cs" t="Include" />
+                <e p="DefaultServiceHost.cs" t="Include" />
+                <e p="ServiceEntryFactory.cs" t="Include" />
+                <e p="ServiceHostAbstract.cs" t="Include" />
+              </e>
+              <e p="IServiceEntryFactory.cs" t="Include" />
+              <e p="IServiceEntryLocate.cs" t="Include" />
+              <e p="IServiceEntryManager.cs" t="Include" />
+              <e p="IServiceEntryProvider.cs" t="Include" />
+              <e p="IServiceExecutor.cs" t="Include" />
+              <e p="IServiceHost.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Transport" t="Include">
+            <e p="Codec" t="Include">
+              <e p="Implementation" t="Include">
+                <e p="JsonTransportMessageCodecFactory.cs" t="Include" />
+                <e p="JsonTransportMessageDecoder.cs" t="Include" />
+                <e p="JsonTransportMessageEncoder.cs" t="Include" />
+              </e>
+              <e p="ITransportMessageCodecFactory.cs" t="Include" />
+              <e p="ITransportMessageDecoder.cs" t="Include" />
+              <e p="ITransportMessageEncoder.cs" t="Include" />
+            </e>
+            <e p="IMessageListener.cs" t="Include" />
+            <e p="IMessageSender.cs" t="Include" />
+            <e p="Impl" t="Include">
+              <e p="DefaultDotNettyMessageClientSender.cs" t="Include" />
+              <e p="DefaultDotNettyMessageSender.cs" t="Include" />
+              <e p="DefaultDotNettyServerMessageListener.cs" t="Include" />
+              <e p="DefaultDotNettyServerMessageSender.cs" t="Include" />
+              <e p="DefaultDotNettyTransportClientFactory.cs" t="Include" />
+              <e p="MessageListener.cs" t="Include" />
+              <e p="TransportClient.cs" t="Include" />
+            </e>
+            <e p="InternalAdaper" t="Include">
+              <e p="ByteBufferExtend.cs" t="Include" />
+              <e p="TransportMessageChannelHandlerDecodeAdapter.cs" t="Include" />
+              <e p="TransportMessageChannelHandlerEncodeAdapter.cs" t="Include" />
+            </e>
+            <e p="ITransportClient.cs" t="Include" />
+            <e p="ITransportClientFactory.cs" t="Include" />
+          </e>
+        </e>
+        <e p="IUserService.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="Rpc.Common.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Rpc.Common.csproj" t="IncludeRecursive" />
+        <e p="UserModel.cs" t="Include" />
+        <e p="UserServiceImpl.cs" t="Include" />
       </e>
       <e p="Rpc.Demo" t="Include" />
       <e p="Rpc.Server" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="Rpc.Server.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
         <e p="Rpc.Server.csproj" t="IncludeRecursive" />
       </e>
       <e p="Rpc.WebServer" t="Include" />

@@ -8,7 +8,6 @@ namespace Rpc.Common
     /// <summary>
     /// 接口UserService的定义
     /// </summary>
-    // 在 protobuf 的服务绑定中，需要对传输的数据结构（或模板）进行rpc特性绑定
     [RpcTagBundle]
     public interface IUserService
     {
@@ -24,7 +23,6 @@ namespace Rpc.Common
 
         Task<IDictionary<string, string>> GetDictionary();
 
-//        [RpcTagBundle(IsWaitExecution = false)]
         Task Try();
 
         Task TryThrowException();
